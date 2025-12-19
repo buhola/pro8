@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
+    "predeploy": "npm run build && echo pro8.jczap.net > ./build/CNAME",
     "docusaurus": "docusaurus",
     "start": "docusaurus start",
     "build": "docusaurus build",
