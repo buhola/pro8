@@ -25,7 +25,7 @@ const config: Config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: "fastura", // Usually your GitHub org/user name.
+  organizationName: "zjceo", // Usually your GitHub org/user name.
   projectName: "pro8", // Usually your repo name.
 
   onBrokenLinks: "throw",
