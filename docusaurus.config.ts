@@ -4,7 +4,6 @@ import type * as Preset from "@docusaurus/preset-classic";
 import type * as Plugin from "@docusaurus/types/src/plugin";
 import type * as OpenApiPlugin from "docusaurus-plugin-openapi-docs";
 
-
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
@@ -203,8 +202,9 @@ const config: Config = {
   ],
 
   themes: [
-     "docusaurus-theme-openapi-docs",
-
+    require.resolve("docusaurus-theme-openapi-docs"),
+    require.resolve("@docusaurus/theme-live-codeblock"),
+    //require.resolve("@docusaurus/theme-search-algolia"),
   ],
 
   themeConfig: {
@@ -212,6 +212,35 @@ const config: Config = {
     image: "img/docusaurus-social-card.jpg",
     colorMode: {
       respectPrefersColorScheme: true,
+    },
+    algolia: {
+      // The application ID provided by Algolia
+      appId: "N230Q4HYO9",
+      // Public API key
+      apiKey: "09a60693f27907b864ec936fb71011a3",
+      indexName: "pro8_jczap_net_n230q4hyo9_pages",
+      // Configuración para búsqueda global
+      contextualSearch: false,
+      searchParameters: {
+        attributesToRetrieve: [
+          "hierarchy.lvl0",
+          "hierarchy.lvl1",
+          "hierarchy.lvl2",
+          "hierarchy.lvl3",
+          "hierarchy.lvl4",
+          "hierarchy.lvl5",
+          "hierarchy.lvl6",
+          "content",
+          "anchor",
+          "url",
+          "url_without_anchor",
+          "type",
+        ],
+        distinct: true,
+        hitsPerPage: 10,
+      },
+      // Optional: path for search page that enabled by default (`false` to disable it)
+      searchPagePath: false,
     },
     navbar: {
       title: "Pro 8",
@@ -288,6 +317,10 @@ const config: Config = {
     prism: {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
+    },
+    imageZoom: {
+      // CSS selector to apply the plugin to, defaults to '.markdown img'
+      selector: ".markdown img",
     },
   } satisfies Preset.ThemeConfig,
 };
