@@ -215,10 +215,10 @@ const config: Config = {
     },
     algolia: {
       // The application ID provided by Algolia
-      appId: "N230Q4HYO9",
+      appId: "I0B1SS64CU",
       // Public API key
-      apiKey: "09a60693f27907b864ec936fb71011a3",
-      indexName: "pro8_jczap_net_n230q4hyo9_pages",
+      apiKey: "6a3186a95fda093e0fa197b971e74924",
+      indexName: "pro-8",
       // Configuración para búsqueda global
       contextualSearch: false,
       searchParameters: {
