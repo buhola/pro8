@@ -1,4 +1,8 @@
-# General: Validador de documentos
+---
+sidebar_position: 2
+---
+
+# Validador de documentos
 
 En este artículo te mostraremos a como utilizar el validador de documentos .Sigue estos pasos para realizarlo:
 

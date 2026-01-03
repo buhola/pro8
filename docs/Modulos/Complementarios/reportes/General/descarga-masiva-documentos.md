@@ -1,4 +1,8 @@
-# General: Descarga masiva - documentos
+---
+sidebar_position: 3
+---
+
+# Descarga masiva - documentos
 
 En este artículo te mostraremos como descargar los documentos de manera masiva.
 

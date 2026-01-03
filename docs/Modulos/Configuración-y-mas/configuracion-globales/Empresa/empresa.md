@@ -1,6 +1,7 @@
 ---
 sidebar_position: 1
 ---
+
 # Empresa
 
 En este artículo te enseñaremos los pasos para configurar tu plataforma de facturación, conectarte a SUNAT y empezar a facturar:
@@ -11,29 +12,29 @@ Ingresa al módulo de **Configuración** y luego en la subcategoría **Empresa**
 
 Aparecerá lo siguiente:
 
-## 1. Datos de la Empresa  
+## 1. Datos de la Empresa
 
-Completa los siguientes campos:  
+Completa los siguientes campos:
 
-![Datos de la Empresa](img/datosempresaa2.jpg)  
+![Datos de la Empresa](img/datosempresaa2.jpg)
 
-* **Número:** Indica el número de identificación de tu empresa.  
-* **Nombre:** Ingresa el nombre de la empresa. Este campo es obligatorio.  
-* **Nombre Comercial:** Especifica el nombre comercial que se utilizará.  
-* **N° Cuenta de Detraction:** Inserta el número de cuenta de detracción si lo deseas.  
-* **Logo:** Puedes subir el logo de la empresa seleccionando el botón azul. Se recomienda una resolución de 700x300 píxeles.  
-* **Rúbrica (Firma Digital):** Sube tu firma digital usando el botón azul. Se recomienda una resolución de 700x300 píxeles.  
-* **Favicon (Icono Web):** Sube el favicon, que es la imagen que aparecerá en la pestaña de navegación. Se recomienda que sea una imagen con fondo transparente y cuadrada en formato PNG.  
-* **Título (Nombre Web):** Define el nombre que aparecerá en la pestaña del navegador al acceder a la plataforma.  
-* **Logo APP:** Sube un logo específico para la aplicación, utilizando el botón azul. Se recomienda un color de fondo blanco.  
+- **Número:** Indica el número de identificación de tu empresa.
+- **Nombre:** Ingresa el nombre de la empresa. Este campo es obligatorio.
+- **Nombre Comercial:** Especifica el nombre comercial que se utilizará.
+- **N° Cuenta de Detraction:** Inserta el número de cuenta de detracción si lo deseas.
+- **Logo:** Puedes subir el logo de la empresa seleccionando el botón azul. Se recomienda una resolución de 700x300 píxeles.
+- **Rúbrica (Firma Digital):** Sube tu firma digital usando el botón azul. Se recomienda una resolución de 700x300 píxeles.
+- **Favicon (Icono Web):** Sube el favicon, que es la imagen que aparecerá en la pestaña de navegación. Se recomienda que sea una imagen con fondo transparente y cuadrada en formato PNG.
+- **Título (Nombre Web):** Define el nombre que aparecerá en la pestaña del navegador al acceder a la plataforma.
+- **Logo APP:** Sube un logo específico para la aplicación, utilizando el botón azul. Se recomienda un color de fondo blanco.
 
-**Entorno del Sistema**  
+**Entorno del Sistema**
 
-* **SOAP Tipo:** Cambia este valor de "Demo" a "Producción" para habilitar tu sistema.  
-* **SOAP Envío:** Selecciona el SOAP de envío a SUNAT.  
-* **SOAP Usuario y Contraseña:** Ingresa el usuario y contraseña del **usuario secundario** creado previamente. 
+- **SOAP Tipo:** Cambia este valor de "Demo" a "Producción" para habilitar tu sistema.
+- **SOAP Envío:** Selecciona el SOAP de envío a SUNAT.
+- **SOAP Usuario y Contraseña:** Ingresa el usuario y contraseña del **usuario secundario** creado previamente.
 
-Sigue los pasos en este **[video de YouTube](https://www.youtube.com/watch?v=PZ028aDpR3A&ab_channel=DigitalBuho)**. Recuerda que al ingresar el usuario, debes agregar también el RUC como se indica en la imagen.  
+Recuerda que al ingresar el usuario, debes agregar también el RUC como se indica en la imagen.
 
 Después de completar todos los campos, selecciona el botón **Guardar** para aplicar los cambios.
 
@@ -41,42 +42,42 @@ Después de completar todos los campos, selecciona el botón **Guardar** para ap
 
 :::danger importante
 
-* Al crear un usuario secundario no utilizar palabras que contengan parte de nombre
-de la empresa.
+- Al crear un usuario secundario no utilizar palabras que contengan parte de nombre
+  de la empresa.
 
-  * Ejemplo:
-    * Nombre de la Empresa: Constructora Juan.
-    * Usuario Secundario: CONSJUAN (Error).
-    * **Usuario Secundario: C6NSJU4N (Correcto)**.
-* Al generar la contraseña secundario asegúrese de usar contraseñas que
-contengan números y letras con mayúsculas, y que no usen palabras de la
-empresa. Para generarla puede utilizar herramientas externas como: **[https://www.clavesegura.org/es/](https://www.clavesegura.org/es/)**
-:::
+  - Ejemplo:
+    - Nombre de la Empresa: Constructora Juan.
+    - Usuario Secundario: CONSJUAN (Error).
+    - **Usuario Secundario: C6NSJU4N (Correcto)**.
 
-## 2.  Certificado
+- Al generar la contraseña secundario asegúrese de usar contraseñas que
+  contengan números y letras con mayúsculas, y que no usen palabras de la
+  empresa. Para generarla puede utilizar herramientas externas como: **[https://www.clavesegura.org/es/](https://www.clavesegura.org/es/)**
+  :::
+
+## 2. Certificado
 
 ![Alt text](img/reportecertificado.jpg)
 
-* Para completar la conexión con SUNAT es necesario subir el certificado digital. En esta sección adjuntamos el archivo **.pfx** que nos brinda SUNAT.
-* Para descargarlos sigue los pasos en este  **[video](https://www.youtube.com/watch?v=N8fse05yda8&ab_channel=DigitalBuho)**.
+- Para completar la conexión con SUNAT es necesario subir el certificado digital. En esta sección adjuntamos el archivo **.pfx** que nos brinda SUNAT.
 
-## 3.  Certificado QZ-Tray
+## 3. Certificado QZ-Tray
 
 ![Alt text](img/Certificado_QZ.jpg)
 
-* Para realizar impresiónes directamente desde aplicaciones web hacia impresoras conectadas localmente.
-* Esta funcionalidad elimina la necesidad de cuadros de diálogo y configuraciones adicionales, facilitando la impresión automatizada de tickets, etiquetas y otros documentos.
-* Como realizar la configuracion **[Aquí](https://fastura.github.io/documentacion/guias-adicionales/Generar-Certificado-QZ-Tray)**.
+- Para realizar impresiónes directamente desde aplicaciones web hacia impresoras conectadas localmente.
+- Esta funcionalidad elimina la necesidad de cuadros de diálogo y configuraciones adicionales, facilitando la impresión automatizada de tickets, etiquetas y otros documentos.
+- Como realizar la configuracion **[Aquí](https://manual.pro8.uio.la/guias-adicionales/Certificados/Generar-Certificado-QZ-Tray)**.
 
-## 4.  Servicio PSE
+## 4. Servicio PSE
 
 En caso de migrar a nuestro facturador y usar un proveedor **PSE**, coloca los accesos **aquí**.
 
 ![Alt text](img/datosempresaa5.jpg)
 
-## 5.  Consulta integrada de CPE- Validador de documentos
+## 5. Consulta integrada de CPE- Validador de documentos
 
-Se requiere configurar el validador de documentos para que ante cualquier eventualidad con SUNAT se puedan regularizar el estado de sus comprobantes. Sigue los pasos en este **[video](https://www.youtube.com/watch?v=6YqtOrIjaDY&t=3s&ab_channel=DigitalBuho)**. Agrega los token como en la imagen mostrada.
+Se requiere configurar el validador de documentos para que ante cualquier eventualidad con SUNAT se puedan regularizar el estado de sus comprobantes. Agrega los token como en la imagen mostrada.
 
 ![Alt text](img/datosempresaa4.jpg)
 
@@ -88,13 +89,13 @@ Configuración para generar el link de pago para Yape y Mercado Pago.
 
 ![Alt text](img/datosempresaa66.jpg)
 
-* **Número de teléfono:** Inserta el número de teléfono que tiene registrado en yape.
-* **Nombres y Apellidos:** Inserta los nombres y apellidos que están registrados en yape.
-* **Adjuntar código QR (Imagen):** Inserta la imagen del código QR que te registra en yape.
+- **Número de teléfono:** Inserta el número de teléfono que tiene registrado en yape.
+- **Nombres y Apellidos:** Inserta los nombres y apellidos que están registrados en yape.
+- **Adjuntar código QR (Imagen):** Inserta la imagen del código QR que te registra en yape.
 
 Seguido, selecciona el botón **Guardar**.
 
-* **Mercado de Pago:** Podrá habilitar Mercado Pago, seleccionando el interruptor, al activar le aparecerán los siguientes campos:
+- **Mercado de Pago:** Podrá habilitar Mercado Pago, seleccionando el interruptor, al activar le aparecerán los siguientes campos:
 
 ![Alt text](img/mercadolibre.jpg)
 
@@ -102,48 +103,35 @@ Los tokens se copiaran en su cuenta de mercado pago
 
 Seguido, selecciona el botón **Guardar**.
 
-## 7.  Envío de mensajes WhatsApp Cloud Api
-
-Se necesita hacer una configuración previa para enviar los pdf por whatsapp api sin usar el link de whatsapp
-
-![Alt text](img/datosempresaa22.jpg)
-
-Para activarlo puede seguir la siguiente documentación: **[https://docs.google.com/document/d1BW6EQBPH-JQNwoUEQQaFndRteTpNLLVM7w9YIqhKzdM/edit](https://docs.google.com/document/d/1BW6EQBPH-JQNwoUEQQaFndRteTpNLLVM7w9YIqhKzdM/edit)**
-
-## 8.  Envio de mensajes a través de QR Api
+## 7. Envio de mensajes a través de QR Api
 
 Esta opción permite enviar los comprobantes generados en formato PDF utilizando un servicio de mensajería que integra QR API. Para activar esta funcionalidad, es necesario:
 
-  Habilitar la opción seleccionando "Sí".
+Habilitar la opción seleccionando "Sí".
 
-* **A continuación, te mostramos los pasos necesarios para activar y configurar correctamente el envío de mensajes a través de QR API:**
-    * 1. Inicia sesión en QR API: Ingrese su correo electrónico y su contraseña en la pantalla de inicio de sesión.
+- **A continuación, te mostramos los pasos necesarios para activar y configurar correctamente el envío de mensajes a través de QR API:**
 
-    * 2. Dashboard: Una vez dentro, podrás ver todos tus dispositivos registrados y el estado de cada uno.
+  - 1. Inicia sesión en QR API: Ingrese su correo electrónico y su contraseña en la pantalla de inicio de sesión.
 
-    * 3. Agregar Dispositivo: Haz clic en "Nuevo" e ingresa el nombre del dispositivo y el número de teléfono móvil que deseas vincular.
+  - 2. Dashboard: Una vez dentro, podrás ver todos tus dispositivos registrados y el estado de cada uno.
 
-    * 4. Escanea el Código QR: Sigue las instrucciones en la pantalla para escanear el código QR con la aplicación de WhatsApp en tu móvil.
+  - 3. Agregar Dispositivo: Haz clic en "Nuevo" e ingresa el nombre del dispositivo y el número de teléfono móvil que deseas vincular.
 
-    * 5. Ver detalles del dispositivo: Luego de escanear el código QR, tendrás que redirigirte a la página de detalles del dispositivo, donde podrás ver la información del número registrado, su estado, y el API Token necesario para integrarlo, esto se hace dándole clik a tu numero.
+  - 4. Escanea el Código QR: Sigue las instrucciones en la pantalla para escanear el código QR con la aplicación de WhatsApp en tu móvil.
 
-    * 6. Utiliza el API Token: Copia el API Token mostrado en la pantalla. Este será necesario para realizar las integraciones de mensajería con tu sistema.
+  - 5. Ver detalles del dispositivo: Luego de escanear el código QR, tendrás que redirigirte a la página de detalles del dispositivo, donde podrás ver la información del número registrado, su estado, y el API Token necesario para integrarlo, esto se hace dándole clik a tu numero.
 
-    * 7. Ingresa la URL de la página del servicio, que será proporcionada por QR API al registrarte. La URL es la dirección web específica donde se llevará a cabo la integración.
+  - 6. Utiliza el API Token: Copia el API Token mostrado en la pantalla. Este será necesario para realizar las integraciones de mensajería con tu sistema.
 
-* **Posterior a los pasos antes mencionados**
+  - 7. Ingresa la URL de la página del servicio, que será proporcionada por QR API al registrarte. La URL es la dirección web específica donde se llevará a cabo la integración.
+
+- **Posterior a los pasos antes mencionados**
 
   Ingresar la URL del Cliente y el API Key proporcionados por el servicio QR API.
 
 ![Alt text](img/datosempresaa33.jpg)
 
-Para más detalles sobre cómo hacer la configuración, puedes consultar el video tutorial para tener mayor información:
-**[https://www.youtube.com/live/37rW8jwIEkU?si=g6-5-De-IKufPFwb](https://www.youtube.com/live/37rW8jwIEkU?si=g6-5-De-IKufPFwb)**
-
 :::danger importante
 
 Recuerde que debe registrarse en el servicio antes de usar esta opción para obtener las credenciales necesarias.
 :::
-
-
-

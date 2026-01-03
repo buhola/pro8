@@ -1,4 +1,8 @@
-# General: Bandeja descarga de reportes
+---
+sidebar_position: 4
+---
+
+# Bandeja descarga de reportes
 
 En este artículo te mostraremos como descargar los reportes que debido a su gran tamaño se van a la bandeja de descarga.
 

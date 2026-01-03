@@ -1,5 +1,8 @@
+---
+sidebar_position: 2
+---
 
-# Ventas comisiones: Utilidad  detallado
+# Ventas comisiones: Utilidad detallado
 
 En este artículo te ayudaremos a visualizar las utilidades de la empresa por cada comprobante. Sigue estos pasos para realizarlo:
 

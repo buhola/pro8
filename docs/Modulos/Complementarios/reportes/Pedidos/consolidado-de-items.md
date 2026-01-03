@@ -1,6 +1,10 @@
-# Pedidos: Consolidado de ítems
+---
+sidebar_position: 2
+---
 
-En este artículo te mostraremos como revisar los pedidos con los productos específicos.  Sigue estos pasos para realizarlo:
+# Consolidado de ítems
+
+En este artículo te mostraremos como revisar los pedidos con los productos específicos. Sigue estos pasos para realizarlo:
 
 Ingresa al módulo de **Reportes** y luego en la subcategoría **Pedidos**, selecciona **Consolidado de items**.
 

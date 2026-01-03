@@ -1,4 +1,8 @@
-# General: Actividades del sistema
+---
+sidebar_position: 5
+---
+
+# Actividades del sistema
 
 En este artículo te mostraremos como revisar las acciones del sistema de manera general. Sigue estos pasos para realizarlo:
 

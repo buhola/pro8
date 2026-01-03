@@ -7,6 +7,7 @@ Bienvenido(a) al sistema de facturación. Esta guía te llevará paso a paso par
 **¿Por qué es importante?** El sistema inicia en modo DEMO para pruebas. Para facturar oficialmente, debes cambiar a PRODUCCIÓN.
 
 **Configuración necesaria:**
+
 1. Ve a **Configuraciones Globales** → **Empresa** → **Empresa**
 
 ![Configuracion necesaria](../img/configuracion-empresa.png)
@@ -15,12 +16,13 @@ Bienvenido(a) al sistema de facturación. Esta guía te llevará paso a paso par
 
 ![Configuracion necesaria](../img/configuracion-empresa-demo-prod.png)
 
-   1.- Cambiar SOAP tipo de **Demo a Producción**
-   2.- Escoger SOAP envío **SUNAT**
-   3.- Agregar **usuario secundario SOL** (RUC + usuario)
-   4.- Ingresar **contraseña del usuario secundario**
+1.- Cambiar SOAP tipo de **Demo a Producción**
+2.- Escoger SOAP envío **SUNAT**
+3.- Agregar **usuario secundario SOL** (RUC + usuario)
+4.- Ingresar **contraseña del usuario secundario**
 
 **⚠️ Importante al crear usuario secundario:**
+
 - NO uses palabras relacionadas con el nombre de tu empresa
 - Ejemplo: Si tu empresa es "Constructora Juan", usa "C6NSJU4N" (no "CONSJUAN")
 - Usa contraseñas con números, letras y mayúsculas
@@ -38,6 +40,7 @@ Bienvenido(a) al sistema de facturación. Esta guía te llevará paso a paso par
 **¿Para qué sirve?** Te permite regularizar el estado de tus comprobantes ante eventualidades con SUNAT.
 
 **Configuración:**
+
 - Agrega los tokens del validador en la sección correspondiente
 - Esto te dará respaldo ante problemas de conexión con SUNAT
 
@@ -70,13 +73,14 @@ Bienvenido(a) al sistema de facturación. Esta guía te llevará paso a paso par
 **Ve a:** **Productos/Servicios** → **Productos**
 
 **Dos opciones:**
+
 - **Individual:** Crear productos uno por uno
 - **Masiva:** Importar múltiples productos con imágenes
 
 **Datos importantes:** Nombre, precio, tipo de IGV, código, stock (si aplica)
 
 :::note
-Para más información acerca de la gestión de productos, puede revisar la sección correspondiente del *[manual](https://manual.uio.la/Pro7/productos-servicios)*.
+Para más información acerca de la gestión de productos, puede revisar la sección correspondiente del _[manual](https://manual.uio.la/Pro7/productos-servicios)_.
 :::
 
 ## 👥 Paso 6: Registrar tus Clientes
@@ -84,13 +88,14 @@ Para más información acerca de la gestión de productos, puede revisar la secc
 **Ve a:** **Clientes** → **Clientes**
 
 **Dos opciones:**
+
 - **Individual:** Crear clientes uno por uno
 - **Masiva:** Importar múltiples clientes
 
 **Datos importantes:** RUC/DNI, razón social, dirección, correo electrónico
 
 :::note
-Para más información acerca de la gestión de clientes, puede revisar la sección correspondiente del *[manual](https://manual.uio.la/Pro7/clientes)*.
+Para más información acerca de la gestión de clientes, puede revisar la sección correspondiente del _[manual](https://manual.uio.la/Pro7/clientes)_.
 :::
 
 ## 🏢 Paso 7: Configurar Establecimientos y Series
@@ -98,15 +103,17 @@ Para más información acerca de la gestión de clientes, puede revisar la secci
 **¿Cuándo es necesario?** Si tienes más de un local o establecimiento.
 
 **Configuración:**
+
 1. Ve a **Configuraciones y más** → **Sucursales & Series**
 2. Agrega las series correspondientes a cada establecimiento
 
 :::note
-Para más información acerca de la gestión de establecimientos (sucursales), puede revisar la sección correspondiente del *[manual](https://manual.uio.la/Pro7/usuarios-locales-series)*.
+Para más información acerca de la gestión de establecimientos (sucursales), puede revisar la sección correspondiente del _[manual](https://manual.uio.la/Pro7/usuarios-locales-series)_.
 :::
 
 **🔄 Migración desde otro proveedor:**
 Si vienes de otro sistema, puedes continuar tu numeración:
+
 1. Ve a **Configuración** → **Numeración de facturación**
 2. Selecciona **Nuevo** y configura:
    - Tipo de comprobante
@@ -116,6 +123,7 @@ Si vienes de otro sistema, puedes continuar tu numeración:
 ## 🎨 Paso 8: Seleccionar Plantilla PDF
 
 **Personaliza tus comprobantes:**
+
 1. Ve a **Configuración** → **PDF plantillas**
 2. Elige la plantilla que mejor se adapte a tu empresa
 3. Selecciona el **establecimiento** y **activa la plantilla**
@@ -125,10 +133,12 @@ Si vienes de otro sistema, puedes continuar tu numeración:
 **Para registrar el dinero de tus ventas, configura:**
 
 **🏪 Dinero en efectivo (Módulo POS):**
+
 - Ve a **POS** → **Caja chica POS**
 - Abre cajas para registrar ventas en efectivo
 
 **🏦 Cuentas bancarias:**
+
 1. Ve a **Configuración** → **Listas de cuentas bancarias**
 2. Selecciona **Nuevo** y completa:
    - Banco
@@ -143,9 +153,8 @@ Si vienes de otro sistema, puedes continuar tu numeración:
 ## 🎉 ¡Listo para Facturar!
 
 Una vez completados estos pasos, tu sistema estará configurado para:
+
 - ✅ Emitir facturas electrónicas válidas
 - ✅ Emitir boletas electrónicas
 - ✅ Enviar comprobantes automáticamente a SUNAT
 - ✅ Generar reportes y controlar tu facturación
-
-**📞 ¿Necesitas ayuda adicional?** Consulta los videos tutoriales específicos mencionados en cada sección o contacta al soporte técnico.

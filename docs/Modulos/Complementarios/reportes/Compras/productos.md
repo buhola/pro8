@@ -1,4 +1,8 @@
-# Compras: Producto
+---
+sidebar_position: 3
+---
+
+# Productos
 
 En este artículo te mostraremos como revisar las compras por el filtro de productos. Un reporte más detallado de los productos. Sigue estos pasos para realizarlo:
 

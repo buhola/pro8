@@ -1,3 +1,7 @@
+---
+sidebar_position: 1
+---
+
 # Pedidos: General
 
 En este artículo te ayudaremos a visualizar los pedidos realizados, y podrá exportar el reporte. Sigue estos pasos para realizarlo:
@@ -6,11 +10,11 @@ Ingresa al módulo de **Reportes** y luego en la subcategoría **Pedidos**, sele
 
 ![Alt text](img/Pedidos_general_01.jpg)
 
- Aparecerá lo siguiente:
+Aparecerá lo siguiente:
 
 ![Alt text](img/Pedidos_general_02.jpg)
 
- Completa los siguientes filtros, deberá seleccionar el vendedor que realizo el pedido:
+Completa los siguientes filtros, deberá seleccionar el vendedor que realizo el pedido:
 
 ![Alt text](img/Pedidos_general_03.jpg)
 

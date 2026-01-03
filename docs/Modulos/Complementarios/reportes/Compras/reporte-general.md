@@ -1,4 +1,8 @@
-# Compras: Reporte general
+---
+sidebar_position: 1
+---
+
+# Reporte general
 
 En este artículo te mostraremos como revisar sus compras totales realizadas. Sigue estos pasos para realizarlo:
 

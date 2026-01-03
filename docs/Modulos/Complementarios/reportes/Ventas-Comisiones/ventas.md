@@ -1,3 +1,7 @@
+---
+sidebar_position: 1
+---
+
 # Ventas/Comisiones: Ventas
 
 En este artículo te ayudaremos a visualizar las comisiones de sus vendedores. Sigue estos pasos para realizarlo:

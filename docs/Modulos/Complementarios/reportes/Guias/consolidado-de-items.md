@@ -1,4 +1,8 @@
-# Guías: Consolidado de ítems
+---
+sidebar_position: 1
+---
+
+# Consolidado de ítems
 
 En este artículo te mostraremos a como exportar las guías realizadas. Sigue estos pasos para realizarlo:
 
