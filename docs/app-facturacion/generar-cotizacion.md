@@ -1,3 +1,7 @@
+---
+sidebar_position: 8
+---
+
 # Cotización
 
 En este artículo te ayudaremos a generar una cotización desde la App Facturalo. Sigue estos pasos para realizarlo:

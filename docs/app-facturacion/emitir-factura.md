@@ -1,3 +1,7 @@
+---
+sidebar_position: 3
+---
+
 # Factura
 
 En este artículo te explicaremos cómo emitir una factura desde la **App Factúralo**. Sigue los pasos a continuación:
@@ -57,4 +61,3 @@ Además de la opción desde **Factura Electrónica**, también puedes emitir una
 ---
 
 Con estos pasos, puedes gestionar la emisión de facturas de manera flexible según tus necesidades, ya sea desde el módulo **Factura Electrónica** o **POS**.
-

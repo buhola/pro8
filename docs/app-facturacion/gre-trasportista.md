@@ -1,4 +1,8 @@
-# Guía de Remisión Transportista
+---
+sidebar_position: 16
+---
+
+# GRE Transportista
 
 En esta guía te mostraremos cómo completar la **Guía de Remisión Transportista** en la **App Factúralo**. Sigue los pasos a continuación:
 
@@ -10,10 +14,10 @@ En esta guía te mostraremos cómo completar la **Guía de Remisión Transportis
 
 Accede al módulo de **Guía de Remisión Transportista** desde el menú principal.
 
-![img](img/Guia_trasportista_1.jpeg)
----
+## ![img](img/Guia_trasportista_1.jpeg)
 
 ## 2. Fechas y Datos del Traslado:
+
 - **Establecimiento:** Selecciona el Establecimiento desde el menú desplegable. Este campo indica el local, sucursal o almacén desde donde se gestionará el traslado.
 - **Fecha de Emisión:** Selecciona la fecha en que se emite la guía de remisión.
 - **Fecha de Traslado:** Selecciona la fecha en que se realizará el traslado de los productos.
@@ -53,22 +57,27 @@ Haz clic en **+ Documento Relacionado** para vincular documentos adicionales, co
 ![img](img/guia_trasportista_2.jpeg)
 
 ### **Remitente:**
+
 Selecciona al **Remitente** haciendo clic en el campo correspondiente. Aparecerá una lista de tus clientes registrados. Si necesitas agregar uno nuevo, selecciona el ícono **"+"** en la esquina superior.
 
 ### **Punto de Partida:**
+
 Elige el punto de partida desde donde iniciará el traslado. Asegúrate de seleccionar correctamente para evitar inconvenientes.
 
 ### **Destinatario:**
+
 Selecciona al **Destinatario** del envío desde la lista de clientes disponibles. Si el destinatario no está registrado, podrás crear uno nuevo desde la opción **"+"**.
 
 ### **Punto de Llegada:**
+
 Selecciona el punto de llegada donde se entregará la mercancía.
 
 :::danger IMPORTANTE:
-- Las direcciones ingresadas se guardan automáticamente en el perfil del cliente para futuros envíos, facilitando la selección en nuevas guías.
-:::
 
-----
+- Las direcciones ingresadas se guardan automáticamente en el perfil del cliente para futuros envíos, facilitando la selección en nuevas guías.
+  :::
+
+---
 
 ## 8. Añadir Productos:
 
@@ -80,7 +89,7 @@ Selecciona **+ Añadir Producto** para agregar productos a la guía. Elige los p
 
 ## 9. Finalizar y Guardar:
 
-Una vez completados todos los campos, selecciona **Aceptar** para guardar la guía. 
+Una vez completados todos los campos, selecciona **Aceptar** para guardar la guía.
 
 ---
 
@@ -95,7 +104,7 @@ Al finalizar tendrás las siguientes opciones:
 ---
 
 :::danger IMPORTANTE:
+
 - Todos los datos ingresados deben ser precisos para evitar problemas en la entrega.
 - Verifica que tanto remitente como destinatario estén correctamente seleccionados.
-:::
-
+  :::

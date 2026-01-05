@@ -1,9 +1,9 @@
 ---
 sidebar_position: 0
-title: ¡Bienvenido a la documentación de Fastura (Reseller)!
+title: Introducción
 ---
 
-# ¡Bienvenidos a la documentación de Fastura (Reseller)!
+# Fastura Reseller - Gestión Multi-empresa
 
 Aquí encontrarás toda la información necesaria para aprovechar al máximo Fastura (Reseller), una potente herramienta de administración diseñada para simplificar y agilizar tus tareas diarias. Desde la gestión de usuarios hasta el seguimiento de métricas clave, Fastura (Reseller) te brinda el control total sobre tus procesos y datos.
 
@@ -15,4 +15,4 @@ Nuestra documentación ha sido diseñada teniendo en cuenta tus necesidades, por
 
 Sumérgete en la documentación de Fastura (Reseller) y descubre cómo esta herramienta puede transformar la forma en que administras tus tareas diarias. ¡Estamos emocionados de acompañarte en este viaje hacia una gestión eficiente y exitosa!
 
-![Alt text](Administrador/img/dashboard-fastura-ac4c8529.webp)
+![Alt text](img/panel-admin.png)

@@ -1,3 +1,7 @@
+---
+sidebar_position: 14
+---
+
 # Productos
 
 En este artículo te ayudaremos a crear productos desde la **App Factúralo.** Sigue estos pasos para realizarlo:
@@ -15,7 +19,7 @@ En este artículo te ayudaremos a crear productos desde la **App Factúralo.** S
 ![Alt text](img/app16.jpeg)
 
 - **Código interno:** Identifica el producto, ayuda a la gestión de inventarios. Es importante colocar el código interno para que los productos puedan visualizarse en su Tienda Virtual.
-- **Nombre:**  Ingresa el nombre del producto.
+- **Nombre:** Ingresa el nombre del producto.
 - **Precio unitario (venta):** Ingresa el precio del producto.
 - **Interruptor IGV:** En caso el producto incluye **IGV**, déjelo activado.
 - **Categoria:** Perpite añadir una categoria al produccto.

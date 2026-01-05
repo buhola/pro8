@@ -1,3 +1,7 @@
+---
+sidebar_position: 9
+---
+
 # Lista de comprobantes
 
 En este artículo te ayudaremos a observar tu listado de comprobantes electrónicos desde la **App Factúralo.** Sigue estos pasos para realizarlo:

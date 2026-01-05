@@ -1,4 +1,8 @@
-# Guía de Remisión Remitente
+---
+sidebar_position: 15
+---
+
+# GRE Remitente
 
 En este artículo te explicaremos cómo generar una **Guía de Remisión Remitente** desde la **App Factúralo**. Sigue estos pasos:
 
@@ -15,19 +19,22 @@ En este artículo te explicaremos cómo generar una **Guía de Remisión Remiten
 ## 2. Completar los siguientes campos necesarios:
 
 ### **Punto de Partida:**
+
 Selecciona el punto de partida desde el menú desplegable. Asegúrate de elegir correctamente el lugar de origen del traslado para evitar inconvenientes en la entrega.
 
 ### **Fecha de Emisión:**
+
 Selecciona la fecha de emisión del documento haciendo clic en el campo correspondiente. Aparecerá un calendario para elegir la fecha correcta.
 
 ### **Fecha de Traslado:**
+
 Haz clic en el campo **Fecha de Traslado** y selecciona desde el calendario la fecha en la que se realizará el traslado. Esta fecha debe coincidir con los acuerdos realizados con el cliente.
 
 ---
 
 ## 3. Datos del Transportista:
 
-- **Transportista:** Selecciona el transportista encargado del traslado.  
+- **Transportista:** Selecciona el transportista encargado del traslado.
 - **Unidad de Medida:** Elige la unidad de medida que corresponde al traslado (Ej.: Kilos, Toneladas).
 - **Peso Total:** Ingresa el peso total de la mercancía.
 - **Número de Pasajeros:** En caso de que aplique, ingresa el número de pasajeros asociados al envío.
@@ -35,6 +42,7 @@ Haz clic en el campo **Fecha de Traslado** y selecciona desde el calendario la f
 ---
 
 ## 4. Descripción del Motivo de Traslado:
+
 Selecciona el motivo del traslado. Si es necesario, agrega una breve observación en el campo correspondiente.
 
 ---
@@ -50,8 +58,7 @@ Haz clic en **+ Documento Relacionado** para vincular documentos adicionales, co
 ## 6. Cliente y Punto de Llegada
 
 - **Cliente:** Selecciona el cliente desde la lista desplegable. Si deseas crear un nuevo cliente, selecciona el **"+"** en la parte superior, mas informacion de la creacion de un cliente en el siguiente **[articulo](https://fastura.github.io/documentacion/app-para-facturacion/Como-crear-cliente)**.
-- **Punto de Llegada:** Elige el destino final del traslado.  
-
+- **Punto de Llegada:** Elige el destino final del traslado.
 
 :::danger IMPORTANTE:
 
@@ -78,9 +85,10 @@ Después de completar todos los campos necesarios, selecciona el botón **Acepta
 ---
 
 :::danger IMPORTANTE:
+
 - Todos los campos no mencionados son opcionales y pueden ser rellenados según tus necesidades.
 - Asegúrate de que todos los datos ingresados sean correctos antes de proceder.
-:::
+  :::
 
 ---
 

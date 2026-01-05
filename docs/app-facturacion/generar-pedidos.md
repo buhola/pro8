@@ -1,3 +1,7 @@
+---
+sidebar_position: 6
+---
+
 # Pedidos
 
 En este artículo te ayudaremos a generar pedidos de venta desde la **App Factúralo**. Sigue estos pasos para realizarlo:

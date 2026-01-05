@@ -1,3 +1,7 @@
+---
+sidebar_position: 13
+---
+
 # Clientes
 
 En este artículo te ayudaremos a crear clientes desde la **App Factúralo**. Sigue estos pasos para realizarlo:
@@ -20,7 +24,6 @@ En este artículo te ayudaremos a crear clientes desde la **App Factúralo**. Si
 - **Nombre comercial:** Ingresa la denominación que identifica a la empresa.
 
 ![Alt text](img/app10.jpeg)
-
 
 - **Teléfono:** Ingresa el teléfono del cliente.
 - **Correo electrónico:** Ingresa el correo electrónico del cliente.

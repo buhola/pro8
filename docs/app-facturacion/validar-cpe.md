@@ -1,3 +1,7 @@
+---
+sidebar_position: 10
+---
+
 # Validar cpe
 
 En este artículo te ayudaremos a validar el estado de comprobantes electrónicos desde la **App Factúralo.** Sigue estos pasos para realizarlo:

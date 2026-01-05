@@ -1,3 +1,7 @@
+---
+sidebar_position: 4
+---
+
 # Boleta
 
 En este artículo te ayudaremos a emitir boleta desde la App. Sigue estos pasos para realizarlo:

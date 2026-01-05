@@ -1,3 +1,7 @@
+---
+sidebar_position: 5
+---
+
 # Nota de venta
 
 En este artículo te ayudaremos a emitir nota de venta desde la **App Factúralo.** Sigue estos pasos para realizarlo:
@@ -26,9 +30,7 @@ Todos los campos no mencionados son opcionales, según su necesidad.
 
 Una vez que los que los campos estén rellenados, selecciona el botón **Aceptar.**
 
-
 ![Alt text](img/Nota_venta_2.jpeg)
-
 
 Seguido, aparecerá un mensaje de comprobante registrado. Tendrá tres opciones:
 

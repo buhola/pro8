@@ -31,25 +31,34 @@ Comienza ahora explorando las funcionalidades principales de la aplicación o co
     <p>Gestiona todos tus comprobantes electrónicos emitidos y consulta su estado en tiempo real.</p>
   </DocsCard>
 
-  <DocsCard
-    header="Gestión de Productos"
-    href="/app-para-facturacion/Como-crear-un-producto"
-  >
+<DocsCard
+header="Gestión de Productos"
+href="/app-para-facturacion/Como-crear-un-producto"
+
+>
+
     <p>Aprende a consultar y gestionar tu inventario de productos desde la aplicación móvil.</p>
+
   </DocsCard>
 
-  <DocsCard
-    header="Emisión de Facturas"
-    href="/app-para-facturacion/Como-emitir-factura"
-  >
+<DocsCard
+header="Emisión de Facturas"
+href="/app-para-facturacion/Como-emitir-factura"
+
+>
+
     <p>Guía paso a paso para emitir facturas electrónicas desde tu dispositivo móvil de forma rápida.</p>
+
   </DocsCard>
 
-  <DocsCard 
-    header="Control de Caja" 
-    href="/app-para-facturacion/Aperturar-Caja" 
-  >
+<DocsCard
+header="Control de Caja"
+href="/app-para-facturacion/Aperturar-Caja"
+
+>
+
     <p>Maneja tus operaciones de caja directamente desde tu smartphone o tablet.</p>
+
   </DocsCard>
 </DocsCards>
 
@@ -76,4 +85,3 @@ La aplicación móvil Pro 7 está diseñada como una herramienta complementaria 
 ## Limitaciones y Complementariedad
 
 La aplicación móvil está diseñada como una versión compacta del sistema web, por lo que algunas funciones avanzadas y configuraciones solo están disponibles en la versión completa. Para configuraciones del sistema, reportes detallados y funcionalidades administrativas, deberás acceder a la versión web de Pro 7.
-

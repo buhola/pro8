@@ -1,3 +1,7 @@
+---
+sidebar_position: 1
+---
+
 # Iniciar Sesión
 
 En este artículo te guiaremos para ingresar a tu cuenta desde la App **Facturalo**. Sigue estos pasos para comenzar:
@@ -25,6 +29,7 @@ Una vez que hayas **instalado** la aplicación, ábrela e ingresa las credencial
 Al iniciar sesión, asegúrate de lo siguiente:
 
 :::danger IMPORTANTE:
+
 - La URL de acceso **no** debe contener **"/login"** al final.
 - Verifica que el usuario y la contraseña sean ingresados correctamente.
-:::
+  :::

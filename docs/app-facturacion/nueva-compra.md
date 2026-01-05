@@ -1,3 +1,7 @@
+---
+sidebar_position: 7
+---
+
 # Nueva compra
 
 En este artículo te ayudaremos a ingresar las compra realizadas desde la **App Facturalo**. Sigue estos pasos para realizarlo:
@@ -11,8 +15,8 @@ En este artículo te ayudaremos a ingresar las compra realizadas desde la **App 
 ![Alt text](img/compra1app.jpg)
 
 - **Tipo de documento:** Selecciona el tipo de comprobante.
-- **Serie:**  Ingresa la serie del comprobante.
-- **Número:**  Ingresa el número del comprobante.
+- **Serie:** Ingresa la serie del comprobante.
+- **Número:** Ingresa el número del comprobante.
 - **Proveedor:** Selecciona **PROVEEDOR** y aparecerá una lista de todos sus proveedores ya registrados.
 
 ![Alt text](img/compra3app.jpg)
@@ -28,7 +32,7 @@ En caso desee crear un nuevo proveedor, en la parte superior derecha selecciona 
 
 ![Alt text](img/compra20app.jpg)
 
-- **Nombre comercial:**  Ingresa la denominación que identifica a la empresa.
+- **Nombre comercial:** Ingresa la denominación que identifica a la empresa.
 - **Teléfono:** Ingresa el teléfono del cliente.
 - **Correo electrónico:** Ingresa el correo electrónico del cliente.
 

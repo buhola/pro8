@@ -2,11 +2,11 @@
 
 Ingresar al **Dashboard**, ubicar en **Listado de clientes** y veremos los siguientes datos del cliente y configuraciones.
 
-![Alt text](img/acciones_de_cuenta_del_cliente1.png)
+![Alt text](img/dashboard-1.png)
 
 ## Secciones detalladas
 
-![Alt text](img/acciones_de_cuenta_del_cliente2.png)
+![Alt text](img/dashboard-2.png)
 
 1. **Hostname:** Nombre del link de acceso para la empresa.
 2. **Nombre:** Razón social de la empresa.
