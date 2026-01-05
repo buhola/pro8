@@ -34,7 +34,7 @@ Comienza ahora siguiendo nuestra [Guía de Configuracion esencial para tu cuenta
 
 <DocsCard
 header="Aplicación para Facturación"
-href="app-para-facturacion"
+href="app-facturacion"
 
 >
 

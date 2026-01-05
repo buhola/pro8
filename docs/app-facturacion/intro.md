@@ -26,14 +26,14 @@ Comienza ahora explorando las funcionalidades principales de la aplicación o co
 <DocsCards>
   <DocsCard 
     header="Lista de Comprobantes"
-    href="/app-para-facturacion/Lista-de-comprobantes"
+    href="listado-comprobantes"
   >
     <p>Gestiona todos tus comprobantes electrónicos emitidos y consulta su estado en tiempo real.</p>
   </DocsCard>
 
 <DocsCard
 header="Gestión de Productos"
-href="/app-para-facturacion/Como-crear-un-producto"
+href="productos"
 
 >
 
@@ -43,7 +43,7 @@ href="/app-para-facturacion/Como-crear-un-producto"
 
 <DocsCard
 header="Emisión de Facturas"
-href="/app-para-facturacion/Como-emitir-factura"
+href="emitir-factura"
 
 >
 
@@ -53,7 +53,7 @@ href="/app-para-facturacion/Como-emitir-factura"
 
 <DocsCard
 header="Control de Caja"
-href="/app-para-facturacion/Aperturar-Caja"
+href="aperturar-caja"
 
 >
 
