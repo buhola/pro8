@@ -190,6 +190,15 @@ const config: Config = {
           //  baseUrl: "/api",
           //  sidebarOptions: {},
           //},
+          api_rest: {
+            specPath: "apifacturador/api-rest.yaml",
+            outputDir: "docs/api-rest",
+            baseUrl: "/api-rest",
+            sidebarOptions: {
+              groupPathsBy: "tag",
+              categoryLinkSource: "tag"
+            },
+          },
           locked_admin: {
             specPath: "apifacturador/lockedAdmin",
             outputDir: "docs/devs/api/admin/locked-admin",
@@ -218,29 +227,7 @@ const config: Config = {
       appId: "I0B1SS64CU",
       // Public API key
       apiKey: "6a3186a95fda093e0fa197b971e74924",
-      indexName: "pro-8",
-      // Configuración para búsqueda global
-      contextualSearch: false,
-      searchParameters: {
-        attributesToRetrieve: [
-          "hierarchy.lvl0",
-          "hierarchy.lvl1",
-          "hierarchy.lvl2",
-          "hierarchy.lvl3",
-          "hierarchy.lvl4",
-          "hierarchy.lvl5",
-          "hierarchy.lvl6",
-          "content",
-          "anchor",
-          "url",
-          "url_without_anchor",
-          "type",
-        ],
-        distinct: true,
-        hitsPerPage: 10,
-      },
-      // Optional: path for search page that enabled by default (`false` to disable it)
-      searchPagePath: false,
+      indexName: "Pro 8",
     },
     navbar: {
       title: "Pro 8",

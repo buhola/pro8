@@ -1,0 +1,9 @@
+{
+  "defaultTag": "General",
+  "pathDepth": 0,
+  "auth": {
+    "bearer": {
+      "token": "{{token}}"
+    }
+  }
+}

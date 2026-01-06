@@ -1,0 +1,1854 @@
+{
+	"info": {
+		"_postman_id": "8e402448-df72-4044-b6fe-cf99f1643e68",
+		"name": "API FACTURADOR PRO 8",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "46756410"
+	},
+	"item": [
+		{
+			"name": "API FACTURADOR PRO8 ",
+			"item": [
+				{
+					"name": "Inventario",
+					"item": [
+						{
+							"name": "Salidas - movimientos",
+							"protocolProfileBehavior": {
+								"followRedirects": true,
+								"disableUrlEncoding": false,
+								"disableCookies": false
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"type\": \"output\",\r\n  \"inventory_transaction_id\": \"01\",\r\n  \"item_code\": \"CODPROD130\",\r\n  \"quantity\": 3,\r\n  \"warehouse_id\": 1\r\n}",
+									"options": {
+										"raw": {
+											"language": "text"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/api/inventory/transaction",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"inventory",
+										"transaction"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Ingresos - movimientos",
+							"protocolProfileBehavior": {
+								"followRedirects": true,
+								"disableUrlEncoding": false,
+								"disableCookies": false
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"type\": \"input\",\r\n  \"inventory_transaction_id\": \"03\",\r\n  \"item_code\": \"CODPROD130\",\r\n  \"quantity\": 100, \r\n  \"warehouse_id\": 1\r\n}",
+									"options": {
+										"raw": {
+											"language": "text"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/api/inventory/transaction",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"inventory",
+										"transaction"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Productos - Crear",
+							"protocolProfileBehavior": {
+								"followRedirects": true,
+								"disableUrlEncoding": false,
+								"disableCookies": false
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": null,\r\n    \"item_type_id\": \"01\",\r\n    \"internal_id\": \"rrr\",\r\n    \"item_code\": null,\r\n    \"item_code_gs1\": null,\r\n    \"description\": \"apk\",\r\n    \"name\": \"apk\",\r\n    \"second_name\": null,\r\n    \"unit_type_id\": \"NIU\",\r\n    \"currency_type_id\": \"PEN\",\r\n    \"sale_unit_price\": \"500\",\r\n    \"purchase_unit_price\": 0,\r\n    \"has_isc\": false,\r\n    \"system_isc_type_id\": null,\r\n    \"percentage_isc\": 0,\r\n    \"suggested_price\": 0,\r\n    \"sale_affectation_igv_type_id\": \"10\",\r\n    \"purchase_affectation_igv_type_id\": \"10\",\r\n    \"calculate_quantity\": false,\r\n    \"stock\": 0,\r\n    \"stock_min\": 0,\r\n    \"has_igv\": true,\r\n    \"has_perception\": false,\r\n    \"item_unit_types\": [],\r\n    \"percentage_of_profit\": 0,\r\n    \"percentage_perception\": 0,\r\n    \"image\": null,\r\n    \"image_url\": null,\r\n    \"temp_path\": null,\r\n    \"is_set\": false,\r\n    \"account_id\": null,\r\n    \"category_id\": null,\r\n    \"brand_id\": null,\r\n    \"date_of_due\": null,\r\n    \"lot_code\": null,\r\n    \"lots_enabled\": false,\r\n    \"lots\": []\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/api/item",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"item"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Productos - Actualizar",
+							"protocolProfileBehavior": {
+								"followRedirects": true,
+								"disableUrlEncoding": false,
+								"disableCookies": false
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": 3946,\r\n    \"item_type_id\": \"01\",\r\n    \"internal_id\": \"rrr\",\r\n    \"item_code\": \"new_code\",\r\n    \"item_code_gs1\": null,\r\n    \"description\": \"apk\",\r\n    \"name\": \"apk\",\r\n    \"second_name\": null,\r\n    \"unit_type_id\": \"NIU\",\r\n    \"currency_type_id\": \"PEN\",\r\n    \"sale_unit_price\": \"500\",\r\n    \"purchase_unit_price\": 0,\r\n    \"has_isc\": false,\r\n    \"system_isc_type_id\": null,\r\n    \"percentage_isc\": 0,\r\n    \"suggested_price\": 0,\r\n    \"sale_affectation_igv_type_id\": \"10\",\r\n    \"purchase_affectation_igv_type_id\": \"10\",\r\n    \"calculate_quantity\": false,\r\n    \"stock\": 0,\r\n    \"stock_min\": 0,\r\n    \"has_igv\": true,\r\n    \"has_perception\": false,\r\n    \"item_unit_types\": [],\r\n    \"percentage_of_profit\": 0,\r\n    \"percentage_perception\": 0,\r\n    \"image\": null,\r\n    \"image_url\": null,\r\n    \"temp_path\": null,\r\n    \"is_set\": false,\r\n    \"account_id\": null,\r\n    \"category_id\": null,\r\n    \"brand_id\": null,\r\n    \"date_of_due\": null,\r\n    \"lot_code\": null,\r\n    \"lots_enabled\": false,\r\n    \"lots\": []\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/api/items/{{item_id}}/update",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"items",
+										"{{item_id}}",
+										"update"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Productos - Listado",
+							"protocolProfileBehavior": {
+								"followRedirects": true,
+								"disableUrlEncoding": false,
+								"disableCookies": false
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer ueyIeHmIps6Ov0gMI0iIxedPqt0nYlqHmUfBY8tWjXqpON4kDR"
+									}
+								],
+								"url": {
+									"raw": "{{_['url']}}/api/document/search-items",
+									"host": [
+										"{{_['url']}}"
+									],
+									"path": [
+										"api",
+										"document",
+										"search-items"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Productos - Filtro",
+							"protocolProfileBehavior": {
+								"followRedirects": true,
+								"disableUrlEncoding": false,
+								"disableCookies": false
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{_['url']}}/api/document/search-items?input=cod_interno_o_descripcion",
+									"host": [
+										"{{_['url']}}"
+									],
+									"path": [
+										"api",
+										"document",
+										"search-items"
+									],
+									"query": [
+										{
+											"key": "input",
+											"value": "cod_interno_o_descripcion"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"description": "Consultas relacionadas a inventario"
+				},
+				{
+					"name": "Mobile",
+					"item": [
+						{
+							"name": "Search Items",
+							"protocolProfileBehavior": {
+								"followRedirects": true,
+								"disableUrlEncoding": false,
+								"disableCookies": false
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": ""
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Documentos - Filtro rango de fechas",
+					"protocolProfileBehavior": {
+						"followRedirects": true,
+						"disableUrlEncoding": false,
+						"disableCookies": false
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/documents/lists/{{date_ini}}/{{date_end}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"documents",
+								"lists",
+								"{{date_ini}}",
+								"{{date_end}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Documento - Actualizar estado",
+					"protocolProfileBehavior": {
+						"followRedirects": true,
+						"disableUrlEncoding": false,
+						"disableCookies": false
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"externail_id\": \"b54e661a-1bf6-4edb-aab8-6744811d10ce\",\r\n    \"state_type_id\": \"01\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/documents/updatedocumentstatus",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"documents",
+								"updatedocumentstatus"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Factura Gravada",
+					"protocolProfileBehavior": {
+						"followRedirects": true,
+						"disableUrlEncoding": false,
+						"disableCookies": false
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"serie_documento\": \"F001\",\r\n  \"numero_documento\": \"#\",\r\n  \"fecha_de_emision\": \"2019-09-17\",\r\n  \"hora_de_emision\": \"10:11:11\",\r\n  \"codigo_tipo_operacion\": \"0101\",\r\n  \"codigo_tipo_documento\":\"01\",\r\n  \"codigo_tipo_moneda\": \"PEN\",\r\n  \"fecha_de_vencimiento\":\"2018-08-30\",\r\n  \"numero_orden_de_compra\": \"0045467898\", \r\n  \"datos_del_cliente_o_receptor\":{\r\n    \"codigo_tipo_documento_identidad\": \"6\",\r\n    \"numero_documento\": \"10414711225\",\r\n    \"apellidos_y_nombres_o_razon_social\": \"EMPRESA XYZ S.A.\",\r\n    \"codigo_pais\": \"PE\",\r\n    \"ubigeo\": \"150101\",\r\n    \"direccion\": \"Av. 2 de Mayo\",\r\n    \"correo_electronico\": \"demo@gmail.com\",\r\n    \"telefono\": \"427-1148\"\r\n  },\r\n  \"totales\": {\r\n    \"total_exportacion\": 0.00,\r\n    \"total_operaciones_gravadas\": 100.00,\r\n    \"total_operaciones_inafectas\": 0.00,\r\n    \"total_operaciones_exoneradas\": 0.00,\r\n    \"total_operaciones_gratuitas\": 0.00,\r\n    \"total_igv\": 18.00,\r\n    \"total_impuestos\": 18.00,\r\n    \"total_valor\": 100,\r\n    \"total_venta\": 118\r\n  },\r\n  \"items\":[\r\n    {\r\n      \"codigo_interno\": \"P0121\",\r\n      \"descripcion\":\"Inca Kola 250 ml\",\r\n      \"codigo_producto_sunat\": \"51121703\",\r\n      \"unidad_de_medida\": \"NIU\",\r\n      \"cantidad\": 2,\r\n      \"valor_unitario\": 50,\r\n      \"codigo_tipo_precio\": \"01\",\r\n      \"precio_unitario\": 59,\r\n      \"codigo_tipo_afectacion_igv\": \"10\",\r\n      \"total_base_igv\": 100.00,\r\n      \"porcentaje_igv\": 18,\r\n      \"total_igv\": 18,\r\n      \"total_impuestos\": 18,\r\n      \"total_valor_item\": 100,\r\n      \"total_item\": 118\r\n    }\r\n  ],\r\n  \"informacion_adicional\": \"Forma de pago:Efectivo|Caja: 1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/documents",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"documents"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Factura Gravada - Cargo Global",
+					"protocolProfileBehavior": {
+						"followRedirects": true,
+						"disableUrlEncoding": false,
+						"disableCookies": false
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"serie_documento\": \"F001\",\r\n  \"numero_documento\": \"#\",\r\n  \"fecha_de_emision\": \"2018-10-09\",\r\n  \"hora_de_emision\": \"10:11:11\",\r\n  \"codigo_tipo_operacion\": \"0101\",\r\n  \"codigo_tipo_documento\":\"01\",\r\n  \"codigo_tipo_moneda\": \"PEN\",\r\n  \"fecha_de_vencimiento\": \"2018-10-09\",\r\n  \"numero_orden_de_compra\": \"0045467898\", \r\n  \"datos_del_cliente_o_receptor\":{\r\n    \"codigo_tipo_documento_identidad\": \"6\",\r\n    \"numero_documento\": \"10414711225\",\r\n    \"apellidos_y_nombres_o_razon_social\": \"EMPRESA XYZ S.A.\",\r\n    \"codigo_pais\": \"PE\",\r\n    \"ubigeo\": \"150101\",\r\n    \"direccion\": \"Av. 2 de Mayo\",\r\n    \"correo_electronico\": \"demo@gmail.com\",\r\n    \"telefono\": \"427-1148\"\r\n  },\r\n  \"cargos\":[\r\n    {\r\n      \"codigo\": \"46\",\r\n      \"descripcion\": \"Regarco por servicios\",\r\n      \"factor\": 0.10,\r\n      \"monto\": 10.00,\r\n      \"base\": 100.00\r\n    }\r\n  ],  \r\n  \"totales\": {\r\n    \"total_cargos\": 10.00,\r\n    \"total_exportacion\": 0.00,\r\n    \"total_operaciones_gravadas\": 100.00,\r\n    \"total_operaciones_inafectas\": 0.00,\r\n    \"total_operaciones_exoneradas\": 0.00,\r\n    \"total_operaciones_gratuitas\": 0.00,\r\n    \"total_igv\": 18.00,\r\n    \"total_impuestos\": 18.00,\r\n    \"total_valor\": 100,\r\n    \"total_venta\": 128.00\r\n  },\r\n  \"items\":[\r\n    {\r\n      \"codigo_interno\": \"P0121\",\r\n      \"descripcion\":\"Inca Kola 250 ml\",\r\n      \"codigo_producto_sunat\": \"\",\r\n      \"codigo_producto_gsl\": \"\",\r\n      \"unidad_de_medida\": \"NIU\",\r\n      \"cantidad\": 2,\r\n      \"valor_unitario\": 50,\r\n      \"codigo_tipo_precio\": \"01\",\r\n      \"precio_unitario\": 59,\r\n      \"codigo_tipo_afectacion_igv\": \"10\",\r\n      \"total_base_igv\": 100.00,\r\n      \"porcentaje_igv\": 18,\r\n      \"total_igv\": 18,\r\n      \"total_impuestos\": 18,\r\n      \"total_valor_item\": 100,\r\n      \"total_item\": 118\r\n    }   \r\n  ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/documents",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"documents"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Factura Gratuita",
+					"protocolProfileBehavior": {
+						"followRedirects": true,
+						"disableUrlEncoding": false,
+						"disableCookies": false
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"serie_documento\": \"F001\",\r\n  \"numero_documento\": \"#\",\r\n  \"fecha_de_emision\": \"2018-10-09\",\r\n  \"hora_de_emision\": \"10:11:11\",\r\n  \"codigo_tipo_operacion\": \"0101\",\r\n  \"codigo_tipo_documento\":\"01\",\r\n  \"codigo_tipo_moneda\": \"PEN\",\r\n  \"fecha_de_vencimiento\":\"2018-08-30\",\r\n  \"numero_orden_de_compra\": \"0045467898\", \r\n  \"datos_del_cliente_o_receptor\":{\r\n    \"codigo_tipo_documento_identidad\": \"6\",\r\n    \"numero_documento\": \"10414711225\",\r\n    \"apellidos_y_nombres_o_razon_social\": \"EMPRESA XYZ S.A.\",\r\n    \"codigo_pais\": \"PE\",\r\n    \"ubigeo\": \"150101\",\r\n    \"direccion\": \"Av. 2 de Mayo\",\r\n    \"correo_electronico\": \"demo@gmail.com\",\r\n    \"telefono\": \"427-1148\"\r\n  },\r\n  \"totales\": {\r\n    \"total_exportacion\": 0.00,\r\n    \"total_operaciones_gravadas\": 0.00,\r\n    \"total_operaciones_inafectas\": 0.00,\r\n    \"total_operaciones_exoneradas\": 0.00,\r\n    \"total_operaciones_gratuitas\": 100.00,\r\n    \"total_igv\": 0.00,\r\n    \"total_impuestos\": 0.00,\r\n    \"total_valor\": 0.00,\r\n    \"total_venta\": 0.00\r\n  },\r\n  \"items\":[\r\n    {\r\n      \"codigo_interno\": \"P0121\",\r\n      \"descripcion\":\"Inca Kola 250 ml\",\r\n      \"codigo_producto_sunat\": \"\",\r\n      \"codigo_producto_gsl\": \"\",\r\n      \"unidad_de_medida\": \"NIU\",\r\n      \"cantidad\": 2,\r\n      \"valor_unitario\": 0.00,\r\n      \"codigo_tipo_precio\": \"02\",\r\n      \"precio_unitario\": 0.00,\r\n      \"codigo_tipo_afectacion_igv\": \"16\",\r\n      \"total_base_igv\": 100.00,\r\n      \"porcentaje_igv\": 18.00,\r\n      \"total_igv\": 18.00,\r\n      \"total_impuestos\": 0.00,\r\n      \"total_valor_item\": 0.00,\r\n      \"total_item\": 0.00\r\n    }\r\n  ],\r\n  \"leyendas\": [\r\n    {\r\n      \"codigo\": \"1002\",\r\n      \"valor\": \"TRANSFERENCIA GRATUITA\"\r\n    }\r\n  ] \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/documents",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"documents"
+							]
+						},
+						"description": "Gratuita"
+					},
+					"response": []
+				},
+				{
+					"name": "Factura - Gravada/Gratuita",
+					"protocolProfileBehavior": {
+						"followRedirects": true,
+						"disableUrlEncoding": false,
+						"disableCookies": false
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"serie_documento\": \"F001\",\r\n  \"numero_documento\": \"#\",\r\n  \"fecha_de_emision\": \"2018-10-09\",\r\n  \"hora_de_emision\": \"10:11:11\",\r\n  \"codigo_tipo_operacion\": \"0101\",\r\n  \"codigo_tipo_documento\":\"01\",\r\n  \"codigo_tipo_moneda\": \"PEN\",\r\n  \"fecha_de_vencimiento\": \"2018-10-09\",\r\n  \"numero_orden_de_compra\": \"0045467898\", \r\n  \"datos_del_cliente_o_receptor\":{\r\n    \"codigo_tipo_documento_identidad\": \"6\",\r\n    \"numero_documento\": \"10414711225\",\r\n    \"apellidos_y_nombres_o_razon_social\": \"EMPRESA XYZ S.A.\",\r\n    \"codigo_pais\": \"PE\",\r\n    \"ubigeo\": \"150101\",\r\n    \"direccion\": \"Av. 2 de Mayo\",\r\n    \"correo_electronico\": \"demo@gmail.com\",\r\n    \"telefono\": \"427-1148\"\r\n  },\r\n  \"totales\": {\r\n    \"total_exportacion\": 0.00,\r\n    \"total_operaciones_gravadas\": 100.00,\r\n    \"total_operaciones_inafectas\": 0.00,\r\n    \"total_operaciones_exoneradas\": 0.00,\r\n    \"total_operaciones_gratuitas\": 100.00,\r\n    \"total_igv\": 18.00,\r\n    \"total_impuestos\": 18.00,\r\n    \"total_valor\": 100,\r\n    \"total_venta\": 118\r\n  },\r\n  \"items\":[\r\n    {\r\n      \"codigo_interno\": \"P0121\",\r\n      \"descripcion\":\"Inca Kola 250 ml\",\r\n      \"codigo_producto_sunat\": \"\",\r\n      \"codigo_producto_gsl\": \"\",\r\n      \"unidad_de_medida\": \"NIU\",\r\n      \"cantidad\": 2,\r\n      \"valor_unitario\": 50,\r\n      \"codigo_tipo_precio\": \"01\",\r\n      \"precio_unitario\": 59,\r\n      \"codigo_tipo_afectacion_igv\": \"10\",\r\n      \"total_base_igv\": 100.00,\r\n      \"porcentaje_igv\": 18,\r\n      \"total_igv\": 18,\r\n      \"total_impuestos\": 18,\r\n      \"total_valor_item\": 100,\r\n      \"total_item\": 118\r\n    },\r\n    {\r\n      \"codigo_interno\": \"P0122\",\r\n      \"descripcion\":\"Pepsi 250 ml\",\r\n      \"codigo_producto_sunat\": \"\",\r\n      \"codigo_producto_gsl\": \"\",\r\n      \"unidad_de_medida\": \"NIU\",\r\n      \"cantidad\": 2,\r\n      \"valor_unitario\": 0.00,\r\n      \"codigo_tipo_precio\": \"02\",\r\n      \"precio_unitario\": 0.00,\r\n      \"codigo_tipo_afectacion_igv\": \"16\",\r\n      \"total_base_igv\": 100.00,\r\n      \"porcentaje_igv\": 18.00,\r\n      \"total_igv\": 18.00,\r\n      \"total_impuestos\": 0.00,\r\n      \"total_valor_item\": 0.00,\r\n      \"total_item\": 0.00\r\n    }    \r\n  ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/documents",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"documents"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Factura Exonerada",
+					"protocolProfileBehavior": {
+						"followRedirects": true,
+						"disableUrlEncoding": false,
+						"disableCookies": false
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"serie_documento\": \"F001\",\r\n  \"numero_documento\": \"#\",\r\n  \"fecha_de_emision\": \"2018-10-09\",\r\n  \"hora_de_emision\": \"10:11:11\",\r\n  \"codigo_tipo_operacion\": \"0101\",\r\n  \"codigo_tipo_documento\":\"01\",\r\n  \"codigo_tipo_moneda\": \"PEN\",\r\n  \"fecha_de_vencimiento\":\"2018-08-30\",\r\n  \"numero_orden_de_compra\": \"0045467898\", \r\n  \"datos_del_cliente_o_receptor\":{\r\n    \"codigo_tipo_documento_identidad\": \"6\",\r\n    \"numero_documento\": \"10414711225\",\r\n    \"apellidos_y_nombres_o_razon_social\": \"EMPRESA XYZ S.A.\",\r\n    \"codigo_pais\": \"PE\",\r\n    \"ubigeo\": \"150101\",\r\n    \"direccion\": \"Av. 2 de Mayo\",\r\n    \"correo_electronico\": \"demo@gmail.com\",\r\n    \"telefono\": \"427-1148\"\r\n  },\r\n  \"totales\": {\r\n    \"total_exportacion\": 0.00,\r\n    \"total_operaciones_gravadas\": 0.00,\r\n    \"total_operaciones_inafectas\": 0.00,\r\n    \"total_operaciones_exoneradas\": 118.00,\r\n    \"total_operaciones_gratuitas\": 0.00,\r\n    \"total_igv\": 0.00,\r\n    \"total_impuestos\": 0.00,\r\n    \"total_valor\": 118,\r\n    \"total_venta\": 118\r\n  },\r\n  \"items\":[\r\n    {\r\n      \"codigo_interno\": \"P0121\",\r\n      \"descripcion\":\"Inca Kola 250 ml\",\r\n      \"codigo_producto_sunat\": \"\",\r\n      \"codigo_producto_gsl\": \"\",\r\n      \"unidad_de_medida\": \"NIU\",\r\n      \"cantidad\": 2,\r\n      \"valor_unitario\": 59,\r\n      \"codigo_tipo_precio\": \"01\",\r\n      \"precio_unitario\": 59,\r\n      \"codigo_tipo_afectacion_igv\": \"20\",\r\n      \"total_base_igv\": 118.00,\r\n      \"porcentaje_igv\": 18,\r\n      \"total_igv\": 0.00,\r\n      \"total_impuestos\": 0.00,\r\n      \"total_valor_item\": 118,\r\n      \"total_item\": 118\r\n    }\r\n  ] \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/documents",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"documents"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Factura Exonerada - Impuesto bolsa plastica",
+					"protocolProfileBehavior": {
+						"followRedirects": true,
+						"disableUrlEncoding": false,
+						"disableCookies": false
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"serie_documento\": \"F001\",\r\n  \"numero_documento\": \"#\",\r\n  \"fecha_de_emision\": \"2021-08-27\",\r\n  \"hora_de_emision\": \"10:11:11\",\r\n  \"codigo_tipo_operacion\": \"0101\",\r\n  \"codigo_tipo_documento\":\"01\",\r\n  \"codigo_tipo_moneda\": \"PEN\",\r\n  \"fecha_de_vencimiento\":\"2021-08-27\",\r\n  \"numero_orden_de_compra\": \"0045467898\", \r\n  \"datos_del_cliente_o_receptor\":{\r\n    \"codigo_tipo_documento_identidad\": \"6\",\r\n    \"numero_documento\": \"10414711225\",\r\n    \"apellidos_y_nombres_o_razon_social\": \"EMPRESA XYZ S.A.\",\r\n    \"codigo_pais\": \"PE\",\r\n    \"ubigeo\": \"150101\",\r\n    \"direccion\": \"Av. 2 de Mayo\",\r\n    \"correo_electronico\": \"demo@gmail.com\",\r\n    \"telefono\": \"427-1148\"\r\n  },\r\n  \"totales\": {\r\n    \"total_exportacion\": 0.00,\r\n    \"total_operaciones_gravadas\": 0.00,\r\n    \"total_operaciones_inafectas\": 0.00,\r\n    \"total_operaciones_exoneradas\": 150.60,\r\n    \"total_operaciones_gratuitas\": 0.00,\r\n    \"total_impuestos_bolsa_plastica\": 0.90,\r\n    \"total_igv\": 0.00,\r\n    \"total_impuestos\": 0.00,\r\n    \"total_valor\": 150.60,\r\n    \"total_venta\": 151.50\r\n  },\r\n  \"items\": [\r\n    {\r\n      \"codigo_interno\": \"P00025\",\r\n      \"descripcion\": \"BANDEJA DE DRENAJE\",\r\n      \"codigo_producto_sunat\": \"\",\r\n      \"codigo_producto_gsl\": \"\",\r\n      \"unidad_de_medida\": \"NIU\",\r\n      \"cantidad\": 3,\r\n      \"valor_unitario\": 50,\r\n      \"codigo_tipo_precio\": \"01\",\r\n      \"precio_unitario\": 50,\r\n      \"codigo_tipo_afectacion_igv\": \"20\",\r\n      \"total_base_igv\": 150.00,\r\n      \"porcentaje_igv\": 18,\r\n      \"total_igv\": 0.00,\r\n      \"total_impuestos\": 0.00,\r\n      \"total_valor_item\": 150,\r\n      \"total_item\": 150\r\n    },\r\n    {\r\n      \"codigo_interno\": \"P01121\",\r\n      \"descripcion\": \"BOLSA PLASTICA\",\r\n      \"codigo_producto_sunat\": \"\",\r\n      \"codigo_producto_gsl\": \"\",\r\n      \"unidad_de_medida\": \"NIU\",\r\n      \"cantidad\": 3,\r\n      \"valor_unitario\": 0.20,\r\n      \"codigo_tipo_precio\": \"01\",\r\n      \"precio_unitario\": 0.20,\r\n      \"codigo_tipo_afectacion_igv\": \"20\",\r\n      \"total_base_igv\": 0.60,\r\n      \"porcentaje_igv\": 18,\r\n      \"total_igv\": 0.00,\r\n      \"total_impuestos_bolsa_plastica\": 0.90,\r\n      \"total_impuestos\": 0.00,\r\n      \"total_valor_item\": 0.60,\r\n      \"total_item\": 0.60\r\n    }\r\n  ],\r\n  \"informacion_adicional\": \"Forma de pago:EFECTIVO|Caja: \"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/documents",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"documents"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Factura Gravada - Detracción",
+					"protocolProfileBehavior": {
+						"followRedirects": true,
+						"disableUrlEncoding": false,
+						"disableCookies": false
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"serie_documento\": \"F001\",\r\n  \"numero_documento\": \"#\",\r\n  \"fecha_de_emision\": \"2019-11-18\",\r\n  \"hora_de_emision\": \"10:11:11\",\r\n  \"codigo_tipo_operacion\": \"1001\",\r\n  \"codigo_tipo_documento\":\"01\",\r\n  \"codigo_tipo_moneda\": \"PEN\",\r\n  \"fecha_de_vencimiento\":\"2019-11-19\",\r\n  \"numero_orden_de_compra\": \"0045467898\", \r\n  \"datos_del_cliente_o_receptor\":{\r\n    \"codigo_tipo_documento_identidad\": \"6\",\r\n    \"numero_documento\": \"10414711225\",\r\n    \"apellidos_y_nombres_o_razon_social\": \"EMPRESA XYZ S.A.\",\r\n    \"codigo_pais\": \"PE\",\r\n    \"ubigeo\": \"150101\",\r\n    \"direccion\": \"Av. 2 de Mayo\",\r\n    \"correo_electronico\": \"demo@gmail.com\",\r\n    \"telefono\": \"427-1148\"\r\n  },\r\n  \"totales\": {\r\n    \"total_exportacion\": 0.00,\r\n    \"total_operaciones_gravadas\": 100.00,\r\n    \"total_operaciones_inafectas\": 0.00,\r\n    \"total_operaciones_exoneradas\": 0.00,\r\n    \"total_operaciones_gratuitas\": 0.00,\r\n    \"total_igv\": 18.00,\r\n    \"total_impuestos\": 18.00,\r\n    \"total_valor\": 100,\r\n    \"total_venta\": 118\r\n  },\r\n  \"leyendas\":[\r\n\t {\r\n\t \t\"codigo\":\"2006\",\r\n\t \t\"valor\":\"Operación sujeta a detracción\"\r\n\t }\r\n  ],\r\n  \"detraccion\": {\r\n    \"codigo_tipo_detraccion\": \"008\",\r\n    \"porcentaje\": 4.00,\r\n    \"monto\": 4.72,\r\n    \"codigo_metodo_pago\": \"001\",\r\n    \"cuenta_bancaria\": \"212-16547578\"\r\n  },\r\n  \"items\":[\r\n    {\r\n      \"codigo_interno\": \"P0150\",\r\n      \"descripcion\":\"Madera caoba xyz\",\r\n      \"codigo_producto_sunat\": \"51121703\",\r\n      \"unidad_de_medida\": \"NIU\",\r\n      \"cantidad\": 2,\r\n      \"valor_unitario\": 50,\r\n      \"codigo_tipo_precio\": \"01\",\r\n      \"precio_unitario\": 59,\r\n      \"codigo_tipo_afectacion_igv\": \"10\",\r\n      \"total_base_igv\": 100.00,\r\n      \"porcentaje_igv\": 18,\r\n      \"total_igv\": 18,\r\n      \"total_impuestos\": 18,\r\n      \"total_valor_item\": 100,\r\n      \"total_item\": 118\r\n    }\r\n  ],\r\n  \"informacion_adicional\": \"Forma de pago:Efectivo|Caja: 1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/documents",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"documents"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Factura Gravada Dolares",
+					"protocolProfileBehavior": {
+						"followRedirects": true,
+						"disableUrlEncoding": false,
+						"disableCookies": false
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"serie_documento\": \"F001\",\r\n  \"numero_documento\": \"#\",\r\n  \"fecha_de_emision\": \"2018-10-09\",\r\n  \"hora_de_emision\": \"10:11:11\",\r\n  \"codigo_tipo_operacion\": \"0101\",\r\n  \"codigo_tipo_documento\":\"01\",\r\n  \"codigo_tipo_moneda\": \"USD\",\r\n  \"fecha_de_vencimiento\": \"2018-10-09\",\r\n  \"numero_orden_de_compra\": \"0045467898\", \r\n  \"datos_del_cliente_o_receptor\":{\r\n    \"codigo_tipo_documento_identidad\": \"6\",\r\n    \"numero_documento\": \"10414711225\",\r\n    \"apellidos_y_nombres_o_razon_social\": \"EMPRESA XYZ S.A.\",\r\n    \"codigo_pais\": \"PE\",\r\n    \"ubigeo\": \"150101\",\r\n    \"direccion\": \"Av. 2 de Mayo\",\r\n    \"correo_electronico\": \"demo@gmail.com\",\r\n    \"telefono\": \"427-1148\"\r\n  },\r\n  \"totales\": {\r\n    \"total_exportacion\": 0.00,\r\n    \"total_operaciones_gravadas\": 100.00,\r\n    \"total_operaciones_inafectas\": 0.00,\r\n    \"total_operaciones_exoneradas\": 0.00,\r\n    \"total_operaciones_gratuitas\": 0.00,\r\n    \"total_igv\": 18.00,\r\n    \"total_impuestos\": 18.00,\r\n    \"total_valor\": 100,\r\n    \"total_venta\": 118\r\n  },\r\n  \"items\":[\r\n    {\r\n      \"codigo_interno\": \"P0121\",\r\n      \"descripcion\":\"Inca Kola 250 ml\",\r\n      \"codigo_producto_sunat\": \"\",\r\n      \"codigo_producto_gsl\": \"\",\r\n      \"unidad_de_medida\": \"NIU\",\r\n      \"cantidad\": 2,\r\n      \"valor_unitario\": 50,\r\n      \"codigo_tipo_precio\": \"01\",\r\n      \"precio_unitario\": 59,\r\n      \"codigo_tipo_afectacion_igv\": \"10\",\r\n      \"total_base_igv\": 100.00,\r\n      \"porcentaje_igv\": 18,\r\n      \"total_igv\": 18,\r\n      \"total_impuestos\": 18,\r\n      \"total_valor_item\": 100,\r\n      \"total_item\": 118\r\n    }   \r\n  ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/documents",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"documents"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Factura Gravada - Impuesto bolsa plastica",
+					"protocolProfileBehavior": {
+						"followRedirects": true,
+						"disableUrlEncoding": false,
+						"disableCookies": false
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"serie_documento\": \"F001\",\r\n  \"numero_documento\": \"#\",\r\n  \"fecha_de_emision\": \"2021-08-27\",\r\n  \"hora_de_emision\": \"10:11:11\",\r\n  \"codigo_tipo_operacion\": \"0101\",\r\n  \"codigo_tipo_documento\":\"01\",\r\n  \"codigo_tipo_moneda\": \"PEN\",\r\n  \"fecha_de_vencimiento\":\"2021-08-27\", \r\n  \"datos_del_cliente_o_receptor\":{\r\n    \"codigo_tipo_documento_identidad\": \"6\",\r\n    \"numero_documento\": \"10414711225\",\r\n    \"apellidos_y_nombres_o_razon_social\": \"EMPRESA XYZ S.A.\",\r\n    \"codigo_pais\": \"PE\",\r\n    \"ubigeo\": \"150101\",\r\n    \"direccion\": \"Av. 2 de Mayo\",\r\n    \"correo_electronico\": \"demo@gmail.com\",\r\n    \"telefono\": \"427-1148\"\r\n  },\r\n  \"totales\": {\r\n    \"total_exportacion\": 0.00,\r\n    \"total_operaciones_gravadas\": 100.00,\r\n    \"total_operaciones_inafectas\": 0.00,\r\n    \"total_operaciones_exoneradas\": 0.00,\r\n    \"total_operaciones_gratuitas\": 0.00,\r\n    \"total_impuestos_bolsa_plastica\": 0.6,\r\n    \"total_igv\": 18.00,\r\n    \"total_impuestos\": 18.00,\r\n    \"total_valor\": 100,\r\n    \"total_venta\": 118.6\r\n  },\r\n  \"items\":[\r\n    {\r\n      \"codigo_interno\": \"P0015\",\r\n      \"descripcion\":\"Pepsi 3 lt\",\r\n      \"codigo_producto_sunat\": \"51121703\",\r\n      \"unidad_de_medida\": \"NIU\",\r\n      \"cantidad\": 2,\r\n      \"valor_unitario\": 50,\r\n      \"codigo_tipo_precio\": \"01\",\r\n      \"precio_unitario\": 59,\r\n      \"codigo_tipo_afectacion_igv\": \"10\",\r\n      \"total_base_igv\": 100.00,\r\n      \"porcentaje_igv\": 18,\r\n      \"total_igv\": 18,\r\n      \"total_impuestos_bolsa_plastica\": 0.6,\r\n      \"total_impuestos\": 18,\r\n      \"total_valor_item\": 100,\r\n      \"total_item\": 118\r\n    }\r\n  ],\r\n  \"informacion_adicional\": \"Forma de pago:Efectivo|Caja: 1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/documents",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"documents"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Factura Gravada - Descuento Global y Lineal",
+					"protocolProfileBehavior": {
+						"followRedirects": true,
+						"disableUrlEncoding": false,
+						"disableCookies": false
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"serie_documento\": \"F001\",\r\n  \"numero_documento\": \"#\",\r\n  \"fecha_de_emision\": \"2018-10-09\",\r\n  \"hora_de_emision\": \"10:11:11\",\r\n  \"codigo_tipo_operacion\": \"0101\",\r\n  \"codigo_tipo_documento\":\"01\",\r\n  \"codigo_tipo_moneda\": \"PEN\",\r\n  \"fecha_de_vencimiento\": \"2018-10-09\",\r\n  \"numero_orden_de_compra\": \"0045467898\", \r\n  \"datos_del_cliente_o_receptor\":{\r\n    \"codigo_tipo_documento_identidad\": \"6\",\r\n    \"numero_documento\": \"10414711225\",\r\n    \"apellidos_y_nombres_o_razon_social\": \"EMPRESA XYZ S.A.\",\r\n    \"codigo_pais\": \"PE\",\r\n    \"ubigeo\": \"150101\",\r\n    \"direccion\": \"Av. 2 de Mayo\",\r\n    \"correo_electronico\": \"demo@gmail.com\",\r\n    \"telefono\": \"427-1148\"\r\n  },\r\n  \"descuentos\":[\r\n    {\r\n      \"codigo\": \"03\",\r\n      \"descripcion\": \"Descuento Global no afecta a la base imponible\",\r\n      \"factor\": 0.10,\r\n      \"monto\": 9.50,\r\n      \"base\": 95.00\r\n    }\r\n  ],    \r\n  \"totales\": {\r\n    \"total_descuentos\": 14.50,\r\n    \"total_exportacion\": 0.00,\r\n    \"total_operaciones_gravadas\": 95.00,\r\n    \"total_operaciones_inafectas\": 0.00,\r\n    \"total_operaciones_exoneradas\": 0.00,\r\n    \"total_operaciones_gratuitas\": 0.00,\r\n    \"total_igv\": 17.10,\r\n    \"total_impuestos\": 17.10,\r\n    \"total_valor\": 95,\r\n    \"total_venta\": 112.10\r\n  },\r\n  \"items\":[\r\n    {\r\n      \"codigo_interno\": \"P0121\",\r\n      \"descripcion\":\"Inca Kola 250 ml\",\r\n      \"codigo_producto_sunat\": \"31201501\",\r\n      \"codigo_producto_gsl\": \"\",\r\n      \"unidad_de_medida\": \"NIU\",\r\n      \"cantidad\": 2,\r\n      \"valor_unitario\": 50,\r\n      \"codigo_tipo_precio\": \"01\",\r\n      \"precio_unitario\": 59,\r\n      \"codigo_tipo_afectacion_igv\": \"10\",\r\n    \"descuentos\":[\r\n      {\r\n        \"codigo\": \"00\",\r\n        \"descripcion\": \"Descuento Lineal\",\r\n        \"factor\": 0.05,\r\n        \"monto\": 5.00,\r\n        \"base\": 100.00\r\n      }\r\n    ],  \r\n      \"total_base_igv\": 95.00,\r\n      \"porcentaje_igv\": 18,    \r\n      \"total_igv\": 17.10,\r\n      \"total_impuestos\": 17.10,\r\n      \"total_valor_item\": 95,\r\n      \"total_item\": 112.10\r\n    }   \r\n  ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/documents",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"documents"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Factura Gravada - Contingencia",
+					"protocolProfileBehavior": {
+						"followRedirects": true,
+						"disableUrlEncoding": false,
+						"disableCookies": false
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"serie_documento\": \"0001\",\r\n  \"numero_documento\": \"#\",\r\n  \"fecha_de_emision\": \"2019-09-03\",\r\n  \"hora_de_emision\": \"10:11:11\",\r\n  \"fecha_de_vencimiento\":\"2019-09-03\",\r\n  \"codigo_tipo_operacion\": \"0101\",\r\n  \"codigo_tipo_documento\":\"01\",\r\n  \"codigo_tipo_moneda\": \"PEN\",  \r\n  \"datos_del_cliente_o_receptor\":{\r\n    \"codigo_tipo_documento_identidad\": \"6\",\r\n    \"numero_documento\": \"20501973522\",\r\n    \"apellidos_y_nombres_o_razon_social\": \"EMBOTELLADORA DON JORGE S.A.C. EN LIQUIDACION\",\r\n    \"codigo_pais\": \"PE\",\r\n    \"ubigeo\": \"150101\",\r\n    \"direccion\": \"Av. Argentina 2458\",\r\n    \"correo_electronico\": \"demo@gmail.com\",\r\n    \"telefono\": \"427-1148\"\r\n  },\r\n  \"totales\": {\r\n    \"total_exportacion\": 0.00,\r\n    \"total_operaciones_gravadas\": 100.00,\r\n    \"total_operaciones_inafectas\": 0.00,\r\n    \"total_operaciones_exoneradas\": 0.00,\r\n    \"total_operaciones_gratuitas\": 0.00,\r\n    \"total_igv\": 18.00,\r\n    \"total_impuestos\": 18.00,\r\n    \"total_valor\": 100,\r\n    \"total_venta\": 118\r\n  },\r\n  \"items\":[\r\n    {\r\n      \"codigo_interno\": \"P0121\",\r\n      \"descripcion\":\"Inca Kola 250 ml\",\r\n      \"codigo_producto_sunat\": \"51121703\",\r\n      \"unidad_de_medida\": \"NIU\",\r\n      \"cantidad\": 2,\r\n      \"valor_unitario\": 50,\r\n      \"codigo_tipo_precio\": \"01\",\r\n      \"precio_unitario\": 59,\r\n      \"codigo_tipo_afectacion_igv\": \"10\",\r\n      \"total_base_igv\": 100.00,\r\n      \"porcentaje_igv\": 18,\r\n      \"total_igv\": 18,\r\n      \"total_impuestos\": 18,\r\n      \"total_valor_item\": 100,\r\n      \"total_item\": 118\r\n    }\r\n  ],\r\n  \"informacion_adicional\": \"Forma de pago:Efectivo|Caja: 1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/documents",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"documents"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Factura Gravada Anticipos",
+					"protocolProfileBehavior": {
+						"followRedirects": true,
+						"disableUrlEncoding": false,
+						"disableCookies": false
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"serie_documento\": \"F001\",\r\n  \"numero_documento\": \"#\",\r\n  \"fecha_de_emision\": \"2019-10-17\",\r\n  \"hora_de_emision\": \"10:11:11\",\r\n  \"codigo_tipo_operacion\": \"0101\",\r\n  \"codigo_tipo_documento\":\"01\",\r\n  \"codigo_tipo_moneda\": \"PEN\",\r\n  \"fecha_de_vencimiento\": \"2019-10-17\",\r\n  \"numero_orden_de_compra\": \"0045467898\",  \r\n  \"datos_del_cliente_o_receptor\":{\r\n    \"codigo_tipo_documento_identidad\": \"6\",\r\n    \"numero_documento\": \"10417844398\",\r\n    \"apellidos_y_nombres_o_razon_social\": \"EMPRESA XYZ S.A.\",\r\n    \"codigo_pais\": \"PE\",\r\n    \"ubigeo\": \"150101\",\r\n    \"direccion\": \"Av. 2 de Mayo\",\r\n    \"correo_electronico\": \"demo@gmail.com\",\r\n    \"telefono\": \"427-1148\"\r\n  },\r\n  \"totales\": {\r\n  \t\"total_anticipos\":20.00,\r\n    \"total_descuentos\": 20.00,\r\n    \"total_exportacion\": 0.00,\r\n    \"total_operaciones_gravadas\": 100.00,\r\n    \"total_operaciones_inafectas\": 0.00,\r\n    \"total_operaciones_exoneradas\": 0.00,\r\n    \"total_operaciones_gratuitas\": 0.00,\r\n    \"total_igv\": 14.40,\r\n    \"total_impuestos\": 14.40,\r\n    \"total_valor\": 80,\r\n    \"total_venta\": 94.40\r\n  },\r\n  \"descuentos\":[\r\n    {\r\n      \"codigo\": \"04\",\r\n      \"descripcion\": \"Descuentos globales por anticipos gravados que afectan la base imponible del IGV/IVAP\",\r\n      \"factor\": 0.20,\r\n      \"monto\": 20.00,\r\n      \"base\": 100.00\r\n    }\r\n  ],  \r\n  \"anticipos\":[\r\n  \t{\r\n\t\t\"numero\":\"F001-9\",\r\n\t\t\"codigo_tipo_documento\":\"02\",\r\n\t\t\"monto\":20.00,\r\n\t\t\"total\":23.60\r\n  \t}\r\n  ],\r\n  \"items\":[\r\n    {\r\n      \"codigo_interno\": \"P0121\",\r\n      \"descripcion\":\"Inca Kola 250 ml\",\r\n      \"codigo_producto_sunat\": \"51121703\",\r\n      \"unidad_de_medida\": \"NIU\",\r\n      \"cantidad\": 2,\r\n      \"valor_unitario\": 50,\r\n      \"codigo_tipo_precio\": \"01\",\r\n      \"precio_unitario\": 59,\r\n      \"codigo_tipo_afectacion_igv\": \"10\",\r\n      \"total_base_igv\": 100.00,\r\n      \"porcentaje_igv\": 18,\r\n      \"total_igv\": 18,\r\n      \"total_impuestos\": 18,\r\n      \"total_valor_item\": 100,\r\n      \"total_item\": 118\r\n    }\r\n  ],\r\n  \"informacion_adicional\": \"Forma de pago:Efectivo|Caja: 1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/documents",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"documents"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Factura Gravada Sin Enviar",
+					"protocolProfileBehavior": {
+						"followRedirects": true,
+						"disableUrlEncoding": false,
+						"disableCookies": false
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"serie_documento\": \"F001\",\r\n  \"numero_documento\": \"#\",\r\n  \"fecha_de_emision\": \"2018-10-09\",\r\n  \"hora_de_emision\": \"10:11:11\",\r\n  \"codigo_tipo_operacion\": \"0101\",\r\n  \"codigo_tipo_documento\":\"01\",\r\n  \"codigo_tipo_moneda\": \"PEN\",\r\n  \"fecha_de_vencimiento\":\"2018-08-30\",\r\n  \"numero_orden_de_compra\": \"0045467898\", \r\n  \"datos_del_cliente_o_receptor\":{\r\n    \"codigo_tipo_documento_identidad\": \"6\",\r\n    \"numero_documento\": \"10414711225\",\r\n    \"apellidos_y_nombres_o_razon_social\": \"EMPRESA XYZ S.A.\",\r\n    \"codigo_pais\": \"PE\",\r\n    \"ubigeo\": \"150101\",\r\n    \"direccion\": \"Av. 2 de Mayo\",\r\n    \"correo_electronico\": \"demo@gmail.com\",\r\n    \"telefono\": \"427-1148\"\r\n  },\r\n  \"totales\": {\r\n    \"total_exportacion\": 0.00,\r\n    \"total_operaciones_gravadas\": 100.00,\r\n    \"total_operaciones_inafectas\": 0.00,\r\n    \"total_operaciones_exoneradas\": 0.00,\r\n    \"total_operaciones_gratuitas\": 0.00,\r\n    \"total_igv\": 18.00,\r\n    \"total_impuestos\": 18.00,\r\n    \"total_valor\": 100,\r\n    \"total_venta\": 118\r\n  },\r\n  \"items\":[\r\n    {\r\n      \"codigo_interno\": \"P0121\",\r\n      \"descripcion\":\"Inca Kola 250 ml\",\r\n      \"codigo_producto_sunat\": \"51121703\",\r\n      \"unidad_de_medida\": \"NIU\",\r\n      \"cantidad\": 2,\r\n      \"valor_unitario\": 50,\r\n      \"codigo_tipo_precio\": \"01\",\r\n      \"precio_unitario\": 59,\r\n      \"codigo_tipo_afectacion_igv\": \"10\",\r\n      \"total_base_igv\": 100.00,\r\n      \"porcentaje_igv\": 18,\r\n      \"total_igv\": 18,\r\n      \"total_impuestos\": 18,\r\n      \"total_valor_item\": 100,\r\n      \"total_item\": 118\r\n    }\r\n  ],\r\n  \"acciones\": {\r\n    \"enviar_xml_firmado\": false\r\n  }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/documents",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"documents"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Factura Inafecta",
+					"protocolProfileBehavior": {
+						"followRedirects": true,
+						"disableUrlEncoding": false,
+						"disableCookies": false
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"serie_documento\": \"F001\",\r\n  \"numero_documento\": \"#\",\r\n  \"fecha_de_emision\": \"2018-10-09\",\r\n  \"hora_de_emision\": \"10:11:11\",\r\n  \"codigo_tipo_operacion\": \"0101\",\r\n  \"codigo_tipo_documento\":\"01\",\r\n  \"codigo_tipo_moneda\": \"PEN\",\r\n  \"fecha_de_vencimiento\":\"2018-08-30\",\r\n  \"numero_orden_de_compra\": \"0045467898\", \r\n  \"datos_del_cliente_o_receptor\":{\r\n    \"codigo_tipo_documento_identidad\": \"6\",\r\n    \"numero_documento\": \"10414711225\",\r\n    \"apellidos_y_nombres_o_razon_social\": \"EMPRESA XYZ S.A.\",\r\n    \"codigo_pais\": \"PE\",\r\n    \"ubigeo\": \"150101\",\r\n    \"direccion\": \"Av. 2 de Mayo\",\r\n    \"correo_electronico\": \"demo@gmail.com\",\r\n    \"telefono\": \"427-1148\"\r\n  },\r\n  \"totales\": {\r\n    \"total_exportacion\": 0.00,\r\n    \"total_operaciones_gravadas\": 0.00,\r\n    \"total_operaciones_inafectas\": 118.00,\r\n    \"total_operaciones_exoneradas\": 0.00,\r\n    \"total_operaciones_gratuitas\": 0.00,\r\n    \"total_igv\": 0.00,\r\n    \"total_impuestos\": 0.00,\r\n    \"total_valor\": 118,\r\n    \"total_venta\": 118\r\n  },\r\n  \"items\":[\r\n    {\r\n      \"codigo_interno\": \"P0121\",\r\n      \"descripcion\":\"Inca Kola 250 ml\",\r\n      \"codigo_producto_sunat\": \"\",\r\n      \"codigo_producto_gsl\": \"\",\r\n      \"unidad_de_medida\": \"NIU\",\r\n      \"cantidad\": 2,\r\n      \"valor_unitario\": 59,\r\n      \"codigo_tipo_precio\": \"01\",\r\n      \"precio_unitario\": 59,\r\n      \"codigo_tipo_afectacion_igv\": \"30\",\r\n      \"total_base_igv\": 118,\r\n      \"porcentaje_igv\": 18,\r\n      \"total_igv\": 0.00,\r\n      \"total_impuestos\": 0.00,\r\n      \"total_valor_item\": 118,\r\n      \"total_item\": 118\r\n    }\r\n  ] \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/documents",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"documents"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Factura - Documento relacionado",
+					"protocolProfileBehavior": {
+						"followRedirects": true,
+						"disableUrlEncoding": false,
+						"disableCookies": false
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"serie_documento\": \"F001\",\r\n  \"numero_documento\": \"#\",\r\n  \"fecha_de_emision\": \"2018-10-09\",\r\n  \"hora_de_emision\": \"10:11:11\",\r\n  \"codigo_tipo_operacion\": \"0101\",\r\n  \"codigo_tipo_documento\":\"01\",\r\n  \"codigo_tipo_moneda\": \"PEN\",\r\n  \"fecha_de_vencimiento\":\"2018-08-30\",\r\n  \"numero_orden_de_compra\": \"0045467898\", \r\n  \"datos_del_cliente_o_receptor\":{\r\n    \"codigo_tipo_documento_identidad\": \"6\",\r\n    \"numero_documento\": \"10414711225\",\r\n    \"apellidos_y_nombres_o_razon_social\": \"EMPRESA XYZ S.A.\",\r\n    \"codigo_pais\": \"PE\",\r\n    \"ubigeo\": \"150101\",\r\n    \"direccion\": \"Av. 2 de Mayo\",\r\n    \"correo_electronico\": \"demo@gmail.com\",\r\n    \"telefono\": \"427-1148\"\r\n  }, \r\n  \"relacionados\":[\r\n    {\r\n      \"numero\": \"12\",\r\n      \"codigo_tipo_documento\": \"01\",\r\n      \"monto\": 150.00\r\n    } ,\r\n    {\r\n      \"numero\": \"15\",\r\n      \"codigo_tipo_documento\": \"01\",\r\n      \"monto\": 150.00\r\n    } \r\n  ] ,\r\n  \"totales\": {\r\n    \"total_exportacion\": 0.00,\r\n    \"total_operaciones_gravadas\": 100.00,\r\n    \"total_operaciones_inafectas\": 0.00,\r\n    \"total_operaciones_exoneradas\": 0.00,\r\n    \"total_operaciones_gratuitas\": 0.00,\r\n    \"total_igv\": 18.00,\r\n    \"total_impuestos\": 18.00,\r\n    \"total_valor\": 100,\r\n    \"total_venta\": 118\r\n  },\r\n  \"items\":[\r\n    {\r\n      \"codigo_interno\": \"P0121\",\r\n      \"descripcion\":\"Inca Kola 250 ml\",\r\n      \"codigo_producto_sunat\": \"51121703\",\r\n      \"unidad_de_medida\": \"NIU\",\r\n      \"cantidad\": 2,\r\n      \"valor_unitario\": 50,\r\n      \"codigo_tipo_precio\": \"01\",\r\n      \"precio_unitario\": 59,\r\n      \"codigo_tipo_afectacion_igv\": \"10\",\r\n      \"total_base_igv\": 100.00,\r\n      \"porcentaje_igv\": 18,\r\n      \"total_igv\": 18,\r\n      \"total_impuestos\": 18,\r\n      \"total_valor_item\": 100,\r\n      \"total_item\": 118 \r\n    }\r\n  ],\r\n  \"informacion_adicional\": \"Forma de pago:Efectivo|Caja: 1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/documents",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"documents"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Factura Gravada - Descuento Global",
+					"protocolProfileBehavior": {
+						"followRedirects": true,
+						"disableUrlEncoding": false,
+						"disableCookies": false
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"serie_documento\": \"F001\",\r\n  \"numero_documento\": \"#\",\r\n  \"fecha_de_emision\": \"2018-10-09\",\r\n  \"hora_de_emision\": \"10:11:11\",\r\n  \"codigo_tipo_operacion\": \"0101\",\r\n  \"codigo_tipo_documento\":\"01\",\r\n  \"codigo_tipo_moneda\": \"PEN\",\r\n  \"fecha_de_vencimiento\": \"2018-10-09\",\r\n  \"numero_orden_de_compra\": \"0045467898\", \r\n  \"datos_del_cliente_o_receptor\":{\r\n    \"codigo_tipo_documento_identidad\": \"6\",\r\n    \"numero_documento\": \"10414711225\",\r\n    \"apellidos_y_nombres_o_razon_social\": \"EMPRESA XYZ S.A.\",\r\n    \"codigo_pais\": \"PE\",\r\n    \"ubigeo\": \"150101\",\r\n    \"direccion\": \"Av. 2 de Mayo\",\r\n    \"correo_electronico\": \"demo@gmail.com\",\r\n    \"telefono\": \"427-1148\"\r\n  },\r\n  \"descuentos\":[\r\n    {\r\n      \"codigo\": \"02\",\r\n      \"descripcion\": \"Descuento Global afecta a la base imponible\",\r\n      \"factor\": 0.20,\r\n      \"monto\": 20.00,\r\n      \"base\": 100.00\r\n    }\r\n  ],  \r\n  \"totales\": {\r\n    \"total_descuentos\": 20.00,\r\n    \"total_exportacion\": 0.00,\r\n    \"total_operaciones_gravadas\": 100.00,\r\n    \"total_operaciones_inafectas\": 0.00,\r\n    \"total_operaciones_exoneradas\": 0.00,\r\n    \"total_operaciones_gratuitas\": 0.00,\r\n    \"total_igv\": 14.40,\r\n    \"total_impuestos\": 14.40,\r\n    \"total_valor\": 80,\r\n    \"total_venta\": 94.40\r\n  },\r\n  \"items\":[\r\n    {\r\n      \"codigo_interno\": \"P0121\",\r\n      \"descripcion\":\"Inca Kola 250 ml\",\r\n      \"codigo_producto_sunat\": \"\",\r\n      \"unidad_de_medida\": \"NIU\",\r\n      \"cantidad\": 2,\r\n      \"valor_unitario\": 50,\r\n      \"codigo_tipo_precio\": \"01\",\r\n      \"precio_unitario\": 59,\r\n      \"codigo_tipo_afectacion_igv\": \"10\",\r\n      \"total_base_igv\": 100.00,\r\n      \"porcentaje_igv\": 18,\r\n      \"total_igv\": 18,\r\n      \"total_impuestos\": 18,\r\n      \"total_valor_item\": 100,\r\n      \"total_item\": 118\r\n    }   \r\n  ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/documents",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"documents"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Factura - Datos Adicionales Item (placa)",
+					"protocolProfileBehavior": {
+						"followRedirects": true,
+						"disableUrlEncoding": false,
+						"disableCookies": false
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"serie_documento\": \"F001\",\r\n  \"numero_documento\": \"#\",\r\n  \"fecha_de_emision\": \"2018-10-09\",\r\n  \"hora_de_emision\": \"10:11:11\",\r\n  \"codigo_tipo_operacion\": \"0101\",\r\n  \"codigo_tipo_documento\":\"01\",\r\n  \"codigo_tipo_moneda\": \"PEN\",\r\n  \"fecha_de_vencimiento\":\"2018-08-30\",\r\n  \"numero_orden_de_compra\": \"0045467898\", \r\n  \"datos_del_cliente_o_receptor\":{\r\n    \"codigo_tipo_documento_identidad\": \"6\",\r\n    \"numero_documento\": \"10414711225\",\r\n    \"apellidos_y_nombres_o_razon_social\": \"EMPRESA XYZ S.A.\",\r\n    \"codigo_pais\": \"PE\",\r\n    \"ubigeo\": \"150101\",\r\n    \"direccion\": \"Av. 2 de Mayo\",\r\n    \"correo_electronico\": \"demo@gmail.com\",\r\n    \"telefono\": \"427-1148\"\r\n  },\r\n  \"totales\": {\r\n    \"total_exportacion\": 0.00,\r\n    \"total_operaciones_gravadas\": 100.00,\r\n    \"total_operaciones_inafectas\": 0.00,\r\n    \"total_operaciones_exoneradas\": 0.00,\r\n    \"total_operaciones_gratuitas\": 0.00,\r\n    \"total_igv\": 18.00,\r\n    \"total_impuestos\": 18.00,\r\n    \"total_valor\": 100,\r\n    \"total_venta\": 118\r\n  },\r\n  \"items\":[\r\n    {\r\n      \"codigo_interno\": \"P0121\",\r\n      \"descripcion\":\"Inca Kola 250 ml\",\r\n      \"codigo_producto_sunat\": \"51121703\",\r\n      \"unidad_de_medida\": \"NIU\",\r\n      \"cantidad\": 2,\r\n      \"valor_unitario\": 50,\r\n      \"codigo_tipo_precio\": \"01\",\r\n      \"precio_unitario\": 59,\r\n      \"codigo_tipo_afectacion_igv\": \"10\",\r\n      \"total_base_igv\": 100.00,\r\n      \"porcentaje_igv\": 18,\r\n      \"total_igv\": 18,\r\n      \"total_impuestos\": 18,\r\n      \"total_valor_item\": 100,\r\n      \"total_item\": 118,\r\n      \"datos_adicionales\":[\r\n  \t\t\t{\r\n  \t\t\t\t\"codigo\": \"5010\",\r\n  \t\t\t\t\"descripcion\": \"Numero de Placa\",\r\n  \t\t\t\t\"valor\": \"A7Q-986\"\r\n  \t\t\t}\r\n  \t  ] \r\n    }\r\n  ],\r\n  \"informacion_adicional\": \"Forma de pago:Efectivo|Caja: 1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/documents",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"documents"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Factura Gravada - Pago Credito",
+					"protocolProfileBehavior": {
+						"followRedirects": true,
+						"disableUrlEncoding": false,
+						"disableCookies": false
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"serie_documento\": \"F001\",\r\n    \"numero_documento\": \"#\",\r\n    \"fecha_de_emision\": \"2018-10-09\",\r\n    \"hora_de_emision\": \"10:11:11\",\r\n    \"codigo_tipo_operacion\": \"0101\",\r\n    \"codigo_tipo_documento\": \"01\",\r\n    \"codigo_tipo_moneda\": \"PEN\",\r\n    \"fecha_de_vencimiento\": \"2018-08-30\",\r\n    \"numero_orden_de_compra\": \"0045467898\",\r\n    \"datos_del_cliente_o_receptor\": {\r\n        \"codigo_tipo_documento_identidad\": \"6\",\r\n        \"numero_documento\": \"10414711225\",\r\n        \"apellidos_y_nombres_o_razon_social\": \"EMPRESA XYZ S.A.\",\r\n        \"codigo_pais\": \"PE\",\r\n        \"ubigeo\": \"150101\",\r\n        \"direccion\": \"Av. 2 de Mayo\",\r\n        \"correo_electronico\": \"demo@gmail.com\",\r\n        \"telefono\": \"427-1148\"\r\n    },\r\n    \"codigo_condicion_de_pago\": \"02\",\r\n    \"cuotas\": [\r\n        {\r\n            \"fecha\": \"2021-04-03\",\r\n            \"codigo_tipo_moneda\": \"PEN\",\r\n            \"monto\": 59\r\n        },\r\n        {\r\n            \"fecha\": \"2021-05-03\",\r\n            \"codigo_tipo_moneda\": \"PEN\",\r\n            \"monto\": 59\r\n        }\r\n    ],\r\n    \"totales\": {\r\n        \"total_exportacion\": 0.00,\r\n        \"total_operaciones_gravadas\": 100.00,\r\n        \"total_operaciones_inafectas\": 0.00,\r\n        \"total_operaciones_exoneradas\": 0.00,\r\n        \"total_operaciones_gratuitas\": 0.00,\r\n        \"total_igv\": 18.00,\r\n        \"total_impuestos\": 18.00,\r\n        \"total_valor\": 100,\r\n        \"total_venta\": 118\r\n    },\r\n    \"items\": [\r\n        {\r\n            \"codigo_interno\": \"P0121\",\r\n            \"descripcion\": \"Inca Kola 250 ml\",\r\n            \"codigo_producto_sunat\": \"51121703\",\r\n            \"unidad_de_medida\": \"NIU\",\r\n            \"cantidad\": 2,\r\n            \"valor_unitario\": 50,\r\n            \"codigo_tipo_precio\": \"01\",\r\n            \"precio_unitario\": 59,\r\n            \"codigo_tipo_afectacion_igv\": \"10\",\r\n            \"total_base_igv\": 100.00,\r\n            \"porcentaje_igv\": 18,\r\n            \"total_igv\": 18,\r\n            \"total_impuestos\": 18,\r\n            \"total_valor_item\": 100,\r\n            \"total_item\": 118\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/documents",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"documents"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Factura Gravada - Pago Contado",
+					"protocolProfileBehavior": {
+						"followRedirects": true,
+						"disableUrlEncoding": false,
+						"disableCookies": false
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"serie_documento\": \"F001\",\r\n    \"numero_documento\": \"#\",\r\n    \"fecha_de_emision\": \"2018-10-09\",\r\n    \"hora_de_emision\": \"10:11:11\",\r\n    \"codigo_tipo_operacion\": \"0101\",\r\n    \"codigo_tipo_documento\": \"01\",\r\n    \"codigo_tipo_moneda\": \"PEN\",\r\n    \"fecha_de_vencimiento\": \"2018-08-30\",\r\n    \"numero_orden_de_compra\": \"0045467898\",\r\n    \"datos_del_cliente_o_receptor\": {\r\n        \"codigo_tipo_documento_identidad\": \"6\",\r\n        \"numero_documento\": \"10414711225\",\r\n        \"apellidos_y_nombres_o_razon_social\": \"EMPRESA XYZ S.A.\",\r\n        \"codigo_pais\": \"PE\",\r\n        \"ubigeo\": \"150101\",\r\n        \"direccion\": \"Av. 2 de Mayo\",\r\n        \"correo_electronico\": \"demo@gmail.com\",\r\n        \"telefono\": \"427-1148\"\r\n    },\r\n    \"codigo_condicion_de_pago\": \"01\",\r\n    \"totales\": {\r\n        \"total_exportacion\": 0.00,\r\n        \"total_operaciones_gravadas\": 100.00,\r\n        \"total_operaciones_inafectas\": 0.00,\r\n        \"total_operaciones_exoneradas\": 0.00,\r\n        \"total_operaciones_gratuitas\": 0.00,\r\n        \"total_igv\": 18.00,\r\n        \"total_impuestos\": 18.00,\r\n        \"total_valor\": 100,\r\n        \"total_venta\": 118\r\n    },\r\n    \"items\": [\r\n        {\r\n            \"codigo_interno\": \"P0121\",\r\n            \"descripcion\": \"Inca Kola 250 ml\",\r\n            \"codigo_producto_sunat\": \"51121703\",\r\n            \"unidad_de_medida\": \"NIU\",\r\n            \"cantidad\": 2,\r\n            \"valor_unitario\": 50,\r\n            \"codigo_tipo_precio\": \"01\",\r\n            \"precio_unitario\": 59,\r\n            \"codigo_tipo_afectacion_igv\": \"10\",\r\n            \"total_base_igv\": 100.00,\r\n            \"porcentaje_igv\": 18,\r\n            \"total_igv\": 18,\r\n            \"total_impuestos\": 18,\r\n            \"total_valor_item\": 100,\r\n            \"total_item\": 118\r\n        }\r\n    ]\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/documents",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"documents"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Factura Gravada - Pagos",
+					"protocolProfileBehavior": {
+						"followRedirects": true,
+						"disableUrlEncoding": false,
+						"disableCookies": false
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"serie_documento\": \"F001\",\r\n  \"numero_documento\": \"#\",\r\n  \"fecha_de_emision\": \"2019-09-17\",\r\n  \"hora_de_emision\": \"10:11:11\",\r\n  \"codigo_tipo_operacion\": \"0101\",\r\n  \"codigo_tipo_documento\":\"01\",\r\n  \"codigo_tipo_moneda\": \"PEN\",\r\n  \"fecha_de_vencimiento\":\"2018-08-30\",\r\n  \"numero_orden_de_compra\": \"0045467898\", \r\n  \"datos_del_cliente_o_receptor\":{\r\n    \"codigo_tipo_documento_identidad\": \"6\",\r\n    \"numero_documento\": \"10414711225\",\r\n    \"apellidos_y_nombres_o_razon_social\": \"EMPRESA XYZ S.A.\",\r\n    \"codigo_pais\": \"PE\",\r\n    \"ubigeo\": \"150101\",\r\n    \"direccion\": \"Av. 2 de Mayo\",\r\n    \"correo_electronico\": \"demo@gmail.com\",\r\n    \"telefono\": \"427-1148\"\r\n  },\r\n  \"totales\": {\r\n    \"total_exportacion\": 0.00,\r\n    \"total_operaciones_gravadas\": 100.00,\r\n    \"total_operaciones_inafectas\": 0.00,\r\n    \"total_operaciones_exoneradas\": 0.00,\r\n    \"total_operaciones_gratuitas\": 0.00,\r\n    \"total_igv\": 18.00,\r\n    \"total_impuestos\": 18.00,\r\n    \"total_valor\": 100,\r\n    \"total_venta\": 118\r\n  },\r\n  \"items\":[\r\n    {\r\n      \"codigo_interno\": \"P0121\",\r\n      \"descripcion\":\"Inca Kola 250 ml\",\r\n      \"codigo_producto_sunat\": \"51121703\",\r\n      \"unidad_de_medida\": \"NIU\",\r\n      \"cantidad\": 2,\r\n      \"valor_unitario\": 50,\r\n      \"codigo_tipo_precio\": \"01\",\r\n      \"precio_unitario\": 59,\r\n      \"codigo_tipo_afectacion_igv\": \"10\",\r\n      \"total_base_igv\": 100.00,\r\n      \"porcentaje_igv\": 18,\r\n      \"total_igv\": 18,\r\n      \"total_impuestos\": 18,\r\n      \"total_valor_item\": 100,\r\n      \"total_item\": 118\r\n    }\r\n  ],\r\n  \"pagos\":[\r\n\t{\r\n\t\t\"codigo_metodo_pago\":\"02\",\r\n\t\t\"referencia\":\"1\",\r\n\t\t\"monto\":\"50\"\r\n\t},\r\n\t{\r\n\t\t\"codigo_metodo_pago\":\"01\",\r\n\t\t\"referencia\":\"ref\",\r\n\t\t\"monto\":\"60\"\r\n\t}\r\n  ],\r\n  \"informacion_adicional\": \"Forma de pago:Efectivo|Caja: 1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/documents",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"documents"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Factura Gravada - Descuento Lineal",
+					"protocolProfileBehavior": {
+						"followRedirects": true,
+						"disableUrlEncoding": false,
+						"disableCookies": false
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"serie_documento\": \"F001\",\r\n  \"numero_documento\": \"#\",\r\n  \"fecha_de_emision\": \"2018-10-09\",\r\n  \"hora_de_emision\": \"10:11:11\",\r\n  \"codigo_tipo_operacion\": \"0101\",\r\n  \"codigo_tipo_documento\":\"01\",\r\n  \"codigo_tipo_moneda\": \"PEN\",\r\n  \"fecha_de_vencimiento\": \"2018-10-09\",\r\n  \"numero_orden_de_compra\": \"0045467898\", \r\n  \"datos_del_cliente_o_receptor\":{\r\n    \"codigo_tipo_documento_identidad\": \"6\",\r\n    \"numero_documento\": \"10414711225\",\r\n    \"apellidos_y_nombres_o_razon_social\": \"EMPRESA XYZ S.A.\",\r\n    \"codigo_pais\": \"PE\",\r\n    \"ubigeo\": \"150101\",\r\n    \"direccion\": \"Av. 2 de Mayo\",\r\n    \"correo_electronico\": \"demo@gmail.com\",\r\n    \"telefono\": \"427-1148\"\r\n  },\r\n  \"totales\": {\r\n    \"total_descuentos\": 5.00,\r\n    \"total_exportacion\": 0.00,\r\n    \"total_operaciones_gravadas\": 95.00,\r\n    \"total_operaciones_inafectas\": 0.00,\r\n    \"total_operaciones_exoneradas\": 0.00,\r\n    \"total_operaciones_gratuitas\": 0.00,\r\n    \"total_igv\": 17.10,\r\n    \"total_impuestos\": 17.10,\r\n    \"total_valor\": 95,\r\n    \"total_venta\": 112.10\r\n  },\r\n  \"items\":[\r\n    {\r\n      \"codigo_interno\": \"P0121\",\r\n      \"descripcion\":\"Inca Kola 250 ml\",\r\n      \"codigo_producto_sunat\": \"\",\r\n      \"codigo_producto_gsl\": \"\",\r\n      \"unidad_de_medida\": \"NIU\",\r\n      \"cantidad\": 2,\r\n      \"valor_unitario\": 50,\r\n      \"codigo_tipo_precio\": \"01\",\r\n      \"precio_unitario\": 59,\r\n      \"codigo_tipo_afectacion_igv\": \"10\",\r\n    \"descuentos\":[\r\n      {\r\n        \"codigo\": \"00\",\r\n        \"descripcion\": \"Descuento Lineal\",\r\n        \"factor\": 0.05,\r\n        \"monto\": 5.00,\r\n        \"base\": 100.00\r\n      }\r\n    ],  \r\n      \"total_base_igv\": 95.00,\r\n      \"porcentaje_igv\": 18,    \r\n      \"total_igv\": 17.10,\r\n      \"total_impuestos\": 17.10,\r\n      \"total_valor_item\": 95,\r\n      \"total_item\": 112.10\r\n    }   \r\n  ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/documents",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"documents"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Factura - Generar documento desde nota de venta",
+					"protocolProfileBehavior": {
+						"followRedirects": true,
+						"disableUrlEncoding": false,
+						"disableCookies": false
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"codigo_tipo_documento\": \"01\",\r\n    \"serie_documento\": \"F001\",\r\n    \"numero_documento\": \"#\",\r\n    \"fecha_de_emision\": \"2021-04-09\",\r\n    \"hora_de_emision\": \"18:00:00\",\r\n    \"fecha_de_vencimiento\":\"2021-04-09\",\r\n    \"codigo_condicion_de_pago\": \"01\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{_['url']}}/api/sale-note/{{_['sale_note_id']}}/generate-cpe",
+							"host": [
+								"{{_['url']}}"
+							],
+							"path": [
+								"api",
+								"sale-note",
+								"{{_['sale_note_id']}}",
+								"generate-cpe"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Factura Exportacion",
+					"protocolProfileBehavior": {
+						"followRedirects": true,
+						"disableUrlEncoding": false,
+						"disableCookies": false
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"serie_documento\": \"F001\",\r\n    \"numero_documento\": \"#\",\r\n    \"fecha_de_emision\": \"2019-09-20\",\r\n    \"hora_de_emision\": \"16:23:01\",\r\n    \"codigo_tipo_operacion\": \"0200\",\r\n    \"codigo_tipo_documento\": \"01\",\r\n    \"codigo_tipo_moneda\": \"PEN\",\r\n    \"fecha_de_vencimiento\":\"2019-07-01\",\r\n    \"numero_orden_de_compra\":\"\",\r\n\t  \"datos_del_emisor\": {\r\n\t    \"codigo_pais\": \"PE\",\r\n\t    \"ubigeo\": \"150101\",\r\n\t    \"direccion\": \"Av. 2 de Mayo\",\r\n\t    \"correo_electronico\": \"demo@gmail.com\",\r\n\t    \"telefono\": \"427-1148\",\r\n\t    \"codigo_del_domicilio_fiscal\": \"0000\"\r\n\t  },  \r\n    \"datos_del_cliente_o_receptor\":{\r\n        \"codigo_tipo_documento_identidad\": \"0\",\r\n        \"numero_documento\": \"8901074873\",\r\n        \"apellidos_y_nombres_o_razon_social\": \"SUPERTIENDAS Y DROGUERIAS OLIMPICA S.A.\",\r\n        \"codigo_pais\": \"CO\",\r\n        \"direccion\": \"CALLE 53 Nro 46-192 LOCAL 3-01 C. COMERCIAL PORTAL DEL PRADO\",\r\n        \"correo_electronico\": \"\",\r\n        \"telefono\": \"\"\r\n    },\r\n\t\"totales\": {\r\n\t\t\"total_exportacion\": 1395.00,\r\n\t\t\"total_operaciones_gravadas\": 0.00,\r\n\t\t\"total_operaciones_inafectas\": 0.00,\r\n\t\t\"total_operaciones_exoneradas\": 0.00,\r\n\t\t\"total_operaciones_gratuitas\": 0.00,\r\n\t\t\"total_igv\": 0.00,\r\n\t\t\"total_impuestos\": 0.00,\r\n\t\t\"total_valor\": 1395.00,\r\n\t\t\"total_venta\": 1395.00\r\n\t},    \r\n    \"items\":[\t        \r\n    \t{\r\n            \"codigo_interno\": \"1055929\",\r\n            \"descripcion\":\"CAMISETA NIÑO MANGA CORTA 4-6-8-10-12 DKK272763\",\r\n            \"codigo_producto_sunat\": \"53101701\",\r\n            \"unidad_de_medida\": \"NIU\",\r\n            \"cantidad\": 300,\r\n            \"valor_unitario\": 4.65,\r\n            \"codigo_tipo_precio\":\"01\",\r\n            \"precio_unitario\":4.65,\r\n            \"codigo_tipo_afectacion_igv\": \"40\",\r\n            \"total_base_igv\": 1395.00,\r\n            \"porcentaje_igv\": 18,\r\n            \"total_igv\": 0.00,\r\n            \"total_impuestos\": 0.00,\r\n            \"total_valor_item\": 1395.00,\r\n            \"total_item\": 1395.00\r\n        }   \r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/documents",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"documents"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Factura - Campo Adicional Guia",
+					"protocolProfileBehavior": {
+						"followRedirects": true,
+						"disableUrlEncoding": false,
+						"disableCookies": false
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"serie_documento\": \"F001\",\r\n  \"numero_documento\": \"#\",\r\n  \"fecha_de_emision\": \"2019-02-21\",\r\n  \"hora_de_emision\": \"10:11:11\",\r\n  \"codigo_tipo_operacion\": \"0101\",\r\n  \"codigo_tipo_documento\":\"01\",\r\n  \"codigo_tipo_moneda\": \"PEN\",\r\n  \"fecha_de_vencimiento\":\"2019-02-21\",\r\n  \"numero_orden_de_compra\": \"0045467898\", \r\n  \"datos_del_cliente_o_receptor\":{\r\n    \"codigo_tipo_documento_identidad\": \"6\",\r\n    \"numero_documento\": \"10414711225\",\r\n    \"apellidos_y_nombres_o_razon_social\": \"EMPRESA XYZ S.A.\",\r\n    \"codigo_pais\": \"PE\",\r\n    \"ubigeo\": \"150101\",\r\n    \"direccion\": \"Av. 2 de Mayo\",\r\n    \"correo_electronico\": \"demo@gmail.com\",\r\n    \"telefono\": \"427-1148\"\r\n  },\r\n  \"guias\":[\r\n\t    {\r\n\t      \"numero\": \"T001\",\r\n\t      \"codigo_tipo_documento\": \"09\"\r\n\t    },\r\n\t    {\r\n\t      \"numero\": \"T002\",\r\n\t      \"codigo_tipo_documento\": \"09\"\r\n\t    }\r\n  ],\r\n  \"totales\": {\r\n    \"total_exportacion\": 0.00,\r\n    \"total_operaciones_gravadas\": 100.00,\r\n    \"total_operaciones_inafectas\": 0.00,\r\n    \"total_operaciones_exoneradas\": 0.00,\r\n    \"total_operaciones_gratuitas\": 0.00,\r\n    \"total_igv\": 18.00,\r\n    \"total_impuestos\": 18.00,\r\n    \"total_valor\": 100,\r\n    \"total_venta\": 118\r\n  },\r\n  \"items\":[\r\n    {\r\n      \"codigo_interno\": \"P0121\",\r\n      \"descripcion\":\"Inca Kola 250 ml\",\r\n      \"codigo_producto_sunat\": \"51121703\",\r\n      \"unidad_de_medida\": \"NIU\",\r\n      \"cantidad\": 2,\r\n      \"valor_unitario\": 50,\r\n      \"codigo_tipo_precio\": \"01\",\r\n      \"precio_unitario\": 59,\r\n      \"codigo_tipo_afectacion_igv\": \"10\",\r\n      \"total_base_igv\": 100.00,\r\n      \"porcentaje_igv\": 18,\r\n      \"total_igv\": 18,\r\n      \"total_impuestos\": 18,\r\n      \"total_valor_item\": 100,\r\n      \"total_item\": 118\r\n    }\r\n  ],\r\n  \"informacion_adicional\": \"Forma de pago:Efectivo|Caja: 1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/documents",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"documents"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Boleta Gravada",
+					"protocolProfileBehavior": {
+						"followRedirects": true,
+						"disableUrlEncoding": false,
+						"disableCookies": false
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"serie_documento\": \"B001\",\r\n  \"numero_documento\": \"#\",\r\n  \"fecha_de_emision\": \"2019-12-09\",\r\n  \"hora_de_emision\": \"10:11:11\",\r\n  \"codigo_tipo_operacion\": \"0101\",\r\n  \"codigo_tipo_documento\":\"03\",\r\n  \"codigo_tipo_moneda\": \"PEN\",\r\n  \"fecha_de_vencimiento\": \"2018-10-09\",\r\n  \"numero_orden_de_compra\": \"0045467898\", \r\n  \"datos_del_cliente_o_receptor\":{\r\n    \"codigo_tipo_documento_identidad\": \"1\",\r\n    \"numero_documento\": \"10414711225\",\r\n    \"apellidos_y_nombres_o_razon_social\": \"EMPRESA XYZ S.A.\",\r\n    \"codigo_pais\": \"PE\",\r\n    \"ubigeo\": \"\",\r\n    \"direccion\": \"Av. 2 de Mayo\",\r\n    \"correo_electronico\": \"demo@gmail.com\",\r\n    \"telefono\": \"427-1148\"\r\n  },\r\n  \"totales\": {\r\n    \"total_exportacion\": 0.00,\r\n    \"total_operaciones_gravadas\": 100.00,\r\n    \"total_operaciones_inafectas\": 0.00,\r\n    \"total_operaciones_exoneradas\": 0.00,\r\n    \"total_operaciones_gratuitas\": 0.00,\r\n    \"total_igv\": 18.00,\r\n    \"total_impuestos\": 18.00,\r\n    \"total_valor\": 100,\r\n    \"total_venta\": 118\r\n  },\r\n  \"items\":[\r\n    {\r\n      \"codigo_interno\": \"P0121\",\r\n      \"descripcion\":\"Inca Kola 250 ml\",\r\n      \"codigo_producto_sunat\": \"51121703\", \r\n      \"unidad_de_medida\": \"NIU\",\r\n      \"cantidad\": 2,\r\n      \"valor_unitario\": 50,\r\n      \"codigo_tipo_precio\": \"01\",\r\n      \"precio_unitario\": 59,\r\n      \"codigo_tipo_afectacion_igv\": \"10\",\r\n      \"total_base_igv\": 100.00,\r\n      \"porcentaje_igv\": 18,\r\n      \"total_igv\": 18,\r\n      \"total_impuestos\": 18,\r\n      \"total_valor_item\": 100,\r\n      \"total_item\": 118\r\n    }\r\n  ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/documents",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"documents"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Boleta Exportacion",
+					"protocolProfileBehavior": {
+						"followRedirects": true,
+						"disableUrlEncoding": false,
+						"disableCookies": false
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"serie_documento\": \"B001\",\r\n    \"numero_documento\": \"#\",\r\n    \"fecha_de_emision\": \"2019-09-20\",\r\n    \"hora_de_emision\": \"17:23:01\",\r\n    \"codigo_tipo_operacion\": \"0200\",\r\n    \"codigo_tipo_documento\": \"03\",\r\n    \"codigo_tipo_moneda\": \"PEN\",\r\n    \"fecha_de_vencimiento\":\"2019-09-20\",\r\n    \"numero_orden_de_compra\":\"\",\r\n\t  \"datos_del_emisor\": {\r\n\t    \"codigo_pais\": \"PE\",\r\n\t    \"ubigeo\": \"150101\",\r\n\t    \"direccion\": \"Av. 2 de Mayo\",\r\n\t    \"correo_electronico\": \"demo@gmail.com\",\r\n\t    \"telefono\": \"427-1148\",\r\n\t    \"codigo_del_domicilio_fiscal\": \"0000\"\r\n\t  },  \r\n    \"datos_del_cliente_o_receptor\":{\r\n        \"codigo_tipo_documento_identidad\": \"0\",\r\n        \"numero_documento\": \"9601074873\",\r\n        \"apellidos_y_nombres_o_razon_social\": \"EL OASIS S.A.\",\r\n        \"codigo_pais\": \"CO\",\r\n        \"direccion\": \"CALLE 123 Nro 50 LOCAL 44-01 C. COMERCIAL INNOVA\",\r\n        \"correo_electronico\": \"\",\r\n        \"telefono\": \"\"\r\n    },\r\n\t\"totales\": {\r\n\t\t\"total_exportacion\": 1395.00,\r\n\t\t\"total_operaciones_gravadas\": 0.00,\r\n\t\t\"total_operaciones_inafectas\": 0.00,\r\n\t\t\"total_operaciones_exoneradas\": 0.00,\r\n\t\t\"total_operaciones_gratuitas\": 0.00,\r\n\t\t\"total_igv\": 0.00,\r\n\t\t\"total_impuestos\": 0.00,\r\n\t\t\"total_valor\": 1395.00,\r\n\t\t\"total_venta\": 1395.00\r\n\t},    \r\n    \"items\":[\t        \r\n    \t{\r\n            \"codigo_interno\": \"1055929\",\r\n            \"descripcion\":\"CAMISETA NIÑO MANGA CORTA 4-6-8-10-12 DKK272763\",\r\n            \"codigo_producto_sunat\": \"53101701\",\r\n            \"unidad_de_medida\": \"NIU\",\r\n            \"cantidad\": 300,\r\n            \"valor_unitario\": 4.65,\r\n            \"codigo_tipo_precio\":\"01\",\r\n            \"precio_unitario\":4.65,\r\n            \"codigo_tipo_afectacion_igv\": \"40\",\r\n            \"total_base_igv\": 1395.00,\r\n            \"porcentaje_igv\": 18,\r\n            \"total_igv\": 0.00,\r\n            \"total_impuestos\": 0.00,\r\n            \"total_valor_item\": 1395.00,\r\n            \"total_item\": 1395.00\r\n        }   \r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/documents",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"documents"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Boleta Gravada - Contingencia",
+					"protocolProfileBehavior": {
+						"followRedirects": true,
+						"disableUrlEncoding": false,
+						"disableCookies": false
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"serie_documento\": \"0004\",\r\n  \"numero_documento\": \"#\",\r\n  \"fecha_de_emision\": \"2019-09-03\",\r\n  \"hora_de_emision\": \"10:11:11\",\r\n  \"codigo_tipo_operacion\": \"0101\",\r\n  \"codigo_tipo_documento\":\"03\",\r\n  \"codigo_tipo_moneda\": \"PEN\",\r\n  \"fecha_de_vencimiento\": \"2019-09-03\",  \r\n  \"datos_del_cliente_o_receptor\":{\r\n    \"codigo_tipo_documento_identidad\": \"6\",\r\n    \"numero_documento\": \"10414711225\",\r\n    \"apellidos_y_nombres_o_razon_social\": \"EMPRESA XYZ S.A.\",\r\n    \"codigo_pais\": \"PE\",\r\n    \"ubigeo\": \"150101\",\r\n    \"direccion\": \"Av. 2 de Mayo\",\r\n    \"correo_electronico\": \"demo@gmail.com\",\r\n    \"telefono\": \"427-1148\"\r\n  },\r\n  \"totales\": {\r\n    \"total_exportacion\": 0.00,\r\n    \"total_operaciones_gravadas\": 100.00,\r\n    \"total_operaciones_inafectas\": 0.00,\r\n    \"total_operaciones_exoneradas\": 0.00,\r\n    \"total_operaciones_gratuitas\": 0.00,\r\n    \"total_igv\": 18.00,\r\n    \"total_impuestos\": 18.00,\r\n    \"total_valor\": 100,\r\n    \"total_venta\": 118\r\n  },\r\n  \"items\":[\r\n    {\r\n      \"codigo_interno\": \"P0121\",\r\n      \"descripcion\":\"Inca Kola 250 ml\",\r\n      \"codigo_producto_sunat\": \"51121703\",\r\n      \"codigo_producto_gsl\": \"51121703\",\r\n      \"unidad_de_medida\": \"NIU\",\r\n      \"cantidad\": 2,\r\n      \"valor_unitario\": 50,\r\n      \"codigo_tipo_precio\": \"01\",\r\n      \"precio_unitario\": 59,\r\n      \"codigo_tipo_afectacion_igv\": \"10\",\r\n      \"total_base_igv\": 100.00,\r\n      \"porcentaje_igv\": 18,\r\n      \"total_igv\": 18,\r\n      \"total_impuestos\": 18,\r\n      \"total_valor_item\": 100,\r\n      \"total_item\": 118\r\n    }\r\n  ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/documents",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"documents"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Nota Credito - Factura",
+					"protocolProfileBehavior": {
+						"followRedirects": true,
+						"disableUrlEncoding": false,
+						"disableCookies": false
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"serie_documento\": \"FC01\",\r\n  \"numero_documento\": \"#\",\r\n  \"fecha_de_emision\": \"2018-10-09\",\r\n  \"hora_de_emision\": \"10:11:11\",\r\n  \"codigo_tipo_documento\":\"07\",\r\n  \"codigo_tipo_nota\": \"01\",\r\n  \"motivo_o_sustento_de_nota\": \"Error al emitir comprobante\",\r\n  \"codigo_tipo_moneda\": \"PEN\",\r\n  \"numero_orden_de_compra\": \"0045467898\",\r\n  \"documento_afectado\": {\r\n    \"external_id\": \"293e1c61-a0c7-444d-8062-5d456d14b2b5\"\r\n  }, \r\n  \"datos_del_cliente_o_receptor\":{\r\n    \"codigo_tipo_documento_identidad\": \"6\",\r\n    \"numero_documento\": \"10414711225\",\r\n    \"apellidos_y_nombres_o_razon_social\": \"EMPRESA XYZ S.A.\",\r\n    \"codigo_pais\": \"PE\",\r\n    \"ubigeo\": \"150101\",\r\n    \"direccion\": \"Av. 2 de Mayo\",\r\n    \"correo_electronico\": \"demo@gmail.com\",\r\n    \"telefono\": \"427-1148\"\r\n  },\r\n  \"totales\": {\r\n    \"total_exportacion\": 0.00,\r\n    \"total_operaciones_gravadas\": 100.00,\r\n    \"total_operaciones_inafectas\": 0.00,\r\n    \"total_operaciones_exoneradas\": 0.00,\r\n    \"total_operaciones_gratuitas\": 0.00,\r\n    \"total_igv\": 18.00,\r\n    \"total_impuestos\": 18.00,\r\n    \"total_valor\": 100,\r\n    \"total_venta\": 118\r\n  },\r\n  \"items\":[\r\n    {\r\n      \"codigo_interno\": \"P0121\",\r\n      \"descripcion\":\"Inca Kola 250 ml\",\r\n      \"codigo_producto_sunat\": \"\", \r\n      \"unidad_de_medida\": \"NIU\",\r\n      \"cantidad\": 2,\r\n      \"valor_unitario\": 50,\r\n      \"codigo_tipo_precio\": \"01\",\r\n      \"precio_unitario\": 59,\r\n      \"codigo_tipo_afectacion_igv\": \"10\",\r\n      \"total_base_igv\": 100.00,\r\n      \"porcentaje_igv\": 18,\r\n      \"total_igv\": 18,\r\n      \"total_impuestos\": 18,\r\n      \"total_valor_item\": 100,\r\n      \"total_item\": 118\r\n    }\r\n  ],\r\n  \"acciones\": {\r\n    \"formato_pdf\": \"a4\"\r\n  }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/documents",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"documents"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Nota Credito Sin External Id - Factura",
+					"protocolProfileBehavior": {
+						"followRedirects": true,
+						"disableUrlEncoding": false,
+						"disableCookies": false
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"serie_documento\": \"FC01\",\r\n  \"numero_documento\": \"#\",\r\n  \"fecha_de_emision\": \"2019-09-05\",\r\n  \"hora_de_emision\": \"10:11:11\",\r\n  \"codigo_tipo_documento\":\"07\",\r\n  \"codigo_tipo_nota\": \"01\",\r\n  \"motivo_o_sustento_de_nota\": \"Error al emitir comprobante\",\r\n  \"codigo_tipo_moneda\": \"PEN\",\r\n  \"numero_orden_de_compra\": \"0045467898\",\r\n  \"documento_afectado\": {\r\n    \"serie_documento\": \"F001\",\r\n    \"numero_documento\": \"190\",\r\n    \"codigo_tipo_documento\": \"01\"\r\n  }, \r\n  \"datos_del_cliente_o_receptor\":{\r\n    \"codigo_tipo_documento_identidad\": \"6\",\r\n    \"numero_documento\": \"10414711225\",\r\n    \"apellidos_y_nombres_o_razon_social\": \"EMPRESA XYZ S.A.\",\r\n    \"codigo_pais\": \"PE\",\r\n    \"ubigeo\": \"150101\",\r\n    \"direccion\": \"Av. 2 de Mayo\",\r\n    \"correo_electronico\": \"demo@gmail.com\",\r\n    \"telefono\": \"427-1148\"\r\n  },\r\n  \"totales\": {\r\n    \"total_exportacion\": 0.00,\r\n    \"total_operaciones_gravadas\": 100.00,\r\n    \"total_operaciones_inafectas\": 0.00,\r\n    \"total_operaciones_exoneradas\": 0.00,\r\n    \"total_operaciones_gratuitas\": 0.00,\r\n    \"total_igv\": 18.00,\r\n    \"total_impuestos\": 18.00,\r\n    \"total_valor\": 100,\r\n    \"total_venta\": 118\r\n  },\r\n  \"items\":[\r\n    {\r\n      \"codigo_interno\": \"P0121\",\r\n      \"descripcion\":\"Inca Kola 250 ml\",\r\n      \"codigo_producto_sunat\": \"\", \r\n      \"unidad_de_medida\": \"NIU\",\r\n      \"cantidad\": 2,\r\n      \"valor_unitario\": 50,\r\n      \"codigo_tipo_precio\": \"01\",\r\n      \"precio_unitario\": 59,\r\n      \"codigo_tipo_afectacion_igv\": \"10\",\r\n      \"total_base_igv\": 100.00,\r\n      \"porcentaje_igv\": 18,\r\n      \"total_igv\": 18,\r\n      \"total_impuestos\": 18,\r\n      \"total_valor_item\": 100,\r\n      \"total_item\": 118\r\n    }\r\n  ],\r\n  \"acciones\": {\r\n    \"formato_pdf\": \"a4\"\r\n  }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/documents",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"documents"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Nota Debito Sin External Id - Factura",
+					"protocolProfileBehavior": {
+						"followRedirects": true,
+						"disableUrlEncoding": false,
+						"disableCookies": false
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"serie_documento\": \"FD01\",\r\n  \"numero_documento\": \"#\",\r\n  \"fecha_de_emision\": \"2019-09-05\",\r\n  \"hora_de_emision\": \"10:11:11\",\r\n  \"codigo_tipo_documento\":\"08\",\r\n  \"codigo_tipo_nota\": \"01\",\r\n  \"motivo_o_sustento_de_nota\": \"Error al emitir comprobante\",\r\n  \"codigo_tipo_moneda\": \"PEN\",\r\n  \"numero_orden_de_compra\": \"0045467898\",\r\n  \"documento_afectado\": {\r\n    \"serie_documento\": \"F001\",\r\n    \"numero_documento\": \"133\",\r\n    \"codigo_tipo_documento\": \"01\"\r\n  }, \r\n  \"datos_del_cliente_o_receptor\":{\r\n    \"codigo_tipo_documento_identidad\": \"6\",\r\n    \"numero_documento\": \"10414711225\",\r\n    \"apellidos_y_nombres_o_razon_social\": \"EMPRESA XYZ S.A.\",\r\n    \"codigo_pais\": \"PE\",\r\n    \"ubigeo\": \"150101\",\r\n    \"direccion\": \"Av. 2 de Mayo\",\r\n    \"correo_electronico\": \"demo@gmail.com\",\r\n    \"telefono\": \"427-1148\"\r\n  },\r\n  \"totales\": {\r\n    \"total_exportacion\": 0.00,\r\n    \"total_operaciones_gravadas\": 100.00,\r\n    \"total_operaciones_inafectas\": 0.00,\r\n    \"total_operaciones_exoneradas\": 0.00,\r\n    \"total_operaciones_gratuitas\": 0.00,\r\n    \"total_igv\": 18.00,\r\n    \"total_impuestos\": 18.00,\r\n    \"total_valor\": 100,\r\n    \"total_venta\": 118\r\n  },\r\n  \"items\":[\r\n    {\r\n      \"codigo_interno\": \"P0121\",\r\n      \"descripcion\":\"Inca Kola 250 ml\",\r\n      \"codigo_producto_sunat\": \"51121703\", \r\n      \"unidad_de_medida\": \"NIU\",\r\n      \"cantidad\": 2,\r\n      \"valor_unitario\": 50,\r\n      \"codigo_tipo_precio\": \"01\",\r\n      \"precio_unitario\": 59,\r\n      \"codigo_tipo_afectacion_igv\": \"10\",\r\n      \"total_base_igv\": 100.00,\r\n      \"porcentaje_igv\": 18,\r\n      \"total_igv\": 18,\r\n      \"total_impuestos\": 18,\r\n      \"total_valor_item\": 100,\r\n      \"total_item\": 118\r\n    }\r\n  ],\r\n  \"acciones\": {\r\n    \"formato_pdf\": \"a4\"\r\n  }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://demo.facturadorpro4.test/api/documents",
+							"protocol": "http",
+							"host": [
+								"demo",
+								"facturadorpro4",
+								"test"
+							],
+							"path": [
+								"api",
+								"documents"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Nota Debito - Factura",
+					"protocolProfileBehavior": {
+						"followRedirects": true,
+						"disableUrlEncoding": false,
+						"disableCookies": false
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"serie_documento\": \"FD01\",\r\n  \"numero_documento\": \"#\",\r\n  \"fecha_de_emision\": \"2018-10-09\",\r\n  \"hora_de_emision\": \"10:11:11\",\r\n  \"codigo_tipo_documento\":\"08\",\r\n  \"codigo_tipo_nota\": \"01\",\r\n  \"motivo_o_sustento_de_nota\": \"Error al emitir comprobante\",\r\n  \"codigo_tipo_moneda\": \"PEN\",\r\n  \"numero_orden_de_compra\": \"0045467898\",\r\n  \"documento_afectado\": {\r\n    \"external_id\": \"293e1c61-a0c7-444d-8062-5d456d14b2b5\"\r\n  }, \r\n  \"datos_del_cliente_o_receptor\":{\r\n    \"codigo_tipo_documento_identidad\": \"6\",\r\n    \"numero_documento\": \"10414711225\",\r\n    \"apellidos_y_nombres_o_razon_social\": \"EMPRESA XYZ S.A.\",\r\n    \"codigo_pais\": \"PE\",\r\n    \"ubigeo\": \"150101\",\r\n    \"direccion\": \"Av. 2 de Mayo\",\r\n    \"correo_electronico\": \"demo@gmail.com\",\r\n    \"telefono\": \"427-1148\"\r\n  },\r\n  \"totales\": {\r\n    \"total_exportacion\": 0.00,\r\n    \"total_operaciones_gravadas\": 100.00,\r\n    \"total_operaciones_inafectas\": 0.00,\r\n    \"total_operaciones_exoneradas\": 0.00,\r\n    \"total_operaciones_gratuitas\": 0.00,\r\n    \"total_igv\": 18.00,\r\n    \"total_impuestos\": 18.00,\r\n    \"total_valor\": 100,\r\n    \"total_venta\": 118\r\n  },\r\n  \"items\":[\r\n    {\r\n      \"codigo_interno\": \"P0121\",\r\n      \"descripcion\":\"Inca Kola 250 ml\",\r\n      \"codigo_producto_sunat\": \"51121703\",\r\n      \"unidad_de_medida\": \"NIU\",\r\n      \"cantidad\": 2,\r\n      \"valor_unitario\": 50,\r\n      \"codigo_tipo_precio\": \"01\",\r\n      \"precio_unitario\": 59,\r\n      \"codigo_tipo_afectacion_igv\": \"10\",\r\n      \"total_base_igv\": 100.00,\r\n      \"porcentaje_igv\": 18,\r\n      \"total_igv\": 18,\r\n      \"total_impuestos\": 18,\r\n      \"total_valor_item\": 100,\r\n      \"total_item\": 118\r\n    }\r\n  ] \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/documents",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"documents"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Nota de venta",
+					"protocolProfileBehavior": {
+						"followRedirects": true,
+						"disableUrlEncoding": false,
+						"disableCookies": false
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"prefix\": \"NV\",\r\n    \"series_id\": 10,\r\n    \"establishment_id\": null,\r\n    \"date_of_issue\": \"2021-06-17\",\r\n    \"time_of_issue\": \"16:31:01\",\r\n    \"customer_id\": 36,\r\n    \"currency_type_id\": \"PEN\",\r\n    \"purchase_order\": null,\r\n    \"exchange_rate_sale\": 0,\r\n    \"total_prepayment\": 0,\r\n    \"total_charge\": 0,\r\n    \"total_discount\": 0,\r\n    \"total_exportation\": 0,\r\n    \"total_free\": 0,\r\n    \"total_taxed\": 0,\r\n    \"total_unaffected\": 0,\r\n    \"total_exonerated\": 100,\r\n    \"total_igv\": 0,\r\n    \"total_base_isc\": 0,\r\n    \"total_isc\": 0,\r\n    \"total_base_other_taxes\": 0,\r\n    \"total_other_taxes\": 0,\r\n    \"total_taxes\": 0,\r\n    \"total_value\": 100,\r\n    \"total\": 100,\r\n    \"operation_type_id\": null,\r\n    \"items\": [\r\n        {\r\n            \"item_id\": 1181,\r\n            \"item\": {\r\n                \"id\": 1181,\r\n                \"item_id\": 1181,\r\n                \"name\": null,\r\n                \"full_description\": \"111111111111 - agua\",\r\n                \"description\": \"agua\",\r\n                \"currency_type_id\": \"PEN\",\r\n                \"internal_id\": \"111111111111\",\r\n                \"item_code\": null,\r\n                \"currency_type_symbol\": \"S/\",\r\n                \"sale_unit_price\": \"100.00\",\r\n                \"purchase_unit_price\": \"0.000000\",\r\n                \"unit_type_id\": \"NIU\",\r\n                \"sale_affectation_igv_type_id\": \"20\",\r\n                \"purchase_affectation_igv_type_id\": \"10\",\r\n                \"calculate_quantity\": false,\r\n                \"has_igv\": true,\r\n                \"is_set\": false,\r\n                \"aux_quantity\": 1,\r\n                \"brand\": \"CIELO\",\r\n                \"category\": \"CIELO\",\r\n                \"stock\": -145,\r\n                \"image\": \"https://demo.facturalo.pro/logo/imagen-no-disponible.jpg\",\r\n                \"warehouses\": [\r\n                    { \"warehouse_description\": \"Almacén Oficina Principal\", \"stock\": \"-145.0000\", \"warehouse_id\": 1 },\r\n                    { \"warehouse_description\": \"Almacén - Oficina Arequipa\", \"stock\": \"-1.0000\", \"warehouse_id\": 4 }\r\n                ],\r\n                \"unit_price\": \"100.00\",\r\n                \"presentation\": null\r\n            },\r\n            \"currency_type_id\": \"PEN\",\r\n            \"quantity\": 1,\r\n            \"unit_value\": 100,\r\n            \"affectation_igv_type_id\": \"20\",\r\n            \"affectation_igv_type\": { \"id\": \"20\", \"active\": 1, \"exportation\": 0, \"free\": 0, \"description\": \"Exonerado - Operación Onerosa\" },\r\n            \"total_base_igv\": 100,\r\n            \"percentage_igv\": 18,\r\n            \"total_igv\": 0,\r\n            \"system_isc_type_id\": null,\r\n            \"total_base_isc\": 0,\r\n            \"percentage_isc\": 0,\r\n            \"total_isc\": 0,\r\n            \"total_base_other_taxes\": 0,\r\n            \"percentage_other_taxes\": 0,\r\n            \"total_other_taxes\": 0,\r\n            \"total_plastic_bag_taxes\": 0,\r\n            \"total_taxes\": 0,\r\n            \"price_type_id\": \"01\",\r\n            \"unit_price\": 100,\r\n            \"total_value\": 100,\r\n            \"total_discount\": 0,\r\n            \"total_charge\": 0,\r\n            \"total\": 100,\r\n            \"attributes\": [],\r\n            \"charges\": [],\r\n            \"discounts\": []\r\n        }\r\n    ],\r\n    \"charges\": [],\r\n    \"discounts\": [],\r\n    \"attributes\": [],\r\n    \"guides\": [],\r\n    \"payments\": [],\r\n    \"additional_information\": null,\r\n    \"actions\": { \"format_pdf\": \"a4\" },\r\n    \"apply_concurrency\": false,\r\n    \"type_period\": null,\r\n    \"quantity_period\": 0,\r\n    \"automatic_date_of_issue\": null,\r\n    \"enabled_concurrency\": false,\r\n    \"datos_del_cliente_o_receptor\": {\r\n        \"codigo_tipo_documento_identidad\": \"6\",\r\n        \"numero_documento\": \"10417844398\",\r\n        \"apellidos_y_nombres_o_razon_social\": \"EMPRESA XYZ S.A.\",\r\n        \"codigo_pais\": \"PE\",\r\n        \"ubigeo\": \"150101\",\r\n        \"direccion\": \"Av. 2 de Mayo\",\r\n        \"correo_electronico\": \"demo@gmail.com\",\r\n        \"telefono\": \"427-1148\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{_['url']}}/api/sale-note",
+							"host": [
+								"{{_['url']}}"
+							],
+							"path": [
+								"api",
+								"sale-note"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Anulacion",
+					"protocolProfileBehavior": {
+						"followRedirects": true,
+						"disableUrlEncoding": false,
+						"disableCookies": false
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"fecha_de_emision_de_documentos\": \"2018-10-09\",\r\n  \"documentos\": [\r\n    {\r\n      \"external_id\": \"9d44af0f-9979-4c61-9e5e-291567184995\",\r\n      \"motivo_anulacion\": \"Se duplico documento\"\r\n    }\r\n  ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/voided",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"voided"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Anulacion Ticket",
+					"protocolProfileBehavior": {
+						"followRedirects": true,
+						"disableUrlEncoding": false,
+						"disableCookies": false
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"external_id\": \"7de8774e-4f5f-490e-be70-80324f947feb\",\r\n        \"ticket\": \"1550260573296\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/voided/status",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"voided",
+								"status"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Accion Enviar Xml",
+					"protocolProfileBehavior": {
+						"followRedirects": true,
+						"disableUrlEncoding": false,
+						"disableCookies": false
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"external_id\": \"c6b0b013-c610-4a1e-bdf8-6ef4e708ded6\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/documents/send",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"documents",
+								"send"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Resumen Diario Ticket",
+					"protocolProfileBehavior": {
+						"followRedirects": true,
+						"disableUrlEncoding": false,
+						"disableCookies": false
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"external_id\": \"9a03b745-78c3-403d-afed-b9cef82be746\",\r\n        \"ticket\": \"1550260529157\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/summaries/status",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"summaries",
+								"status"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Resumen Diario",
+					"protocolProfileBehavior": {
+						"followRedirects": true,
+						"disableUrlEncoding": false,
+						"disableCookies": false
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"fecha_de_emision_de_documentos\": \"2019-10-15\",\r\n  \"codigo_tipo_proceso\": \"1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/summaries",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"summaries"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Resumen Diario Anulacion",
+					"protocolProfileBehavior": {
+						"followRedirects": true,
+						"disableUrlEncoding": false,
+						"disableCookies": false
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"fecha_de_emision_de_documentos\": \"2018-10-09\",\r\n  \"codigo_tipo_proceso\": \"3\",\r\n  \"documentos\": [\r\n    {\r\n      \"external_id\": \"f53084f9-6ad7-464f-97f5-ce987937094a\",\r\n      \"motivo_anulacion\": \"Se duplico documento\"\r\n    }\r\n  ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/summaries",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"summaries"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Percepción",
+					"protocolProfileBehavior": {
+						"followRedirects": true,
+						"disableUrlEncoding": false,
+						"disableCookies": false
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"serie_documento\": \"P001\",\r\n  \"numero_documento\": \"#\",\r\n  \"fecha_de_emision\": \"2018-10-09\",\r\n  \"hora_de_emision\": \"10:11:11\",\r\n  \"codigo_tipo_documento\": \"40\",\r\n  \"datos_del_emisor\": {\r\n    \"codigo_pais\": \"PE\",\r\n    \"ubigeo\": \"150101\",\r\n    \"direccion\": \"Av. 2 de Mayo\",\r\n    \"correo_electronico\": \"demo@gmail.com\",\r\n    \"telefono\": \"427-1148\",\r\n    \"codigo_del_domicilio_fiscal\": \"0000\"\r\n  }, \r\n  \"datos_del_cliente_o_receptor\":{\r\n    \"codigo_tipo_documento_identidad\": \"6\",\r\n    \"numero_documento\": \"10414711225\",\r\n    \"apellidos_y_nombres_o_razon_social\": \"EMPRESA XYZ S.A.\",\r\n    \"nombre_comercial\": \"EMPRESA XYZ\",\r\n    \"codigo_pais\": \"PE\",\r\n    \"ubigeo\": \"150101\",\r\n    \"direccion\": \"Av. 2 de Mayo\",\r\n    \"correo_electronico\": \"demo@gmail.com\",\r\n    \"telefono\": \"427-1148\"\r\n  },\r\n  \"codigo_tipo_percepcion\": \"01\",\r\n  \"observaciones\": \"-\",\r\n  \"totales\": {\r\n    \"total_percibido\": 30.00,\r\n    \"total_pagado\": 1000.00\r\n  },\r\n  \"documentos\":[\r\n    {\r\n      \"codigo_tipo_documento\": \"01\",\r\n      \"serie_documento\": \"F001\",\r\n      \"numero_documento\": \"3\",\r\n      \"fecha_de_emision\": \"2018-10-09\",\r\n      \"codigo_tipo_moneda\": \"PEN\",\r\n      \"pagos\": [\r\n        {\r\n          \"fecha_de_pago\": \"2018-10-09\",\r\n          \"total_pago\": 200.00,\r\n          \"codigo_tipo_moneda\": \"PEN\"\r\n        }\r\n      ],\r\n      \"tipo_de_cambio\": {\r\n        \"codigo_tipo_moneda_referencia\": \"PEN\",\r\n        \"codigo_tipo_moneda_objetivo\": \"PEN\",\r\n        \"factor\": 1,\r\n        \"fecha_tipo_de_cambio\": \"2018-10-09\"\r\n      },\r\n      \"fecha_de_percepcion\": \"2018-10-09\",\r\n      \"total_documento\": 400.00,\r\n      \"total_percibido\": 12.00,\r\n      \"total_a_pagar\": 412.00,\r\n      \"total_pagado\": 412.00\r\n    },\r\n    {\r\n      \"codigo_tipo_documento\": \"01\",\r\n      \"serie_documento\": \"F001\",\r\n      \"numero_documento\": \"4\",\r\n      \"fecha_de_emision\": \"2018-10-09\",\r\n      \"codigo_tipo_moneda\": \"USD\",\r\n      \"total_documento\": 200.00,\r\n      \"pagos\": [\r\n        {\r\n          \"fecha_de_pago\": \"2018-10-09\",\r\n          \"total_pago\": 200.00,\r\n          \"codigo_tipo_moneda\": \"USD\"\r\n        }\r\n      ],\r\n      \"tipo_de_cambio\": {\r\n        \"codigo_tipo_moneda_referencia\": \"USD\",\r\n        \"codigo_tipo_moneda_objetivo\": \"PEN\",\r\n        \"factor\": 3.00,\r\n        \"fecha_tipo_de_cambio\": \"2018-10-09\"\r\n      },\r\n      \"fecha_de_percepcion\": \"2018-10-09\",\r\n      \"total_percibido\": 18.00,\r\n      \"total_a_pagar\": 618.00,\r\n      \"total_pagado\": 618.00\r\n    }\r\n  ]\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/perceptions",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"perceptions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Retencion",
+					"protocolProfileBehavior": {
+						"followRedirects": true,
+						"disableUrlEncoding": false,
+						"disableCookies": false
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"serie_documento\": \"R001\",\r\n  \"numero_documento\": \"#\",\r\n  \"fecha_de_emision\": \"2018-10-09\",\r\n  \"hora_de_emision\": \"10:11:11\",\r\n  \"codigo_tipo_documento\": \"20\",\r\n  \"datos_del_emisor\": {\r\n    \"codigo_pais\": \"PE\",\r\n    \"ubigeo\": \"150101\",\r\n    \"direccion\": \"Av. 2 de Mayo\",\r\n    \"correo_electronico\": \"demo@gmail.com\",\r\n    \"telefono\": \"427-1148\",\r\n    \"codigo_del_domicilio_fiscal\": \"0000\"\r\n  },\r\n  \"datos_del_proveedor\":{\r\n    \"codigo_tipo_documento_identidad\": \"6\",\r\n    \"numero_documento\": \"10414711225\",\r\n    \"apellidos_y_nombres_o_razon_social\": \"EMPRESA XYZ S.A.\",\r\n    \"nombre_comercial\": \"EMPRESA XYZ\",\r\n    \"codigo_pais\": \"PE\",\r\n    \"ubigeo\": \"150101\",\r\n    \"direccion\": \"Av. 2 de Mayo\",\r\n    \"correo_electronico\": \"demo@gmail.com\",\r\n    \"telefono\": \"427-1148\"\r\n  },\r\n  \"codigo_tipo_retencion\": \"01\",\r\n  \"observaciones\": \"-\",\r\n  \"totales\": {\r\n    \"total_retenido\": 30.00,\r\n    \"total_pagado\": 1000.00\r\n  },\r\n  \"documentos\":[\r\n    {\r\n      \"codigo_tipo_documento\": \"01\",\r\n      \"serie_documento\": \"F001\",\r\n      \"numero_documento\": \"3\",\r\n      \"fecha_de_emision\": \"2018-10-09\",\r\n      \"codigo_tipo_moneda\": \"PEN\",\r\n      \"pagos\": [\r\n        {\r\n          \"fecha_de_pago\": \"2018-10-09\",\r\n          \"total_pago\": 200.00,\r\n          \"codigo_tipo_moneda\": \"PEN\"\r\n        }\r\n      ],\r\n      \"tipo_de_cambio\": {\r\n        \"codigo_tipo_moneda_referencia\": \"PEN\",\r\n        \"codigo_tipo_moneda_objetivo\": \"PEN\",\r\n        \"factor\": 1,\r\n        \"fecha_tipo_de_cambio\": \"2018-10-09\"\r\n      },\r\n      \"fecha_de_retencion\": \"2018-10-09\",\r\n      \"total_documento\": 400.00,\r\n      \"total_retenido\": 12.00,\r\n      \"total_a_pagar\": 412.00,\r\n      \"total_pagado\": 412.00\r\n    },\r\n    {\r\n      \"codigo_tipo_documento\": \"01\",\r\n      \"serie_documento\": \"F001\",\r\n      \"numero_documento\": \"4\",\r\n      \"fecha_de_emision\": \"2018-10-09\",\r\n      \"codigo_tipo_moneda\": \"USD\",\r\n      \"total_documento\": 200.00,\r\n      \"pagos\": [\r\n        {\r\n          \"fecha_de_pago\": \"2018-10-09\",\r\n          \"total_pago\": 200.00,\r\n          \"codigo_tipo_moneda\": \"USD\"\r\n        }\r\n      ],\r\n      \"tipo_de_cambio\": {\r\n        \"codigo_tipo_moneda_referencia\": \"USD\",\r\n        \"codigo_tipo_moneda_objetivo\": \"PEN\",\r\n        \"factor\": 3.00,\r\n        \"fecha_tipo_de_cambio\": \"2018-10-09\"\r\n      },\r\n      \"fecha_de_retencion\": \"2018-10-09\",\r\n      \"total_retenido\": 18.00,\r\n      \"total_a_pagar\": 618.00,\r\n      \"total_pagado\": 618.00\r\n    }\r\n  ]\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/retentions",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"retentions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Guia Remisión",
+					"protocolProfileBehavior": {
+						"followRedirects": true,
+						"disableUrlEncoding": false,
+						"disableCookies": false
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"serie_documento\": \"T001\",\r\n  \"numero_documento\": \"#\",\r\n  \"fecha_de_emision\": \"2018-10-09\",\r\n  \"hora_de_emision\": \"10:11:11\",\r\n  \"codigo_tipo_documento\": \"09\",\r\n  \"datos_del_emisor\": {\r\n    \"codigo_pais\": \"PE\",\r\n    \"ubigeo\": \"150101\",\r\n    \"direccion\": \"Av. 2 de Mayo\",\r\n    \"correo_electronico\": \"demo@gmail.com\",\r\n    \"telefono\": \"427-1148\",\r\n    \"codigo_del_domicilio_fiscal\": \"0000\"\r\n  },\r\n  \"datos_del_cliente_o_receptor\":{\r\n    \"codigo_tipo_documento_identidad\": \"6\",\r\n    \"numero_documento\": \"10414711225\",\r\n    \"apellidos_y_nombres_o_razon_social\": \"EMPRESA XYZ S.A.\",\r\n    \"nombre_comercial\": \"EMPRESA XYZ\",\r\n    \"codigo_pais\": \"PE\",\r\n    \"ubigeo\": \"150101\",\r\n    \"direccion\": \"Av. 2 de Mayo\",\r\n    \"correo_electronico\": \"demo@gmail.com\",\r\n    \"telefono\": \"427-1148\"\r\n  },\r\n  \"observaciones\": \"aaaaaaaaaaaaaaa\",\r\n  \"codigo_modo_transporte\": \"01\",\r\n  \"codigo_motivo_traslado\": \"01\",\r\n  \"descripcion_motivo_traslado\": \"El cliente solicito envia a su trabajo en ...\",\r\n  \"fecha_de_traslado\": \"2019-01-16\",\r\n  \"codigo_de_puerto\": \"\",\r\n  \"indicador_de_transbordo\": false,\r\n  \"unidad_peso_total\": \"KGM\",\r\n  \"peso_total\": 30.00,\r\n  \"numero_de_bultos\": 1,\r\n  \"numero_de_contenedor\": \"\",\r\n  \"direccion_partida\": {\r\n    \"ubigeo\": \"150101\",\r\n    \"direccion\": \"PUNTO A\"\r\n  },\r\n  \"direccion_llegada\": {\r\n    \"ubigeo\": \"150101\",\r\n    \"direccion\": \"PUNTO 2\"\r\n  },\r\n  \"transportista\": {\r\n    \"codigo_tipo_documento_identidad\": \"6\",\r\n    \"numero_documento\": \"10417844398\",\r\n    \"apellidos_y_nombres_o_razon_social\": \"aaaaaaaaa\"\r\n  },\r\n  \"chofer\": {\r\n    \"codigo_tipo_documento_identidad\": \"1\",\r\n    \"numero_documento\": \"4177874\"\r\n  },\r\n  \"numero_de_placa\": \"A01-1254\",\r\n  \"items\":[\r\n    {\r\n      \"codigo_interno\": \"P0121\",\r\n      \"cantidad\": 2\r\n    }\r\n  ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/dispatches",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"dispatches"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "# API Core Facturalo\n\nConjunto de ejemplos funcionales para consumo de la API de las diferentes versiones del Facturador\n\n### Header ejemplo\n\n```\n'Content-Type: application/json'\n'Authorization: Bearer [TOKEN]'\n\n ```",
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "AKPrrjcFadEl9sOOseeMxAvUTYUYCk4yH2MuTfK7El0rkmsyqN",
+						"type": "string"
+					}
+				]
+			}
+		}
+	]
+}
