@@ -74,6 +74,7 @@ Pro 8 se enfoca en proporcionar un sistema de facturación electrónica completo
 - **Punto de Venta (POS):** Optimiza las ventas con funcionalidades como impresión automática de comprobantes y búsqueda con escáner de códigos de barras.
 - **Reportes Financieros:** Genera reportes detallados para analizar el rendimiento de tu negocio.
 - **Gestión de Usuarios:** Configura permisos y roles para cada usuario según las necesidades de tu empresa.
+- **Multi-Tenancy:** Soporte para múltiples empresas en una sola instalación.
 
 ## Enfoque en el Rendimiento
 
@@ -89,21 +90,79 @@ Pro 8 funciona perfectamente en navegadores web y como aplicación móvil, adapt
 
 ## Tecnologías
 
-### Laravel y PHP
+### <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg" width="20" height="20" style={{ verticalAlign: 'middle', marginRight: '8px' }} /> Laravel y PHP
 
-El sistema de facturación de Facturalo Perú utiliza Laravel, un framework de PHP conocido por su elegancia y simplicidad. Laravel 5.6 permite un desarrollo rápido gracias a características como Eloquent ORM, migraciones de base de datos y un sistema de enrutamiento robusto. PHP 8.4, la versión utilizada, ofrece mejoras significativas en rendimiento y nuevas características como propiedades tipadas.
+El sistema utiliza **Laravel 9.0**, un framework de PHP conocido por su elegancia y simplicidad. Laravel permite un desarrollo rápido gracias a características como Eloquent ORM, migraciones de base de datos y un sistema de enrutamiento robusto. **PHP 8.0+** ofrece mejoras significativas en rendimiento, JIT compilation y nuevas características como tipos union y atributos nativos.
 
-### MySQL
+### <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" width="20" height="20" style={{ verticalAlign: 'middle', marginRight: '8px' }} /> MySQL
 
-Para la base de datos, el sistema utiliza MySQL 5.8, una versión confiable y ampliamente adoptada que ofrece un equilibrio entre rendimiento y facilidad de uso. MySQL permite manejar grandes volúmenes de datos y consultas complejas, ideal para aplicaciones de facturación.
+Para la base de datos, el sistema utiliza **MySQL 8.0**, una versión moderna y de alto rendimiento que ofrece mejoras significativas en velocidad de consultas, soporte JSON mejorado y características avanzadas como window functions. MySQL permite manejar grandes volúmenes de datos y consultas complejas, ideal para aplicaciones de facturación empresarial.
 
-### Vue 2
+### <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" width="20" height="20" style={{ verticalAlign: 'middle', marginRight: '8px' }} /> Vue.js 2
 
-El sistema también aprovecha Vue 2, una biblioteca de JavaScript moderna y progresiva que facilita la creación de interfaces de usuario interactivas. Vue 2 se integra perfectamente con Laravel, permitiendo construir aplicaciones dinámicas y reactivas.
+El sistema aprovecha **Vue 2.6.14**, una biblioteca de JavaScript moderna y progresiva que facilita la creación de interfaces de usuario interactivas. Vue 2 se integra perfectamente con Laravel, permitiendo construir aplicaciones dinámicas y reactivas con un ecosistema robusto de componentes.
 
-### Node.js
+### <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" width="20" height="20" style={{ verticalAlign: 'middle', marginRight: '8px' }} /> Bootstrap 5
 
-Node.js 12.22 se utiliza para manejar tareas del lado del servidor y construir herramientas de desarrollo. Esta versión de Node.js es estable y compatible con muchas bibliotecas modernas, lo que permite ejecutar scripts, manejar dependencias y realizar tareas como la compilación de activos front-end.
+La interfaz de usuario está construida con **Bootstrap 5.3.7**, proporcionando un diseño responsive y componentes UI modernos que garantizan una experiencia consistente en todos los dispositivos, con mejoras en personalización y rendimiento.
+
+### ⚡ Vite
+
+Pro 8 utiliza **Vite 4.4** como herramienta de build moderna, reemplazando Laravel Mix para ofrecer tiempos de compilación ultra-rápidos, Hot Module Replacement instantáneo y una experiencia de desarrollo significativamente mejorada.
+
+### 📊 Chart.js
+
+Para la visualización de datos y reportes, el sistema integra **Chart.js 2.7**, permitiendo crear gráficos interactivos y dashboards informativos que facilitan el análisis del negocio en tiempo real.
+
+### 🔐 Librerías de Seguridad
+
+El sistema implementa **XMLSecLibs 3.1** para garantizar la firma digital y seguridad de los documentos electrónicos conforme a los estándares de SUNAT, asegurando la integridad y autenticidad de cada comprobante.
+
+### 📄 Generación de PDFs
+
+Pro 8 integra múltiples soluciones para la generación de documentos:
+
+- **DomPDF 2.0**: Generación de PDFs desde HTML
+- **mPDF 8.0**: PDFs avanzados con soporte completo para UTF-8 y diseños complejos
+- **FPDF/FPDI**: Manipulación y generación de PDFs de alto rendimiento
+
+### 🏢 Multi-Tenancy
+
+Implementa **Hyn Multi-Tenant 5.8** para soporte robusto de múltiples empresas, permitiendo aislar datos y configuraciones de forma segura en una sola instalación.
+
+### 📊 Manejo de Datos
+
+- **Maatwebsite Excel 3.1**: Importación y exportación de archivos Excel
+- **Papa Parse**: Procesamiento eficiente de archivos CSV
+- **XML2JS**: Procesamiento de documentos XML para integración con SUNAT
+
+### 💳 Integraciones de Pago
+
+- **Culqi PHP 1.3.4**: Integración con pasarela de pagos Culqi
+- **Mercado Pago DX PHP 2.5**: Soporte completo para pagos con Mercado Pago
+
+### 🖨️ Impresión y Códigos
+
+- **QZ Tray 2.2**: Impresión directa desde el navegador sin diálogos
+- **Picqer Barcode Generator 2.2**: Generación de códigos de barras en múltiples formatos
+- **mPDF QRCode 1.2**: Generación de códigos QR para comprobantes
+
+### 🔧 Herramientas de Desarrollo
+
+- **Composer**: Gestión de paquetes PHP
+- **NPM**: Gestión de paquetes JavaScript
+- **Laravel Debugbar 3.6**: Herramienta de debugging para desarrollo
+- **Laravel Dusk 7.0**: Testing automatizado del navegador
+
+### 📦 Librerías Adicionales
+
+- **Guzzle HTTP 7.2**: Cliente HTTP moderno para integraciones API
+- **Intervention Image 2.7**: Procesamiento y manipulación de imágenes
+- **Moment.js 2.22**: Manipulación y formato de fechas
+- **Lodash 4.17**: Utilidades JavaScript de alto rendimiento
+- **Element UI 2.13**: Componentes Vue.js empresariales
+- **Socket.io Client 4.5**: Comunicación en tiempo real
+- **Vuex 3.6**: Gestión de estado centralizada
 
 ## Compatibilidad con Ecosistema
 
