@@ -42,7 +42,7 @@ const config: Config = {
       "classic",
       {
         docs: {
-          //sidebarPath: "./sidebars.ts",
+          sidebarPath: "./sidebars.ts",
           routeBasePath: "/",
           docItemComponent: "@theme/ApiItem", // Derived from docusaurus-theme-openapi
           showLastUpdateTime: true,
@@ -68,7 +68,7 @@ const config: Config = {
   plugins: [
     "plugin-image-zoom",
 
-    "./src/plugins/api-navbar-plugin.js",
+    // "./src/plugins/api-navbar-plugin.js",
 
     [
       "docusaurus-plugin-openapi-docs",
@@ -196,7 +196,7 @@ const config: Config = {
             baseUrl: "/api-rest",
             sidebarOptions: {
               groupPathsBy: "tag",
-              categoryLinkSource: "tag"
+              categoryLinkSource: "tag",
             },
           },
           locked_admin: {
@@ -236,6 +236,13 @@ const config: Config = {
         src: "img/pro8-logo.svg",
       },
       items: [
+        {
+          type: "docSidebar",
+          sidebarId: "tutorialSidebar",
+          position: "left",
+          label: "Navegación",
+          className: "mobile-sidebar-toggle",
+        },
         /*{
           type: "docSidebar",
           sidebarId: "tutorialSidebar",
@@ -248,6 +255,30 @@ const config: Config = {
         //  label: "GitHub",
         //  position: "right",
         //},
+        {
+          to: "/devs/api/introduccion",
+          label: "API",
+          position: "left",
+          className: "navbar-item-custom-btn navbar-item-api",
+        },
+        {
+          to: "/mozo/introduccion",
+          label: "Mozo",
+          position: "left",
+          className: "navbar-item-custom-btn navbar-item-mozo",
+        },
+        {
+          to: "/vendeya/introduccion",
+          label: "VendeYA",
+          position: "left",
+          className: "navbar-item-custom-btn navbar-item-vendeya",
+        },
+        {
+          to: "/app-facturacion/intro",
+          label: "App",
+          position: "left",
+          className: "navbar-item-custom-btn navbar-item-app",
+        },
       ],
     },
     docs: {
