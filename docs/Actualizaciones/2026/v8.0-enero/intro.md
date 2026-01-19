@@ -1,8 +1,9 @@
 ---
-tittle: v8.0 (Enero)
+slug: /v8.0
+sidebar_position: 1
 ---
 
-# Pro 8 v1
+# v8.0
 
 ## 🚀 Nuevas mejoras del sistema
 
