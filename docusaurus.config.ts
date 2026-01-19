@@ -223,6 +223,9 @@ const config: Config = {
         indexDocs: true,
         indexPages: true,
         docsRouteBasePath: '/', // Asegura que el buscador indexe correctamente
+        searchBarPosition: 'right', // Posición del botón de búsqueda
+        searchBarShortcut: true, // Habilitar atajo de teclado (Ctrl+K)
+        searchBarShortcutHint: true, // Mostrar hint del atajo
       }),
     ]
 
