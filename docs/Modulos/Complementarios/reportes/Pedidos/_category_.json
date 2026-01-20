@@ -1,9 +1,0 @@
-{
-  "label": "Pedidos",
-  "position": 5,
-  "link": {
-    "type": "generated-index",
-    "slug": "pedidos-reportes",
-    "description": "Encuentra ayuda sobre el módulo de Reportes, seccion Pedidos."
-  }
-}

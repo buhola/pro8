@@ -1,9 +1,0 @@
-{
-  "label": "Reportes de Ventas",
-  "position": 3,
-  "link": {
-    "type": "generated-index",
-    "slug": "r-ventas",
-    "description": "Encuentra ayuda sobre el módulo de Reportes, seccion Ventas."
-  }
-}

@@ -1,9 +1,0 @@
-{
-  "label": "Sunat",
-  "position": 3,
-  "link": {
-    "type": "generated-index",
-    "slug": "sunat",
-    "description": "Documentacion del modulo de Sunat."
-  }
-}

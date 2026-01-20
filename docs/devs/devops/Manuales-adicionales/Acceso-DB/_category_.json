@@ -1,9 +1,0 @@
-{
-  "label": "Acceso a la Base de Datos",
-  "position": 3,
-  "link": {
-    "type": "generated-index",
-    "slug": "acceso-db",
-    "description": "Encuentra ayuda sobre el Acceso a la Base de Datos."
-  }
-}

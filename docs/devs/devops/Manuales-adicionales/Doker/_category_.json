@@ -1,9 +1,0 @@
-{
-  "label": "Docker",
-  "position": 4,
-  "link": {
-    "type": "generated-index",
-    "slug": "doker",
-    "description": "Encuentra ayuda sobre el uso de Docker."
-  }
-}

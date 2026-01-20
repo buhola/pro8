@@ -1,9 +1,0 @@
-{
-  "label": "Compras",
-  "position": 2,
-  "link": {
-    "type": "generated-index",
-    "slug": "compras-reportes",
-    "description": "Encuentra ayuda sobre el módulo de Reportes, seccion Compras."
-  }
-}

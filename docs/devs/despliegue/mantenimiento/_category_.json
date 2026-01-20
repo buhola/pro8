@@ -1,9 +1,0 @@
-{
-  "label": "Mantenimiento",
-  "position": 3,
-  "link": {
-    "type": "generated-index",
-    "slug": "despliegue/mantenimiento",
-    "description": "Guías para actualizar y migrar el sistema."
-  }
-}
