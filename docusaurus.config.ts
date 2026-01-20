@@ -24,7 +24,7 @@ const config: Config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: "zjceo", // Usually your GitHub org/user name.
+  organizationName: "buhola", // Usually your GitHub org/user name.
   projectName: "pro8", // Usually your repo name.
 
   onBrokenLinks: "throw",
@@ -49,7 +49,7 @@ const config: Config = {
           showLastUpdateAuthor: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl: "https://github.com/zjceo/pro8/tree/main/",
+          editUrl: "https://github.com/buhola/pro8/tree/main/",
         },
         /*blog: {
           showReadingTime: true,
@@ -223,9 +223,6 @@ const config: Config = {
         indexDocs: true,
         indexPages: true,
         docsRouteBasePath: '/', // Asegura que el buscador indexe correctamente
-        searchBarPosition: 'right', // Posición del botón de búsqueda
-        searchBarShortcut: true, // Habilitar atajo de teclado (Ctrl+K)
-        searchBarShortcutHint: true, // Mostrar hint del atajo
       }),
     ]
 
