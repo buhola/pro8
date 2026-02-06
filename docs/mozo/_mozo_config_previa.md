@@ -1,5 +1,6 @@
 ---
 sidebar_position: 2
+unlisted: true
 ---
 
 # Mozo: Configuración Previa
@@ -37,11 +38,12 @@ Ahora configuraremos la sucursal que utilizará Mozo:
 
 :::danger Obligatorio para Restaurantes
 Esta opción es **obligatoria** para restaurantes porque:
+
 - ✅ Permite la correcta emisión de comprobantes de pago con IGV
 - ✅ Garantiza el cumplimiento de la Ley 31556
 - ✅ Asegura la validez legal de las transacciones
 - 📊 **Aplica el 10% de IGV** para servicios de restaurante
-:::
+  :::
 
 ![alt text](img/mozo_config_previa_15.png)
 
@@ -62,6 +64,7 @@ Nos ubicamos en el menú lateral izquierdo y buscamos el módulo de **Restaurant
 ## Ambientes de Trabajo
 
 ### 📍 Configuración de Ambientes
+
 - **Ambientes disponibles:** 4 (2 activados por defecto)
 - **Personalización:** Solo se pueden editar los nombres de ambientes activados
 - **Ejemplo:** Cambiar "Ambiente 1" → "Piso 1"
@@ -75,6 +78,7 @@ Nos ubicamos en el menú lateral izquierdo y buscamos el módulo de **Restaurant
 ## 👥 Gestión de Usuarios
 
 ### Tipos de Usuario Preconfigurados
+
 - **🔑 Administrador:** Acceso completo a todos los módulos
 - **💰 Caja:** Acceso a módulos POS, Mesa y Pedidos
 - **👨‍🍳 Cocina:** Acceso específico para área de cocina
@@ -88,15 +92,15 @@ import Admonition from '@theme/Admonition';
 
 ![alt text](img/mozo_config_previa_16.png)
 
-  Es indispensable asignar uno de los cuatro roles mencionados anteriormente (Administrador, Caja, Cocina o Mozo) para que el usuario pueda acceder correctamente a las funcionalidades del sistema.
+Es indispensable asignar uno de los cuatro roles mencionados anteriormente (Administrador, Caja, Cocina o Mozo) para que el usuario pueda acceder correctamente a las funcionalidades del sistema.
 </Admonition>
 
-
 ### Credenciales Editables
-| Rol | PIN | Contraseña | Gmail |
-|-----|-----|------------|-------|
-| Administrador | ✅ | ✅| ❌ |
-| Otros roles | ✅ | ✅ | ❌ |
+
+| Rol           | PIN | Contraseña | Gmail |
+| ------------- | --- | ---------- | ----- |
+| Administrador | ✅  | ✅         | ❌    |
+| Otros roles   | ✅  | ✅         | ❌    |
 
 > **💡 Importante:** El PIN será utilizado en funcionalidades específicas que se explicarán mas adelante
 
@@ -107,6 +111,7 @@ import Admonition from '@theme/Admonition';
 ![alt text](img/mozo_config_previa_4.png)
 
 ### Funcionalidades
+
 - **Crear notas:** Agregar descripciones personalizadas
 - **Gestión:** Administrar notas existentes
 - **Acceso rápido:** Disponible desde la interfaz principal
@@ -118,34 +123,36 @@ import Admonition from '@theme/Admonition';
 ![alt text](img/mozo_config_previa_3.png)
 
 ### 🖨️ Botones en Comanda
+
 Configure dónde aparecerán los botones de comanda:
 
 ![alt text](img/mozo_config_previa_7.png)
 
 - **Solo Impresora** ⬜
-- **Solo Pantalla de Cocina** ⬜  
+- **Solo Pantalla de Cocina** ⬜
 - **Impresora + Pantalla de Cocina** ⬜
 
 > **Visualización:** Estos ajustes se reflejan directamente en la plataforma Mozo
 
 ### 🔐 Permisos Adicionales para Mozo
+
 Por defecto, el usuario Mozo tiene acceso limitado:
 
 ![alt text](img/mozo_config_previa_5.png)
 
-| Permiso | Estado Default | Descripción |
-|---------|----------------|-------------|
-| **Habilitar Comanda** | ❌ | Acceso a funciones de comanda |
-| **Habilitar POS** | ❌ | Acceso a punto de venta |
-| **Acceso a Mesas** | ✅ | Gestión básica de mesas |
+| Permiso               | Estado Default | Descripción                   |
+| --------------------- | -------------- | ----------------------------- |
+| **Habilitar Comanda** | ❌             | Acceso a funciones de comanda |
+| **Habilitar POS**     | ❌             | Acceso a punto de venta       |
+| **Acceso a Mesas**    | ✅             | Gestión básica de mesas       |
 
 ### 💰 Permisos Adicionales para Cajero
 
 ![alt text](img/mozo_config_previa_6.png)
 
-| Permiso | Estado | Descripción |
-|---------|--------|-------------|
-| **Cerrar Mesa** | ✅ | Permite finalizar el servicio de mesa |
+| Permiso         | Estado | Descripción                           |
+| --------------- | ------ | ------------------------------------- |
+| **Cerrar Mesa** | ✅     | Permite finalizar el servicio de mesa |
 
 ---
 
@@ -156,6 +163,7 @@ En el menu lateral izquierdo esta vez vamos a ingresar al submodulo de **Product
 ![alt text](img/mozo_config_previa_8.png)
 
 ### Visibilidad en Restaurante
+
 - **Productos visibles:** Lista de productos activos en el sistema
 - **Activación masiva:** Hacer visibles todos los productos de una vez
 
@@ -174,7 +182,9 @@ Solo se activan productos con código interno asignado
 - **Ocultos** - Productos no disponibles en la plataforma
 
 ### Activación Individual
+
 Para productos específicos que no están visibles:
+
 1. Localizar el producto en la lista
 2. Activar desde el panel individual
 
@@ -187,6 +197,7 @@ Para productos específicos que no están visibles:
 ## ✅ Verificación de Configuración
 
 ### Checklist Final
+
 - [ ] Ambientes nombrados correctamente
 - [ ] Usuarios creados con roles apropiados
 - [ ] Notas rápidas configuradas

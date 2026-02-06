@@ -12,13 +12,13 @@ import DocsCards from '/src/components/global/DocsCards';
   <title>Mozo.pe</title>
   <meta
     name="description"
-    content="Mozo.pe: Aplicación de toma de pedidos para restaurantes, compatible con el Sistema de Facturación Pro 8 y Pro X para una gestión completa de comandas."
+    content="Mozo.pe: Aplicación de toma de pedidos para restaurantes, compatible con el Sistema de Facturación Pro 8 para una gestión completa de comandas."
   />
 </head>
 
 ## Introducción
 
-Mozo.pe es una aplicación especializada para la toma y gestión de pedidos en restaurantes, diseñada para optimizar el flujo de trabajo desde la mesa hasta la cocina. Totalmente integrada con los sistemas de Facturación Pro 8 y Pro X, permite agilizar el servicio mientras mantiene un control completo de las comandas y la facturación electrónica.
+Mozo.pe es una aplicación especializada para la toma y gestión de pedidos en restaurantes, diseñada para optimizar el flujo de trabajo desde la mesa hasta la cocina. Totalmente integrada con el sistema de Facturación Pro 8, permite agilizar el servicio mientras mantiene un control completo de las comandas y la facturación electrónica.
 
 <DocsCards>
   <DocsCard 
@@ -28,25 +28,34 @@ Mozo.pe es una aplicación especializada para la toma y gestión de pedidos en r
     <p>Aprende a configurar tu cuenta y comenzar a utilizar Mozo.pe en minutos.</p>
   </DocsCard>
 
-  <DocsCard
-    header="Toma de Pedidos"
-    href="pos"
-  >
+<DocsCard
+header="Toma de Pedidos"
+href="pos"
+
+>
+
     <p>Guía completa para la toma de pedidos rápida y eficiente desde cualquier dispositivo.</p>
+
   </DocsCard>
 
-  <DocsCard
-    header="Gestión de Cocina"
-    href="mesas"
-  >
+<DocsCard
+header="Gestión de Cocina"
+href="mesas"
+
+>
+
     <p>Conoce cómo funciona la interfaz de cocina para preparar y entregar pedidos.</p>
+
   </DocsCard>
 
-  <DocsCard
-    header="Facturación"
-    href="introduccion#integración-con-pro-8-y-pro-x"
-  >
-    <p>Emisión de comprobantes electrónicos integrados con Pro 8 y Pro X.</p>
+<DocsCard
+header="Facturación"
+href="introduccion#integración-con-pro-8"
+
+>
+
+    <p>Emisión de comprobantes electrónicos integrados con Pro 8.</p>
+
   </DocsCard>
 
 </DocsCards>
@@ -63,7 +72,7 @@ Mozo.pe ofrece una solución super simple pero potente para restaurantes que nec
 - **Búsqueda Avanzada:** Localización de productos por texto o código de barras.
 - **Gestión de Cocina:** Panel especial para visualizar órdenes recibidas, en preparación y listas para entrega.
 - **Emisión de Comprobantes:** Generación instantánea de boletas, facturas o notas de venta.
-- **Compatibilidad Total:** Funciona perfectamente con los sistemas Pro 8 y Pro X.
+- **Compatibilidad Total:** Funciona perfectamente con el sistema Pro 8.
 
 ## Flujo de Trabajo
 
@@ -101,9 +110,9 @@ El módulo de cocina de Mozo.pe organiza los pedidos en tres columnas para una g
 
 Este sistema permite al personal de cocina organizar su trabajo y priorizar pedidos, mientras los mozos pueden conocer el estado de las órdenes en tiempo real.
 
-## Integración con Pro 8 y Pro X
+## Integración con Pro 8
 
-Mozo.pe está completamente integrado con los Sistemas de Facturación Pro 8 y Pro X, permitiendo:
+Mozo.pe está completamente integrado con el Sistema de Facturación Pro 8, permitiendo:
 
 - Sincronización automática del catálogo de productos
 - Emisión de comprobantes electrónicos que cumplen con requisitos fiscales

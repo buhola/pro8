@@ -55,7 +55,7 @@ function getIconForItem(item) {
     if (item.label.includes('Devs')) return <Code size={18} />;
     
     // New icons for remaining sections
-    if (item.label.includes('Mozo.pe')) return <Utensils size={18} />;
+    if (item.label.includes('Mozo v4')) return <Utensils size={18} />;
     if (item.label.includes('Multi Empresa')) return <Users  size={18} />; 
     if (item.label.includes('Dashboard')) return <LayoutDashboard  size={18} />;
     if (item.label.includes('Introducción')) return <Sparkles  size={18} />;

@@ -2,6 +2,7 @@
 title: Mozo.pe vs Mozo Compilado
 description: "Comparación detallada entre las dos versiones del sistema Mozo: la versión web Mozo.pe y la versión compilada para instalación local."
 sidebar_position: 1
+unlisted: true
 ---
 
 import DocsCard from '/src/components/global/DocsCard';
@@ -31,11 +32,14 @@ Existen **dos versiones** del sistema Mozo, cada una diseñada para diferentes n
     <p>Versión web gratuita accesible desde cualquier navegador sin instalación.</p>
   </DocsCard>
 
-  <DocsCard
-    header="Mozo Compilado"
-    href="#mozo-compilado-versión-instalable"
-  >
+<DocsCard
+header="Mozo Compilado"
+href="#mozo-compilado-versión-instalable"
+
+>
+
     <p>Versión instalable que se integra directamente en el sistema del cliente final.</p>
+
   </DocsCard>
 </DocsCards>
 
@@ -43,15 +47,15 @@ Existen **dos versiones** del sistema Mozo, cada una diseñada para diferentes n
 
 ## 📊 Tabla Comparativa
 
-| Característica | Mozo.pe (Web) | Mozo Compilado |
-|----------------|---------------|----------------|
-| **Costo** | ✅ Gratuito desde la web | 💰 Requiere suscripción anual + hosting |
-| **Instalación** | ❌ No requiere instalación | ✅ Instalación individual por cliente |
-| **Configuración** | ⚙️ Requiere configurar URL y conexión | 🔧 Se instala en el sistema del cliente |
-| **Tipo de Usuario** | ❌ No puede usar el tipo de usuario "Mozo" | ✅ Puede usar mozos como usuarios |
-| **Personalización** | ❌ No es personalizable | ✅ Totalmente personalizable (imágenes, logos, colores) |
-| **Limitaciones** | ⚠️ Funcionalidad limitada | ✅ Sin limitaciones de funcionalidad |
-| **Documentación** | 📚 [Manual Mozo.pe](https://manual.uio.la/Pro7/mozo) | 📚 [Manual Mozo.pe](https://manual.uio.la/Pro7/mozo) |
+| Característica      | Mozo.pe (Web)                                        | Mozo Compilado                                          |
+| ------------------- | ---------------------------------------------------- | ------------------------------------------------------- |
+| **Costo**           | ✅ Gratuito desde la web                             | 💰 Requiere suscripción anual + hosting                 |
+| **Instalación**     | ❌ No requiere instalación                           | ✅ Instalación individual por cliente                   |
+| **Configuración**   | ⚙️ Requiere configurar URL y conexión                | 🔧 Se instala en el sistema del cliente                 |
+| **Tipo de Usuario** | ❌ No puede usar el tipo de usuario "Mozo"           | ✅ Puede usar mozos como usuarios                       |
+| **Personalización** | ❌ No es personalizable                              | ✅ Totalmente personalizable (imágenes, logos, colores) |
+| **Limitaciones**    | ⚠️ Funcionalidad limitada                            | ✅ Sin limitaciones de funcionalidad                    |
+| **Documentación**   | 📚 [Manual Mozo.pe](https://manual.uio.la/Pro7/mozo) | 📚 [Manual Mozo.pe](https://manual.uio.la/Pro7/mozo)    |
 
 ---
 
@@ -154,18 +158,24 @@ Ambas versiones del sistema Mozo incluyen las siguientes funcionalidades princip
     <p>Guía completa para instalar Mozo Compilado en servidores con cPanel.</p>
   </DocsCard>
 
-  <DocsCard
-    header="Configuración Previa"
-    href="mozo_config_previa"
-  >
+<DocsCard
+header="Configuración Previa"
+href="mozo_config_previa"
+
+>
+
     <p>Pasos necesarios antes de comenzar a usar el sistema Mozo.</p>
+
   </DocsCard>
 
-  <DocsCard
-    header="Iniciar Sesión"
-    href="iniciar-sesion-mozo"
-  >
+<DocsCard
+header="Iniciar Sesión"
+href="iniciar-sesion-mozo"
+
+>
+
     <p>Cómo acceder al sistema Mozo por primera vez.</p>
+
   </DocsCard>
 </DocsCards>
 
@@ -200,18 +210,24 @@ Ambas versiones del sistema Mozo incluyen las siguientes funcionalidades princip
     <p>Aprende a usar el módulo de Punto de Venta integrado.</p>
   </DocsCard>
 
-  <DocsCard
-    header="Módulo Mesas"
-    href="mesas"
-  >
+<DocsCard
+header="Módulo Mesas"
+href="mesas"
+
+>
+
     <p>Gestión completa del área de mesas y asignaciones.</p>
+
   </DocsCard>
 
-  <DocsCard 
-    header="Sistema Pro 8"
-    href="/"
-  >
+<DocsCard
+header="Sistema Pro 8"
+href="/"
+
+>
+
     <p>Conoce el sistema principal de facturación electrónica.</p>
+
   </DocsCard>
 
 </DocsCards>
@@ -231,5 +247,3 @@ Mozo Compilado requiere un hosting básico. Con 1 GB de almacenamiento puedes al
 :::tip Recomendación
 Para restaurantes que están comenzando, recomendamos iniciar con Mozo.pe (web) para familiarizarse con el sistema, y luego migrar a Mozo Compilado cuando el negocio crezca y requiera más funcionalidades.
 :::
-
-

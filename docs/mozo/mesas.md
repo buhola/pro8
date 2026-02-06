@@ -1,265 +1,197 @@
----
-sidebar_position: 5
----
+# Mesas
 
-# 📋 Módulo Mesas
+## 1. Acceso al Módulo de Mesas
 
-El **Módulo Mesa** permite a los mozos gestionar de manera eficiente las mesas del restaurante, asignar pedidos y coordinar con la cocina para la preparación de los platillos. Los mozos pueden seleccionar una mesa, tomar el pedido de los clientes y luego enviarlo a la cocina mediante una **comanda**, que puede imprimirse para facilitar el trabajo del equipo de cocina.
+Para acceder al módulo de gestión de mesas, haga clic en el botón **"MESAS"** ubicado en la barra de navegación superior.
 
-![Interfaz principal de Mesas](img/mozo_mesas_principal.jpg)
+![Acceso al módulo de mesas](img/mesas_v4_1.png)
 
----
+## 2. Vista Principal - Selector de Mesas
 
-## 🎨 Estados de las Mesas
+### 2.1 Descripción General
 
-Cada mesa tiene un indicador visual que muestra su estado actual:
+La vista principal muestra un grid con todas las mesas disponibles en el establecimiento, organizadas por pisos (Piso 01, Piso 02, etc.).
 
-### 🟢 Mesa Libre
-La mesa está **disponible** para asignar a nuevos clientes.
+![Vista principal del selector de mesas](img/mesas_v4_1.png)
 
-| Mesa Libre | Vista |
-|------------|-------|
-| Estado: Disponible | ![Mesa libre](img/mozo_mesas_1.png) |
+## 3. Selección de Mesa
 
-### 🟡 Mesa Ocupada
-La mesa está **en uso** con clientes atendidos.
+### 3.1 Seleccionar una Mesa Disponible
 
-| Mesa Ocupada | Vista |
-|--------------|-------|
-| Estado: En servicio | ![Mesa ocupada](img/mozo_mesas_2.png) |
+Para seleccionar una mesa disponible:
 
-::::danger ⚠️ IMPORTANTE - Control de Tiempo
-Cada mesa registra el **tiempo desde que fue abierta**, permitiendo que el personal de servicio tenga control sobre la duración del servicio y agilice la rotación de las mesas.
+1. Haga clic sobre la mesa deseada
+2. La mesa se resaltará con un borde verde
 
-**Ejemplo:** `3 Pedidos - 170 hs y 0 min`
-::::
+![Selección de mesa](img/mesas_v4_13.png)
 
----
+### 3.2 Gestión Individual de Mesas
 
-## 📝 Proceso de Gestión de Mesa
+#### 1. Abrir Mesa
 
-### Paso 1: Abrir Mesa
+1. En el panel derecho se mostrará la información de la mesa:
+   - **Número de mesa y Piso**
+   - **1. Personas en la mesa**: Campo editable
+   - **2. Cliente**: Campo para ingresar nombre del cliente
+   - **3. Mozo**: Selector de mozo asignado
+   - **4. Comentarios**: Área de texto para observaciones
 
-Cuando llegan los clientes, el mozo debe configurar la mesa con la siguiente información:
+![Panel de información de la mesa](img/mesas_v4_14.png)
 
-![Formulario de apertura de mesa](img/mozo_mesas_4.png)
+2. Complete la información requerida
+3. Haga clic en **"Abrir mesa"** para activarla
 
-#### Campos del Formulario
+#### 2. Opciones de Visualización
 
-| N° | Campo | Descripción |
-|----|-------|-------------|
-| **1** | **Personas en la mesa** | Cantidad de comensales que ocuparán la mesa |
-| **2** | **Cliente** | Nombre del cliente (opcional) - Por defecto: "Clientes - Varios" |
-| **3** | **Mozo** | Seleccionar al mozo asignado (configurado previamente en panel administrativo) |
-| **4** | **Comentarios** | Notas especiales o requerimientos del cliente |
-| **5** | **Abrir mesa** | Botón para confirmar y activar la mesa |
+En la parte superior del módulo puede configurar qué tipo de mesas mostrar:
 
-::::tip 💡 Buenas Prácticas
-- Verificar el número correcto de personas antes de abrir la mesa
-- Agregar comentarios sobre alergias o preferencias especiales
-- Asignar el mozo correcto para facilitar el seguimiento del servicio
-::::
+![Filtros de visualización](img/mesas_v4_12.png)
 
----
+- **Disponibles**: Mostrar mesas libres
+- **Ocupadas**: Mostrar mesas en uso
+- **Fuera de servicio**: Mostrar mesas no disponibles
 
-### Paso 2: Tomar el Pedido
+## 4. Mover Mesa a Otro Ambiente
 
-Una vez abierta la mesa, el mozo procede a tomar el pedido:
+### 4.1 Iniciar el Proceso de Traslado
 
-![Selección de platillos](img/mozo_mesas_5.png)
+Cuando necesite reubicar una mesa a otro ambiente (piso):
 
-1. **Navegación por categorías**
-   - Todos, CEVICHES, ENTRADAS, LENGUADO, TIRADITO, FRITURAS
+1. Seleccione la mesa que desea mover
+2. Aparecerá un icono de traslado
+3. Haga clic en **"Mover a otro ambiente"**
 
-2. **Búsqueda de productos**
-   - Usar el buscador para encontrar platillos específicos rápidamente
+![Opción de mover mesa](img/mesas_v4_5.png)
 
-3. **Agregar productos**
-   - Hacer clic en los platillos deseados para agregarlos al pedido
-   - Los productos seleccionados aparecerán en el panel derecho con precio y cantidad
+### 4.2 Confirmar el Traslado
 
----
+Se abrirá un modal con las siguientes opciones:
 
-### Paso 3: Gestionar el Pedido
+![Modal de confirmación de traslado](img/mesas_v4_6.png)
 
-![Opciones de gestión](img/mozo_mesas_6.png)
+- **DESDE**: Muestra el piso y mesa de origen (Piso 01 - Mesa 18)
+- **HACIA**: Seleccione el ambiente destino usando el dropdown
+- **Seleccionar Ambiente**: Elija el piso de destino (ej. Piso 02)
 
-Una vez seleccionados los platillos, el mozo tiene tres opciones principales:
+Haga clic en **"Confirmar"** para completar el traslado, o **"Cancelar"** para abortar la operación.
 
-#### 🧾 Precuenta
+### 4.3 Resultado del Traslado
 
-Genera un resumen del pedido antes de procesar el pago:
+Una vez confirmado el traslado, la mesa será movida al nuevo ambiente y el sistema actualizará automáticamente el estado.
 
-![Modal de precuenta](img/mozo_mesas_7.png)
+## 5. Editar Configuración de Mesa
 
-**Información mostrada:**
-- Mesa y mozo asignado
-- Listado completo de productos con cantidades y precios
-- Total a pagar
+### 5.1 Acceder a la Edición
 
-**Opciones:**
-- 📄 **Descargar PDF** de la precuenta
-- 🖨️ **Imprimir** directamente
+Para modificar la configuración de una mesa:
 
----
+1. Haga clic en el botón **"Editar mesas"**
+2. Seleccione la mesa a editar
 
-#### 📨 Enviar a Comanda
+![Opción editar mesas](img/mesas_v4_2.png)
 
-Envía los platillos seleccionados a la cocina:
+### 5.2 Filtros de Visualización
 
-![Modal de comanda](img/mozo_mesas_8.png)
+En la parte superior se encuentran las opciones de filtrado:
 
-**Proceso:**
-1. Seleccionar los productos a enviar (pueden ser todos o parciales)
-2. Ver estado: **TOTAL**, **ENVIADO**, **PENDIENTE**
-3. Elegir acción:
-   - 📄 **Imprimir** comanda para cocina
-   - 🖨️ **Imprimir y enviar** comanda
-   - 📤 **Enviar a Comanda** digitalmente
+![Filtros de visualización](img/mesas_v4_15.png)
 
-::::warning ⚠️ IMPORTANTE - Comandas
-**Una vez enviada la comanda, no podrá ser eliminada ni reenviada.** La comanda puede ser impresa o visualizada digitalmente por el equipo de cocina.
-::::
+- **Mozo**: Filtrar mesas por mozo asignado
+- **Tiempo**: Filtrar por tiempo de ocupación
+- **N° Pedidos**: Filtrar por cantidad de pedidos
+- **Monto**: Filtrar por monto acumulado
+- **Personas**: Filtrar por cantidad de personas
 
----
+### 5.3 Estados de las Mesas
 
-#### ❌ Cerrar Mesa
+Las mesas se identifican visualmente según su estado:
 
-Confirma el cierre de la mesa para proceder al cobro:
+![Estados de las mesas](img/mesas_v4_16.png)
 
-![Confirmación de cierre](img/mozo_mesas_9.png)
+- **Verde con check (✓)**: Mesa disponible
+- **Gris con check (✓)**: Mesa ocupada (no se puede desactivar)
+- **Círculo con línea**: Mesa fuera de servicio
+- **Patrón de cuadros**: Mesa reubicada
 
-El sistema solicitará confirmación antes de cerrar la mesa.
+### 5.4 Opciones de Mesa
 
----
+![Opciones de mesa](img/mesas_v4_17.png)
 
-### Paso 4: Finalizar Venta
+Al hacer clic derecho sobre una mesa, se desplegará un menú contextual con las siguientes opciones:
 
-::::danger 🔒 PERMISOS REQUERIDOS
-**Solo los usuarios con rol de Administrador** pueden finalizar la venta y generar el comprobante. El usuario con rol de mozo **NO puede finalizar la venta**.
-::::
+- **Nombre**: Permite modificar el nombre de la mesa
+- **Forma**: Permite cambiar la forma de la mesa entre **Cuadrada** y **Redonda**
 
-Al momento de finalizar la venta, el sistema ofrece dos opciones para generar el comprobante:
+![Forma de la mesa](img/mesas_v4_4.png)
 
----
+## 6. Unir Mesas
 
-## 💳 Opciones de Finalización de Venta
+### 6.1 Seleccionar Mesas para Unir
 
-### Opción 1: Por Consumo (Comprobante Consolidado)
+Para unir múltiples mesas:
 
-![Comprobante por consumo](img/mozo_mesas_10.png)
+1. Seleccione la primera mesa haciendo clic sobre ella
+2. Mantenga presionada la tecla Ctrl (o Cmd en Mac)
+3. Seleccione las mesas adicionales que desea unir
+4. Las mesas seleccionadas se resaltarán con un borde punteado
 
-El botón **"Por consumo"** genera un comprobante donde **todos los productos se consolidan** en una sola línea con el total general.
+![Proceso de unión de mesas](img/mesas_v4_10.png)
 
-**Características:**
-- ✅ Un solo ítem en el comprobante
-- ✅ Descripción: "Por consumo"
-- ✅ Muestra el total consolidado de todos los platillos
-- ✅ Ideal para clientes que no requieren detalle de productos
+### 6.2 Confirmar la Unión
 
-**Ejemplo del comprobante:**
+1. Aparecerá un banner naranja en la parte superior indicando:
+   - **"Uniendo Mesa 5"**
+   - **"Selecciona las mesas secundarias (3 seleccionadas)"**
+2. En el panel derecho se mostrará la sección **"Mesas unidas"** con la lista de mesas seleccionadas
+3. Haga clic en **"Confirmar unión"** para completar el proceso
 
-| CÓD. | CANT. | UNIDAD | DESCRIPCIÓN | P.UNIT | TOTAL |
-|------|-------|--------|-------------|--------|-------|
-| 00002 | 1 | NIU | Por consumo | 297 | 297 |
+![Confirmar unión](img/mesas_v4_11.png)
 
-**TOTAL A PAGAR: S/ 297.00**
+4. Si desea cancelar, haga clic en **"Cancelar"**
 
-::::tip 💡 ¿Cuándo usar "Por Consumo"?
-- Para agilizar el proceso de facturación
-- Cuando el cliente no necesita ver el detalle de cada platillo
-- En servicios rápidos o buffets
-- Para mantener comprobantes más simples y cortos
-::::
+### 6.3 Visualización de Mesa Unida
 
----
+![Vista de mesa unida](img/mesas_v4_18.png)
 
-### Opción 2: Finalizar Venta (Comprobante Detallado)
+Una vez unidas, las mesas se mostrarán agrupadas con el identificador compuesto (ej. "MESA 8 + 3 + 7").
 
-![Comprobante detallado](img/mozo_mesas_12.png)
+## 7. Opciones Contextuales de Mesa
 
-El botón **"Finalizar Venta"** genera un comprobante donde **cada producto aparece listado individualmente** con su precio correspondiente.
+### 7.1 Menú de Acciones
 
-**Características:**
-- ✅ Todos los productos listados por separado
-- ✅ Detalle completo de cada platillo ordenado
-- ✅ Precios individuales visibles
-- ✅ Ideal para clientes que requieren detalle completo
+Al hacer clic derecho sobre una mesa ocupada, se desplegará un menú contextual con las siguientes opciones:
 
-**Ejemplo del comprobante:**
+- **Unir mesas**: Permite unir la mesa actual con otras mesas
+- **Editar mesa**: Abre el modal de edición de configuración
 
-| CÓD. | CANT. | UNIDAD | DESCRIPCIÓN | P.UNIT | TOTAL |
-|------|-------|--------|-------------|--------|-------|
-| 00001 | 1 | NIU | TRIO DE CEVICHE DE POTA | 72.00 | 72.00 |
-| 00002 | 1 | NIU | CEVICHE DE CONCHAS NEGRAS | 62.00 | 62.00 |
-| 00003 | 1 | NIU | CEVICHE CLÁSICO MIXTO | 62.00 | 62.00 |
+### 7.2 Estados Visuales de las Mesas
 
-**TOTAL A PAGAR: S/ 196.00**
+#### 7.2.1 Leyenda de Colores
 
-::::tip 💡 ¿Cuándo usar "Finalizar Venta"?
-- Cuando el cliente solicita ver el detalle de cada platillo
-- Para facturas que requieren desglose de productos
-- En pedidos corporativos o eventos especiales
-- Para mayor transparencia con el cliente
-::::
+- 🟢 **Verde claro**: Mesa disponible
+- 🟧 **Naranja**: Mesa con órdenes servidas
+- 🟥 **Rojo/Rosa**: Mesa con órdenes pendientes
+- 🟦 **Azul**: Frecuenta generada
+- ⬜ **Gris**: Mesa fuera de servicio
+- 🟩 **Verde oscuro**: Mesa ocupada sin pedidos
+- 🔲 **Patrón de cuadros**: Mesa reubicada
 
----
+#### 7.2.2 Información Adicional en las Mesas
 
-### 📊 Comparación de Opciones
+Las mesas ocupadas muestran información relevante:
 
-| Característica | Por Consumo | Finalizar Venta |
-|----------------|-------------|-----------------|
-| **Detalle de productos** | ❌ No muestra | ✅ Muestra todos |
-| **Velocidad de emisión** | ⚡ Más rápido | 🕐 Estándar |
-| **Longitud del comprobante** | 📄 Corto | 📋 Detallado |
-| **Transparencia** | 🔒 Básica | 🔍 Total |
-| **Ideal para** | Servicio rápido | Servicio detallado |
+- **Mozo asignado**: Icono de persona con nombre
+- **Tiempo de ocupación**: Reloj con tiempo transcurrido (ej. "43m", "45m")
+- **Número de pedidos**: Cantidad de órdenes (ej. "🍴 1")
+- **Monto acumulado**: Total de la cuenta (ej. "S/ 51.20", "S/ 90.70")
 
----
+### 7.3 Botón "Editar mesas"
 
-#### Opciones de Comprobante
+El botón verde **"Editar mesas"** en la esquina superior derecha permite acceder rápidamente al modo de edición para modificar la configuración de las mesas del establecimiento.
 
-El sistema permite generar diferentes tipos de comprobantes:
+### Notas Importantes
 
-| Opción | Tipo de Comprobante | Serie |
-|--------|---------------------|-------|
-| **1** | N. Venta / Boleta / Factura | NV01 (seleccionable) |
-| **2** | Vista previa del comprobante | Panel derecho |
-| **3** | **Por Consumo** / **Finalizar Venta** | Botones de confirmación |
-
-**Detalles mostrados en el comprobante:**
-- Información del negocio (logo, RUC, dirección comercial, email)
-- **NOTA DE VENTA** con fecha y hora de emisión
-- Cliente asignado
-- Mesa y mozo (si aplica)
-- Detalle de productos (según opción seleccionada)
-- **Condición de pago:** Efectivo con monto exacto
-- Vendedor asignado (Caja)
-
----
-
-## ⚙️ Gestión de Mesas
-
-### Editar Configuración de Mesas
-
-El botón **"Editar mesas"** permite personalizar las mesas del establecimiento:
-
-![Botón editar mesas](img/mozo_mesas_13.png)
-
-#### Modal de Edición
-
-![Modal de edición de mesa](img/mozo_mesas_14.png)
-
-**Opciones configurables:**
-1. **Nombre** de la mesa (Ejemplo: Mesa 3)
-2. **Forma** de visualización:
-   - 🟩 Cuadrado
-   - 🟢 Circular
-
-**Botón:** 💾 **Guardar** cambios
-
-::::tip 💡 Organización Visual
-La forma de las mesas ayuda a replicar visualmente la distribución física del restaurante en el sistema, facilitando la identificación rápida por parte del personal.
-::::
-
----
+- Las mesas ocupadas no pueden ser desactivadas hasta que se cierre la cuenta
+- Al unir mesas, se combinan los pedidos y el monto total
+- Los cambios en la configuración de mesas se reflejan inmediatamente en el sistema
+- El tiempo de ocupación se actualiza en tiempo real
