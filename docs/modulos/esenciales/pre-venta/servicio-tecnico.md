@@ -1,3 +1,8 @@
+---
+sidebar_position: 5
+title: Servicio de soporte técnico
+---
+
 # Servicio de soporte técnico
 
 En esta área podrás generar fichas de soporte técnico.

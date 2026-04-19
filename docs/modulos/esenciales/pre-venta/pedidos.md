@@ -1,3 +1,7 @@
+---
+sidebar_position: 4
+title: Pedidos
+---
 # Pedidos
 
 En esta área podrás generar pedidos de venta. Sigue estos pasos para realizarlo:

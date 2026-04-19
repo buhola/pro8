@@ -66,39 +66,71 @@ href="/finanzas"
 
 El punto de inicio que muestra un resumen de todas las operaciones de tu negocio: ventas, compras, productos por agotarse y clientes con mayores compras. Te ofrece una visión general del estado actual de tu empresa.
 
-### Pre-venta
+### Pre Venta
 
 Gestiona documentos previos a la venta como cotizaciones, permitiéndote organizar tus operaciones comerciales antes de generar comprobantes fiscales.
+
+En cuentra mas informacion en el siguiente enlace:
+
+- [Pre Venta](/pre-venta)
 
 ### Ventas
 
 Módulo central que permite generar nuevos comprobantes (facturas, boletas) y mantener un listado de todos los documentos emitidos con información sobre su estado y saldos pendientes. Incluye también notas de venta y puntos de venta.
 
+En cuentra mas informacion en el siguiente enlace:
+
+- [Ventas](/ventas)
+
 ### Productos y Servicios
 
 Catálogo completo donde puedes registrar productos y servicios de forma individual o masiva. Incluye funcionalidades para gestionar conjuntos, packs, promociones, categorías, marcas y series.
+
+En cuentra mas informacion en el siguiente enlace:
+
+- [Productos y Servicios](/productos-servicios)
 
 ### Inventario
 
 Control total de tu stock con funciones para registrar movimientos, traslados, devoluciones a proveedores y acceso a reportes detallados como cardex e inventario valorizado.
 
+En cuentra mas informacion en el siguiente enlace:
+
+- [Inventario](/inventario)
+
 ### Finanzas
 
 Administración integral de ingresos y salidas de dinero, con reportes detallados de caja chica, cuentas bancarias y otros métodos de pago que hayas registrado.
 
+En cuentra mas informacion en el siguiente enlace:
+
+- [Finanzas](/finanzas)
+
 ## Módulos Especializados
 
-### SUNAT
+### Guías de Remisión
 
 Gestión de guías de remisión (remitente y transportista) y registro de transportistas, conductores y vehículos para cumplir con los requisitos fiscales.
+
+En cuentra mas informacion en el siguiente enlace:
+
+- [Guías de Remisión](/guias-remision)
 
 ### Contabilidad
 
 Conexión con sistemas contables como Cire para reportar ventas y compras, además de ofrecer formatos exportables compatibles con diferentes plataformas contables.
 
+En cuentra mas informacion en el siguiente enlace:
+
+- [Contabilidad](/contabilidad)
+
 ### Reportes
 
 Diferentes tipos de informes orientados a ventas, compras y operaciones generales, todos exportables en formatos PDF y Excel para facilitar el análisis de datos.
+
+En cuentra mas informacion en el siguiente enlace:
+
+- [Reportes](/reportes)
 
 ### Tienda Virtual
 

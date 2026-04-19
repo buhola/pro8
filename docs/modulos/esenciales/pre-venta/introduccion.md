@@ -23,14 +23,14 @@ El Módulo de Preventas es una potente herramienta diseñada para gestionar efic
 <DocsCards>
   <DocsCard 
     header="Oportunidades de Venta"
-    href="/modulos/esenciales/Preventa/Oportunidad-de-Venta"
+    href="/modulos/esenciales/pre-venta/oportunidad-de-venta"
   >
     <p>Gestiona prospectos comerciales y registra el primer contacto con potenciales clientes.</p>
   </DocsCard>
 
 <DocsCard
 header="Cotizaciones"
-href="/modulos/esenciales/Preventa/Cotizaciones"
+href="/modulos/esenciales/pre-venta/cotizaciones"
 
 >
 
@@ -40,7 +40,7 @@ href="/modulos/esenciales/Preventa/Cotizaciones"
 
 <DocsCard
 header="Contratos"
-href="/modulos/esenciales/Preventa/Contratos"
+href="/modulos/esenciales/pre-venta/contratos"
 
 >
 
@@ -50,7 +50,7 @@ href="/modulos/esenciales/Preventa/Contratos"
 
 <DocsCard
 header="Pedidos"
-href="/modulos/esenciales/Preventa/Pedidos"
+href="/modulos/esenciales/pre-venta/pedidos"
 
 >
 
@@ -59,8 +59,8 @@ href="/modulos/esenciales/Preventa/Pedidos"
   </DocsCard>
 
 <DocsCard
-header="Soporte Técnico"
-href="/modulos/esenciales/Preventa/Servicio-de-soporte-tecnico"
+header="Servicios de Soporte Técnico"
+href="/modulos/esenciales/pre-venta/servicio-tecnico"
 
 >
 
@@ -75,7 +75,7 @@ href="/modulos/esenciales/Preventa/Servicio-de-soporte-tecnico"
 El Módulo de Preventas ofrece una solución completa para organizar la fase previa a la venta, permitiendo documentar cada etapa del proceso comercial. Con documentos internos adaptados a diferentes necesidades, facilita el seguimiento de oportunidades, la elaboración de propuestas y la gestión de servicios técnicos sin generar aún transacciones formales que afecten al sistema contable o de inventarios.
 
 ## Características Principales
-
+s
 - **Documentos Comerciales Internos:** Generación de documentos que no son enviados a SUNAT.
 - **Múltiples Tipos de Documentos:** Oportunidades de venta, cotizaciones, contratos, pedidos y servicios técnicos.
 - **Formatos Personalizables:** Opciones de impresión en formatos A4, A5 y ticket para diferentes necesidades.

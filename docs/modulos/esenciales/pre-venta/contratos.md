@@ -1,3 +1,8 @@
+---
+title: Contratos
+sidebar_position: 3
+---
+
 # Contratos
 
 Los contratos son acuerdos vinculantes que establecen los términos para ambas partes involucradas, donde se definen aspectos como los precios de los productos, los terminos de pago, y otros detalles relevantes en una transacción o acuerdo de compra. Podrá cambiar el estado de

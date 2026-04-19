@@ -1,3 +1,8 @@
+---
+title: Oportunidad de venta
+sidebar_position: 1
+---
+
 # Oportunidad de venta
 
 Una oportunidad de venta es una posibilidad de cerrar un trato con un cliente potencial, que surge cuando este muestra interés en un producto o servicio y avanza en el proceso de compra. En una oportunidad de venta, se pueden incluir observaciones o detalles, así como cargar archivos si es necesario.

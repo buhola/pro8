@@ -1,3 +1,8 @@
+---
+title: Cotizaciones
+sidebar_position: 2
+---
+
 # Cotizaciones
 
 Una cotización es una oferta de precios en la cual se especifican las condiciones, como el tiempo de validez, el tiempo de entrega y los términos de pago.
