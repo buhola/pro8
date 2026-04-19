@@ -7,10 +7,10 @@ sidebar_position: 0
 import DocsCard from '/src/components/global/DocsCard';
 import DocsCards from '/src/components/global/DocsCards';
 
-# Introducción a la plataforma Pro7
+# Introducción a la plataforma Pro 8
 
 <head>
-  <title>Introducción a los módulos de Pro 8 - Facturalo Perú</title>
+  <title>Introducción a los módulos de Pro 8</title>
   <meta
     name="description"
     content="Conoce los módulos y funcionalidades principales del Sistema de Facturación Pro 8 para gestionar tu negocio de manera eficiente."
@@ -116,9 +116,6 @@ Funcionalidades específicas para el sector farmacéutico, con listados de produ
 
 Herramientas para gestionar check-in y check-out de habitaciones, con categorías para clasificar las instalaciones y una recepción centralizada.
 
-### Producción
-
-Orientado al rubro de fabricación, permite registrar procesos productivos y gestionar el consumo de insumos para la elaboración de productos finales.
 
 ## Módulos en Desarrollo
 
