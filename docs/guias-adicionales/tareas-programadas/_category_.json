@@ -1,0 +1,9 @@
+{
+  "label": "Tareas programadas",
+  "position": 9,
+  "link": {
+    "type": "generated-index",
+    "slug": "tareas-programadas",
+    "description": "Encuentra ayuda sobre el módulo de Guias adicionales."
+  }
+}
