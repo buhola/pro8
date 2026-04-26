@@ -45,19 +45,25 @@ Haz esto desde el panel de administración, en la misma red donde está BuhoPrin
 
 ### 1. Ingresar al sistema y configurarlo
 
-Una vez logueados nos vamos a Dashboard y buscamos la opción **CONFIGURACION Y MAS** en el apartado de **CONFIGURACIONES GLOBALES**. La opción del recuadro rojo.
+Una vez logueados nos vamos a Dashboard y buscamos la opción **Configuraciones y más** en el apartado de **Configuraciones globales**. 
+
+![alt text](img/buho_printer_new_3.png)
 
 ### 2. Dirigirse al apartado de Empresa, la opción de AVANZADO
 
+![alt text](img/buho_printer_new_4.png)
+
 ### 3. Dirigirse a la sección de POS y activar IMPRESIÓN DE PDF AUTOMATICA
 
-La casilla debe estar sombreada, así como se muestra en la imagen del recuadro rojo.
+La casilla debe estar sombreada, es decir el toggle debe estar en la derecha.
 
-### 4. Dirigirse al módulo de RESTAURANTE en la sección de Config. Mesas/Cocina
+![alt text](img/buho_printer_new_5.png)
 
-La sección para ingresar está sombreada.
+### 4. Dirigirse al módulo de Restaurante en la sección de Configuración 
 
-### 5. Nos dirigimos al Apartado de IMPRESIÓN
+![alt text](img/buho_printer_new_6.png)
+
+### 5. Nos dirigimos al Apartado de Impresión
 
 Por defecto, como es la primera vez que haces esta configuración, el navegador nos notificará una ventana de acceso. Aceptar el acceso y haz clic en el botón **"Verificar y actualizar"**.
 
