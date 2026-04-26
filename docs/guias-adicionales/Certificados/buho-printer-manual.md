@@ -45,7 +45,7 @@ Haz esto desde el panel de administración, en la misma red donde está BuhoPrin
 
 ### 1. Ingresar al sistema y configurarlo
 
-Una vez logueados nos vamos a Dashboard y buscamos la opción **Configuraciones y más** en el apartado de **Configuraciones globales**. 
+Una vez logueados nos vamos a Dashboard y buscamos la opción **Configuraciones y más** en el apartado de **Configuraciones globales**.
 
 ![alt text](img/buho_printer_new_3.png)
 
@@ -59,17 +59,25 @@ La casilla debe estar sombreada, es decir el toggle debe estar en la derecha.
 
 ![alt text](img/buho_printer_new_5.png)
 
-### 4. Dirigirse al módulo de Restaurante en la sección de Configuración 
+### 4. Dirigirse al módulo de Restaurante en la sección de Configuración
 
 ![alt text](img/buho_printer_new_6.png)
 
 ### 5. Nos dirigimos al Apartado de Impresión
 
-Por defecto, como es la primera vez que haces esta configuración, el navegador nos notificará una ventana de acceso. Aceptar el acceso y haz clic en el botón **"Verificar y actualizar"**.
+Por defecto, como es la primera vez que haces esta configuración, el navegador nos notificará una ventana de acceso.
+
+![alt text](img/buho_printer_new_9.png)
+
+Aceptar el acceso y haz clic en el botón **"Verificar y actualizar"**.
+
+![alt text](img/buho_printer_new_8.png)
 
 ### 6. Activamos la opción de buhoprinter
 
 Solo hacemos click y movemos al estado de ACTIVO. De igual forma, el sistema nos notifica cuando está activo.
+
+![alt text](img/buho_printer_new_7.png)
 
 ### 7. Asigna cada impresora a su propósito
 
