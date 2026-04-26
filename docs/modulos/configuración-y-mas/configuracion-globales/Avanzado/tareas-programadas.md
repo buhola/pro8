@@ -173,6 +173,6 @@ Identifica automáticamente los tipos de afectación IGV más utilizados en tus 
 
 <!-- Enviar Facturas : **Para enviar facturas a SUNAT** seguir el siguiente manual **[Envio de Facturas automatico](../../../../guias-adicionales/TareasProgramadas/envio-facturas-automatico.md)** -->
 
-Enviar Boletas : **Para enviar boletas a SUNAT** seguir el siguiente manual **[Envio de Boletas automatico](../../../../guias-adicionales/TareasProgramadas/envio-boletas-automatico.md)**
+Enviar Boletas : **Para enviar boletas a SUNAT** seguir el siguiente manual **[Envio de Boletas automatico](../../../../guias-adicionales/tareas-programadas/envio-boletas-automatico.md)**
 
-Enviar Guías de Remisión : **Para enviar guías de remisión a SUNAT** seguir el siguiente manual **[Envio de Guías de Remisión automatico](../../../../guias-adicionales/TareasProgramadas/envio-guias-remision-automatico.md)**
+Enviar Guías de Remisión : **Para enviar guías de remisión a SUNAT** seguir el siguiente manual **[Envio de Guías de Remisión automatico](../../../../guias-adicionales/tareas-programadas/envio-guias-remision-automatico.md)**
