@@ -83,6 +83,8 @@ Solo hacemos click y movemos al estado de ACTIVO. De igual forma, el sistema nos
 
 Se nos mostrará 3 columnas y un listado de todas las impresoras que tenemos disponibles. Seleccionar la impresora que se usará.
 
+![alt text](img/buho_printer_new_10.png)
+
 | Tipo                      | Propósito                                  |
 | ------------------------- | ------------------------------------------ |
 | **Impresora - Comanda**   | Las comandas que se envían a cocina        |
@@ -148,7 +150,7 @@ Repite la Parte 1 en la nueva computadora y luego vuelve a hacer "Verificar y ac
 
 ## Reinstalación limpia de BuhoPrinter
 
-Sigue estos pasos cuando BuhoPrinter dejó de funcionar, quedó con errores después de una actualización, o cuando los pasos de la Parte 4 no solucionaron el problema. Este procedimiento borra por completo BuhoPrinter de la computadora (incluyendo archivos de configuración ocultos) y lo deja listo para una instalación desde cero.
+Sigue estos pasos cuando BuhoPrinter dejó de funcionar, quedó con errores después de una actualización, o cuando los pasos de la seccion [Qué hacer si algo no funciona](#qué-hacer-si-algo-no-funciona) no solucionaron el problema. Este procedimiento borra por completo BuhoPrinter de la computadora (incluyendo archivos de configuración ocultos) y lo deja listo para una instalación desde cero.
 
 ### 1. Desinstalar BuhoPrinter desde Windows
 
@@ -185,8 +187,8 @@ Reinicia la PC antes de instalar de nuevo. No te saltes este paso: es necesario 
 
 ### 6. Volver a instalar BuhoPrinter y probar
 
-- Sigue nuevamente los pasos de la **PARTE 1 - Instalación BuhoPrinter** de este manual para instalarlo desde cero
-- Después entra al sistema, vuelve a hacer clic en "Verificar y actualizar" (como se indica en la **PARTE 2**) y realiza una impresión de prueba para confirmar que todo quedó funcionando correctamente
+- Sigue nuevamente los pasos de la [**Instalación BuhoPrinter**](#instalación-buhoprinter-en-la-computadora-de-la-impresora) de este manual para instalarlo desde cero
+- Después entra al sistema, vuelve a hacer clic en "Verificar y actualizar" (como se indica en la [**Configuración de impresoras**](#configurar-las-impresoras-en-el-sistema)) y realiza una impresión de prueba para confirmar que todo quedó funcionando correctamente
 
 ---
 
