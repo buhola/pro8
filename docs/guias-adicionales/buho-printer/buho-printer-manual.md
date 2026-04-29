@@ -1,3 +1,7 @@
+---
+sidebar_position: 1
+---
+
 # Buhoprinter Manual
 
 ## Impresión rápida y directa desde el Facturador y Mozo
@@ -130,4 +134,3 @@ Esto es útil si quieres evitar que alguien imprima desde fuera del local.
 
 > Si un usuario intenta imprimir desde una red diferente, verá el mensaje:
 > "Impresión local activa: esta terminal no está en la red del servicio de impresión."
-

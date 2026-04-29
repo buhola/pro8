@@ -1,3 +1,7 @@
+---
+sidebar_position: 2
+---
+
 # Qué hacer si algo no funciona
 
 ## La verificación falla o dice "sin conexión"
