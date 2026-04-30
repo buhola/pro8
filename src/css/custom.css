@@ -558,8 +558,7 @@ html.embed-mode .theme-doc-markdown.markdown {
 
 html.embed-mode .row > .col.col--3,
 html.embed-mode .row > .col.col--2,
-html.embed-mode aside,
-html.embed-mode [class*='docItemContainer'] > .row > :last-child:not(:first-child) {
+html.embed-mode aside {
   display: none !important;
 }
 
