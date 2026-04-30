@@ -556,3 +556,18 @@ html.embed-mode .theme-doc-markdown.markdown {
   padding: 16px 20px !important;
 }
 
+html.embed-mode .row > .col.col--3,
+html.embed-mode .row > .col.col--2,
+html.embed-mode aside,
+html.embed-mode [class*='docItemContainer'] > .row > :last-child:not(:first-child) {
+  display: none !important;
+}
+
+html.embed-mode [class*='docItemContainer'] > .row > :first-child,
+html.embed-mode [class*='docMainContainer'],
+html.embed-mode article {
+  width: 100% !important;
+  max-width: 100% !important;
+  flex: 0 0 100% !important;
+}
+
