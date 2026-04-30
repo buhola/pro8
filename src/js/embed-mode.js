@@ -25,6 +25,7 @@ if (typeof window !== 'undefined') {
 
   let enforceIntervalId = null;
   let classObserver = null;
+  let imageObserver = null;
 
   const enforceEmbedClass = () => {
     if (!enabled) {
@@ -45,6 +46,51 @@ if (typeof window !== 'undefined') {
     enforceEmbedClass();
   };
 
+  const normalizeImageSrc = (img) => {
+    const src = img.getAttribute('src') || '';
+    if (!src) {
+      return;
+    }
+    if (src.startsWith('/')) {
+      img.src = `${window.location.origin}${src}`;
+    }
+  };
+
+  const hardenEmbedImages = () => {
+    if (!enabled) {
+      return;
+    }
+
+    const images = document.querySelectorAll('article img, .theme-doc-markdown img');
+    images.forEach((img, index) => {
+      normalizeImageSrc(img);
+      img.loading = 'eager';
+      img.decoding = 'sync';
+      if (index < 2) {
+        img.fetchPriority = 'high';
+      }
+
+      if (img.dataset.embedFixed === '1') {
+        return;
+      }
+
+      img.dataset.embedFixed = '1';
+      img.dataset.embedRetries = '0';
+
+      img.addEventListener('error', () => {
+        const retries = Number(img.dataset.embedRetries || '0');
+        if (retries >= 2) {
+          return;
+        }
+
+        img.dataset.embedRetries = String(retries + 1);
+        const current = img.getAttribute('src') || '';
+        const glue = current.includes('?') ? '&' : '?';
+        img.src = `${current}${glue}embedRetry=${Date.now()}`;
+      });
+    });
+  };
+
   if (document.body) {
     applyBodyClass();
   } else {
@@ -61,11 +107,25 @@ if (typeof window !== 'undefined') {
       attributeFilter: ['class'],
     });
 
+    imageObserver = new MutationObserver(() => {
+      hardenEmbedImages();
+    });
+    imageObserver.observe(document.documentElement, {
+      childList: true,
+      subtree: true,
+    });
+
     enforceIntervalId = window.setInterval(enforceEmbedClass, 500);
+    hardenEmbedImages();
+    window.setTimeout(hardenEmbedImages, 800);
+    window.setTimeout(hardenEmbedImages, 2000);
 
     window.addEventListener('beforeunload', () => {
       if (classObserver) {
         classObserver.disconnect();
+      }
+      if (imageObserver) {
+        imageObserver.disconnect();
       }
       if (enforceIntervalId) {
         window.clearInterval(enforceIntervalId);
