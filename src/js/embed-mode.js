@@ -1,5 +1,9 @@
 function isEmbedMode() {
   try {
+    if (window.self !== window.top) {
+      return true;
+    }
+
     const params = new URLSearchParams(window.location.search || '');
     if (params.get('embed') === '1') {
       return true;
