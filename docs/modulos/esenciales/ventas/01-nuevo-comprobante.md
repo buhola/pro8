@@ -2,9 +2,10 @@
 
 En esta área podrás generar comprobantes electrónicos y crear nuevos clientes.Sigue estos pasos para realizarlo:
 
-Ingresa al **módulo de ventas** y luego selecciona subcategoría **comprobantes electrónicos**.
+Ingresa al **módulo de Ventas** y luego selecciona subcategoría **Boleta/Factura**, boton **CREAR**.
 
-![Alt text](img/11_em.jpg)
+![Alt text](img/boleta_factura_new_1.png)
+
 
 **1. Crear comprobante**
 

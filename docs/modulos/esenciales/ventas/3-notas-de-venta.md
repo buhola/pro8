@@ -1,11 +1,9 @@
 # Notas de ventas
 
 En esta área podrás conocer como generar una nota de venta.
-Ingresa al **módulo de ventas** y luego ir a subcategoría **Notas de venta**.
+Ingresa al **módulo de Ventas** y luego ir a subcategoría **Notas de venta**, seleccionar el boton **CREAR**
 
-A primera vista aparecerá la lista de las notas, para crear una nueva nota de venta tendrá que seleccionar el botón **Nuevo**.
-
-![Alt text](img/1_nota_inicio.jpg)
+![Alt text](img/nota_venta_new_1.png)
 
 ## Crea tu nota de venta
 
