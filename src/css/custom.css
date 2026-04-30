@@ -517,8 +517,15 @@ header.Card-header:before {
 
 /* Modo embebido para mostrar solo el articulo */
 html.embed-mode .navbar,
+html.embed-mode .navbar-sidebar,
+html.embed-mode .navbar-sidebar__backdrop,
+html.embed-mode .theme-layout-navbar,
 html.embed-mode .theme-doc-sidebar-container,
+html.embed-mode [class*='docSidebarContainer'],
+html.embed-mode [class*='docSidebar'],
 html.embed-mode .theme-doc-toc-desktop,
+html.embed-mode .table-of-contents,
+html.embed-mode [class*='tocCollapsible'],
 html.embed-mode .pagination-nav,
 html.embed-mode .theme-edit-this-page,
 html.embed-mode footer.footer,

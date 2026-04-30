@@ -23,21 +23,53 @@ function isEmbedMode() {
 if (typeof window !== 'undefined') {
   const enabled = isEmbedMode();
 
-  if (enabled) {
-    window.sessionStorage.setItem('help_embed_mode', '1');
-    document.documentElement.classList.add('embed-mode');
-  }
+  let enforceIntervalId = null;
+  let classObserver = null;
 
-  const applyBodyClass = () => {
+  const enforceEmbedClass = () => {
     if (!enabled) {
       return;
     }
-    document.body.classList.add('embed-mode');
+    document.documentElement.classList.add('embed-mode');
+    if (document.body) {
+      document.body.classList.add('embed-mode');
+    }
+  };
+
+  if (enabled) {
+    window.sessionStorage.setItem('help_embed_mode', '1');
+    enforceEmbedClass();
+  }
+
+  const applyBodyClass = () => {
+    enforceEmbedClass();
   };
 
   if (document.body) {
     applyBodyClass();
   } else {
     window.addEventListener('DOMContentLoaded', applyBodyClass);
+  }
+
+  if (enabled) {
+    classObserver = new MutationObserver(() => {
+      enforceEmbedClass();
+    });
+
+    classObserver.observe(document.documentElement, {
+      attributes: true,
+      attributeFilter: ['class'],
+    });
+
+    enforceIntervalId = window.setInterval(enforceEmbedClass, 500);
+
+    window.addEventListener('beforeunload', () => {
+      if (classObserver) {
+        classObserver.disconnect();
+      }
+      if (enforceIntervalId) {
+        window.clearInterval(enforceIntervalId);
+      }
+    });
   }
 }
