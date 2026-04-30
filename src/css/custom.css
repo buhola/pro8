@@ -515,3 +515,37 @@ header.Card-header:before {
   }
 }
 
+/* Modo embebido para mostrar solo el articulo */
+html.embed-mode .navbar,
+html.embed-mode .theme-doc-sidebar-container,
+html.embed-mode .theme-doc-toc-desktop,
+html.embed-mode .pagination-nav,
+html.embed-mode .theme-edit-this-page,
+html.embed-mode footer.footer,
+html.embed-mode .breadcrumbs {
+  display: none !important;
+}
+
+html.embed-mode main {
+  width: 100% !important;
+}
+
+html.embed-mode .container {
+  max-width: 100% !important;
+}
+
+html.embed-mode .row {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+html.embed-mode .col {
+  --ifm-col-width: 100%;
+  flex: 0 0 100% !important;
+  max-width: 100% !important;
+}
+
+html.embed-mode .theme-doc-markdown.markdown {
+  padding: 16px 20px !important;
+}
+
