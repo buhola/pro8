@@ -97,6 +97,10 @@ if (typeof window !== 'undefined') {
     if (!enabled || embedZoomSetupDone) {
       return;
     }
+    if (!document.body) {
+      window.addEventListener('DOMContentLoaded', setupEmbedImageZoom, { once: true });
+      return;
+    }
     embedZoomSetupDone = true;
 
     const overlay = document.createElement('div');
@@ -139,9 +143,7 @@ if (typeof window !== 'undefined') {
       }
     });
 
-    document.addEventListener(
-      'click',
-      (e) => {
+    const openFromEvent = (e) => {
         const target = e.target;
         const img =
           target instanceof HTMLImageElement
@@ -170,9 +172,10 @@ if (typeof window !== 'undefined') {
         imgEl.alt = img.alt || '';
         overlay.classList.add('is-open');
         document.body.style.overflow = 'hidden';
-      },
-      true,
-    );
+    };
+
+    document.addEventListener('click', openFromEvent, true);
+    document.addEventListener('pointerup', openFromEvent, true);
   };
 
   if (document.body) {
