@@ -70,6 +70,13 @@ if (typeof window !== 'undefined') {
         img.fetchPriority = 'high';
       }
 
+      if (openZoomFromImage && img.dataset.embedZoomBound !== '1') {
+        img.dataset.embedZoomBound = '1';
+        img.style.cursor = 'zoom-in';
+        img.addEventListener('click', (e) => openZoomFromImage(img, e), { passive: false });
+        img.addEventListener('pointerup', (e) => openZoomFromImage(img, e), { passive: false });
+      }
+
       if (img.dataset.embedFixed === '1') {
         return;
       }
@@ -92,6 +99,7 @@ if (typeof window !== 'undefined') {
   };
 
   let embedZoomSetupDone = false;
+  let openZoomFromImage = null;
 
   const setupEmbedImageZoom = () => {
     if (!enabled || embedZoomSetupDone) {
@@ -129,6 +137,24 @@ if (typeof window !== 'undefined') {
       document.body.style.overflow = '';
     };
 
+    openZoomFromImage = (img, event = null) => {
+      if (!img || !imgEl) {
+        return;
+      }
+      if (event) {
+        event.preventDefault();
+        event.stopPropagation();
+      }
+      const src = img.currentSrc || img.src;
+      if (!src) {
+        return;
+      }
+      imgEl.src = src;
+      imgEl.alt = img.alt || '';
+      overlay.classList.add('is-open');
+      document.body.style.overflow = 'hidden';
+    };
+
     overlay.querySelectorAll('[data-embed-zoom-close]').forEach((el) => {
       el.addEventListener('click', closeZoom);
     });
@@ -160,18 +186,7 @@ if (typeof window !== 'undefined') {
           return;
         }
 
-        e.preventDefault();
-        e.stopImmediatePropagation();
-
-        const src = img.currentSrc || img.src;
-        if (!src || !imgEl) {
-          return;
-        }
-
-        imgEl.src = src;
-        imgEl.alt = img.alt || '';
-        overlay.classList.add('is-open');
-        document.body.style.overflow = 'hidden';
+        openZoomFromImage(img, e);
     };
 
     document.addEventListener('click', openFromEvent, true);
@@ -203,10 +218,10 @@ if (typeof window !== 'undefined') {
     });
 
     enforceIntervalId = window.setInterval(enforceEmbedClass, 500);
+    setupEmbedImageZoom();
     hardenEmbedImages();
     window.setTimeout(hardenEmbedImages, 800);
     window.setTimeout(hardenEmbedImages, 2000);
-    setupEmbedImageZoom();
 
     window.addEventListener('beforeunload', () => {
       if (classObserver) {
