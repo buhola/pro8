@@ -570,3 +570,68 @@ html.embed-mode article {
   flex: 0 0 100% !important;
 }
 
+/* Zoom por clic en modo embed (modal del facturador) */
+html.embed-mode .theme-doc-markdown img,
+html.embed-mode article img {
+  cursor: zoom-in;
+}
+
+#embed-doc-zoom-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 2147483646;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+#embed-doc-zoom-overlay.is-open {
+  display: flex;
+}
+
+#embed-doc-zoom-overlay .embed-doc-zoom-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  cursor: zoom-out;
+}
+
+#embed-doc-zoom-overlay .embed-doc-zoom-inner {
+  position: relative;
+  z-index: 1;
+  max-width: 96vw;
+  max-height: 92vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 8px;
+}
+
+#embed-doc-zoom-overlay .embed-doc-zoom-close {
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  background: rgba(30, 30, 40, 0.95);
+  color: #fff;
+  border-radius: 8px;
+  padding: 8px 14px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+#embed-doc-zoom-overlay .embed-doc-zoom-close:focus {
+  outline: 2px solid rgba(255, 255, 255, 0.6);
+  outline-offset: 2px;
+}
+
+#embed-doc-zoom-overlay .embed-doc-zoom-img {
+  max-width: 96vw;
+  max-height: calc(92vh - 48px);
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  border-radius: 8px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.45);
+  cursor: default;
+}
+

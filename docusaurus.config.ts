@@ -350,8 +350,8 @@ const config: Config = {
       darkTheme: prismThemes.dracula,
     },
     imageZoom: {
-      // CSS selector to apply the plugin to, defaults to '.markdown img'
-      selector: ".markdown img",
+      // Incluye contenedores reales de Docusaurus v3 (no solo .markdown)
+      selector: ".theme-doc-markdown img, article img, .markdown img",
     },
   } satisfies Preset.ThemeConfig,
 };

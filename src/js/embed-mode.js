@@ -91,6 +91,90 @@ if (typeof window !== 'undefined') {
     });
   };
 
+  let embedZoomSetupDone = false;
+
+  const setupEmbedImageZoom = () => {
+    if (!enabled || embedZoomSetupDone) {
+      return;
+    }
+    embedZoomSetupDone = true;
+
+    const overlay = document.createElement('div');
+    overlay.id = 'embed-doc-zoom-overlay';
+    overlay.setAttribute('role', 'dialog');
+    overlay.setAttribute('aria-modal', 'true');
+    overlay.setAttribute('aria-label', 'Vista ampliada');
+    overlay.innerHTML = `
+      <div class="embed-doc-zoom-backdrop" data-embed-zoom-close></div>
+      <div class="embed-doc-zoom-inner">
+        <button type="button" class="embed-doc-zoom-close" data-embed-zoom-close>Cerrar</button>
+        <img class="embed-doc-zoom-img" alt="" />
+      </div>
+    `;
+    document.body.appendChild(overlay);
+
+    const imgEl = overlay.querySelector('.embed-doc-zoom-img');
+    const inner = overlay.querySelector('.embed-doc-zoom-inner');
+
+    const closeZoom = () => {
+      overlay.classList.remove('is-open');
+      if (imgEl) {
+        imgEl.removeAttribute('src');
+        imgEl.alt = '';
+      }
+      document.body.style.overflow = '';
+    };
+
+    overlay.querySelectorAll('[data-embed-zoom-close]').forEach((el) => {
+      el.addEventListener('click', closeZoom);
+    });
+
+    if (inner) {
+      inner.addEventListener('click', (e) => e.stopPropagation());
+    }
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && overlay.classList.contains('is-open')) {
+        closeZoom();
+      }
+    });
+
+    document.addEventListener(
+      'click',
+      (e) => {
+        const target = e.target;
+        const img =
+          target instanceof HTMLImageElement
+            ? target
+            : target && typeof target.closest === 'function'
+              ? target.closest('article img, .theme-doc-markdown img')
+              : null;
+
+        if (!img || !(img instanceof HTMLImageElement)) {
+          return;
+        }
+
+        if (img.closest('#embed-doc-zoom-overlay')) {
+          return;
+        }
+
+        e.preventDefault();
+        e.stopImmediatePropagation();
+
+        const src = img.currentSrc || img.src;
+        if (!src || !imgEl) {
+          return;
+        }
+
+        imgEl.src = src;
+        imgEl.alt = img.alt || '';
+        overlay.classList.add('is-open');
+        document.body.style.overflow = 'hidden';
+      },
+      true,
+    );
+  };
+
   if (document.body) {
     applyBodyClass();
   } else {
@@ -119,6 +203,7 @@ if (typeof window !== 'undefined') {
     hardenEmbedImages();
     window.setTimeout(hardenEmbedImages, 800);
     window.setTimeout(hardenEmbedImages, 2000);
+    setupEmbedImageZoom();
 
     window.addEventListener('beforeunload', () => {
       if (classObserver) {
