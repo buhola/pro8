@@ -1,0 +1,9 @@
+{
+  "label": "Tipos de Comprobantes",
+  "position": 7,
+  "link": {
+    "type": "generated-index",
+    "slug": "tipos-de-comprobantes",
+    "description": "Guías sobre los tipos de comprobantes del sistema."
+  }
+}
