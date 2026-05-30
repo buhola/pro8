@@ -7,29 +7,29 @@ title: Emitir Notas de Crédito y Débito
 
 En esta artículo podrás conocer como generar una nota de crédito o débito, según sea la necesidad.
 
-Ingresa al **módulo de ventas** y luego ir a subcategoría **Listado de Comprobantes**.
+Ingresa al **módulo de ventas** y luego ir a subcategoría **Boleta/Factura**.
 
-![Alt text](img/1_notascred.jpg)
+![Alt text](img/notas_credito_debito_new_1.png)
 
-:::danger IMPORTANTE:
-El plazo para comunicar de baja o anular directamente un comprobante de pago electrónico es de 7 días, contados desde el día que emites el comprobante. Luego de ese plazo es necesario realizar una nota de crédito para anular cualquier comprobante.
+:::info IMPORTANTE:
+Recuerde que estas anulaciones solo se pueden realizar dentro de los primeros 7 días después de la emisión del comprobante, pasado el tiempo debe emitir una nota de crédito.
 :::
 
 Luego selecciona los tres puntos verticales en la parte derecha y después ingresa a la sección **Nota**.
 
-![Alt text](img/2_notas.jpg)
+![Alt text](img/notas_credito_debito_new_2.png)
 
 ## Nota de crédito
 
 Son documentos que el vendedor **emite** para indicarle al cliente que tiene un saldo a su favor, como lo es acreditar la devolución de un valor determinado o para que la empresa pueda corregir errores en las facturas ya emitidas de una forma sencilla.
 
-![Alt text](img/3_nc.jpg)
+![Alt text](img/notas_credito_debito_new_3.png)
 
 ## Nota de débito
 
 Una **nota de débito** es un documento emitido por un vendedor a un comprador para notificarle las obligaciones de deuda en curso.
 
-![Alt text](img/4_nd.jpg)
+![Alt text](img/notas_credito_debito_new_4.png)
 
 Los campos más importantes a llenar en ambos formularios,son los siguientes:
 
@@ -39,11 +39,11 @@ Los campos más importantes a llenar en ambos formularios,son los siguientes:
 
 En caso el motivo sea modificar la cantidad del monto, cantidad del producto o agregar uno nuevo. Selecciona el botón **Agregar producto** y posteriormente se encontrará el formulario para realizar estas acciones.
 
-![Alt text](img/5_notas.jpg)
+![Alt text](img/notas_credito_debito_new_5.png)
 
 Se procederá a ingresar los siguientes datos:
 
-- **Producto/Servicio:** Si el producto se creó previamente, se visualizará en la lista de opciones,si no lo está,podrá crear el producto paso a paso en nuestro **[artículo](https://fastura.github.io/documentacion/ventas/Emitir-comprobantes-Facturas-y-Boletas)**.
+- **Producto/Servicio:** Si el producto se creó previamente, se visualizará en la lista de opciones,si no lo está,podrá crear el producto paso a paso en nuestro **[artículo](https://manual.pro8.uio.la/modulos/esenciales/productos-servicios/productos-creacion-basica)**.
 - **Cantidad:** Ingresa la cantidad de productos
 - **Precio unitario:** Indicará el monto de la nota.
 - **Nombre del producto en PDF:** Ingresa la descripción del producto

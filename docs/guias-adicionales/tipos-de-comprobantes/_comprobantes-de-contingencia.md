@@ -14,12 +14,9 @@ Previamente configura la serie de contingencia:
 1. Ingresa al módulo de **Usuarios/Locales & Series** y luego selecciona la subcategoría **Establecimientos**.
 2. Observara la lista de establecimientos.Seleccionamos el botón **Series**.
 
-![Alt text](img/documento-de-contingencia-2.jpg)
 3. Nos aparecerá una ventana y seleccionamos el botón +Nuevo para agregar una serie.
-![Alt text](img/documento_de_contingencia_3.jpg)
-4. Seguido aparecerá un pequeño formulario en donde se debe completar:
 
-![Alt text](img/Tipodeoperacin4.jpg)
+4. Seguido aparecerá un pequeño formulario en donde se debe completar:
 
 - **Tipo de documento:** Elegimos el tipo de documento que queremos agregar.
 - **Número:** Colocar el número que corresponda segun mi serie física
@@ -30,8 +27,6 @@ Y para guardar seleccionamos el botón de confirmación.
 ## Realizar el comprobante de pago
 
 Ingresa al módulo de **Ventas** y luego selecciona la subcategoría **Comprobante electrónico**.
-
-![Alt text](img/documento-de-contigencia-3.jpg)
 
 1. **Activar comprobante de contingencia:** En la parte derecha superior podrá activar que es un **comprobante de contingencia**, y automáticamente el sistema activará la serie correspondiente, previamente creada.
 
@@ -47,7 +42,6 @@ Ingresa al módulo de **Ventas** y luego selecciona la subcategoría **Comproban
 
 Después selecciona el botón **GENERAR**, donde se visualizará una ventana indicando que el comprobante ha sido aceptada.
 
-![Alt text](img/descarga.jpg)
 
 Además podrás escoger el formato del comprobante electrónico en tamaño **A4(vertical), 80MM (ticket) y A5(horizontal)**.
 

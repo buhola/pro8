@@ -12,11 +12,9 @@ Este artículo muestra a cómo realizar la configuración inicial para utilizar 
 1. Ingresa al módulo de **Configuración y más** y luego selecciona **Configuraciones Globales**.
 2. Una vez en el módulo ubica el submódulo de **Empresa** y tendras que escojer la opcion de **Avanzado** 
 
-![alt text](img/retencion_igv_1.jpg)
 
 3. En **Avanzado**, ubica el módulo de **Contable** , donde ubicara la opcion de **Porcentaje retención IGV**
 
-![alt text](img/retencion_igv_2.jpg)
 
 :::info IMPORTANTE
 El porcentaje por defecto es 3%. Sin embargo, esto no significa que todas las actividades estén configuradas con este valor. Es necesario cambiarlo a 4% y luego volver a 3% para asegurarse de que la configuración se aplique correctamente.
@@ -30,16 +28,11 @@ En esta área podrás generar comprobantes electrónicos con retencion de IGV.Si
 
 Ingresa al **módulo de ventas** y luego selecciona subcategoría **Nuevo Comprobante**.
 
-![alt text](img/retencion_igv_3.jpg)
-
 
 Como primer paso vamos a la opcion de **Informacion Adicional**.La encontrara en la seccion derecha del comprobante.
 
-![alt text](img/retencion_igv_4.jpg)
-
 Saldra un menu despegable donde tendra que seleccionar la opcion **¿Tiene retencion de IGV?**
 
-![alt text](img/retencion_igv_5.jpg)
 
 Una vez realizado estos pasos podemos continuar con la generacion del Comprobante.
 
@@ -48,8 +41,6 @@ Una vez realizado estos pasos podemos continuar con la generacion del Comprobant
 En esta sección podrá empezar con la creación de su comprobante electrónico y realizar otras importantes configuraciones.
 
 Se encontrará el formulario del tipo de comprobante y se completarán los siguientes datos:
-
-![alt text](img/retencion_igv_6.jpg)
 
 
 :::info IMPORTANTE
@@ -75,7 +66,6 @@ Puede emitir boletas electrónicas por montos menores a 700 soles con el cliente
 **2. Crear nuevo cliente**
 En esta sección escogerá el cliente para la creación del comprobante, caso contrario deberá crearlo seleccionando el botón **[+Nuevo]**.
 
-![alt text](img/retencion_igv_7.jpg)
 
 Posteriormente aparecerá el formulario de **Nuevo cliente**.
 
@@ -91,17 +81,13 @@ Todos los campos que cuentan con **(*)** son obligatorios.
 
 Selecciona el botón **Agregar producto.**
 
-![alt text](img/retencion_igv_8.jpg)
 
 Posteriormente se encontrará el formulario de **Agregar Producto o Servicio**.
 
-![alt text](img/retencion_igv_4.png)
 
 Para crear un nuevo producto siga los pasos del siguiente **[articulo](https://manual.uio.la/Pro7/Modulos/Esenciales/productos-servicios/Productos-Creacion-basica)**
 
 Después selecciona el botón **Cerrar**, donde visualizará la descripción del producto.
-
-![alt text](img/retencion_igv_11.jpg)
 
 **4. Condiciones de pago** 
 
@@ -117,10 +103,7 @@ Selecciona el tipo de **Condición de pago** que mejor se acomode a tus requerim
 
 Se visualizará una ventana indicando que la factura ha sido aceptada.
 
-![alt text](img/retencion_igv_9.jpg)
 
 En este caso vamos a seleccionar la opcion **A4**
-
-![alt text](img/retencion_igv_10.jpg)
 
 Donde podra visualizar su **Total de Retencion**, seleccionado previamente.

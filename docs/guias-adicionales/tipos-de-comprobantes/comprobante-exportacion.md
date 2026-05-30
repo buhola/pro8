@@ -15,7 +15,7 @@ Es importante leer antes este **[artículo](https://fastura.github.io/documentac
 
 Ingresa al **Módulo de ventas** y luego selecciona subcategoría **Comprobantes electrónicos**, y cambiar el Tipo de operación a **Exportación de bienes**
 
-![Alt text](img/comprobante_exportacion.jpg)
+![Alt text](img/comprobantes_exportacion_new_1.png)
 
 ## Seleccionar cliente
 
@@ -23,8 +23,6 @@ Al agregar un cliente, tiene que estar registrado con el Tipo de Doc. Identidad 
 
 ## Agregar productos
 
-Al agregar un producto, debe editar el Tipo de afecctación IGV,  haz clic en la casilla de selección **Editar** y selecciona **Exportación de bienes**.
-
-![Alt text](img/exportacion-producto.jpg)
+Debera agrefar un producto o crear uno nuevo. El tipo de afectación del IGV debe ser **Exportación de Bienes**.
 
 Una vez ingresado todos los productos, selecciona el botón **Generar**.

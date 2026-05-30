@@ -13,11 +13,9 @@ En este artículo te enseñaremos a conocer como se realiza el proceso de acumul
 
 Ingresa al módulo de **Configuración** y luego en la subcategoría **S. Puntos**.
 
-![Alt text](img/avanzado13.jpg)
 
 Una vez dentro, debemos de Habilitar el sistema por puntos, cambiando el interruptor a **Si.**
 
-![Alt text](img/avanzado15.jpg)
 
 - **Monto de venta:**  Inserta el monto de venta con el que desea que acumulen puntos.
 - **N° de puntos:** Inserta el número de puntos que acumulara según el monto de venta.
@@ -31,7 +29,6 @@ Ingresa al módulo **Productos/Servicios**, si el producto ya esta creado selecc
 
 El cliente puede acumular puntos según sus compras, en este ejemplo pusimos que por cada 1 sol de compra, el cliente obtendrá 1 punto. Entonces generamos el comprobante electrónico:
 
-![Alt text](img/puntos2.jpg)
 
 Como puede observar en la imagen, el cliente no tenia ningún punto acumulado, pero con esta compra el cliente ganará 17 puntos.
 
@@ -39,6 +36,5 @@ Como puede observar en la imagen, el cliente no tenia ningún punto acumulado, p
 
 Al momento de agregar el producto previamente configurado para canjear por puntos, te aparecerá una casilla de selección para canjear por puntos, selecciónala para que el cliente pueda canjear los puntos que tiene acumulado.
 
-![Alt text](img/puntos3.jpg)
 
 Al generar ese comprobante, en el comprobante electrónico aparecerá el producto canjeado por puntos, y cuantos puntos uso.

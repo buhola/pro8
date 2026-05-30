@@ -11,13 +11,13 @@ Esta funcionalidad te permite gestionar hasta **tres precios adicionales** adem�
 
 El selector de precios se encuentra en el **panel lateral derecho** del sistema de Punto de Venta (POS). Desde allí, podrás elegir fácilmente cuál de los precios configurados deseas aplicar a los productos que estás vendiendo.
 
-![alt text](img/multipleprecio3.jpg)
+![alt text](img/multiple_precio_new_1.png)
 
 ## Módulo ventas
 
 En el **módulo de ventas**, el **selector de precios** se encuentra junto al buscador de productos. Esta funcionalidad te permite elegir de forma sencilla el precio que aplicarás al producto que estás vendiendo, ofreciendo flexibilidad según las condiciones de la venta.
 
-![alt text](multipleprecio4-1.jpg)
+![alt text](img/multiple_precio_new_2.png)
 
 ## Crear un Producto con Varios Precios
 
@@ -26,7 +26,7 @@ Sigue estos pasos para configurar un producto con múltiples precios:
 1. Accede a la sección de **Productos** en tu sistema.
 2. Selecciona **Crear Nuevo Producto** o edita uno existente.
 
-![alt text](img/multipleprecio2.jpg)
+![alt text](img/multiple_precio_new_3.png)
 
 3. En el campo de **Precio Principal**, introduce el precio estándar del producto.
 4. Dirigete a **Presentaciones***
